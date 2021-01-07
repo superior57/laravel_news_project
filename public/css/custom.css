@@ -484,6 +484,7 @@ section .main-item {
     height: auto;
     background-color: #000;
     display: block;
+    z-index: 100;
 }
 
 
@@ -550,6 +551,7 @@ section .main-item {
     width: 100px;
     height: 100%;
     background-color: #000;
+    z-index: 99;
 }
 
 .hero .head * {
