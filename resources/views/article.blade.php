@@ -23,9 +23,9 @@
         </div>
 
         <span class="hashtag-date mb-3">#streetart / 24 June 2020</span>
-        <h5 class="title mb-4">
-            The photographic journey <br>
-            through the Tottenham
+        <h5 class="title mb-4"> 
+            THE PHOTOGRAPHIC JOURNEY <br>
+            THROUGH THE TOTTENHAM
         </h5>
         <span class="sub-title">"Can't Smile Without You" - Martin Andersen's book between terrace and casual</span>
     </div>

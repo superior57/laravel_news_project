@@ -482,7 +482,7 @@ section .main-item {
     position: absolute;
     width: 100px;
     height: auto;
-    background-color: #000;
+    background-color: transparent;
     display: block;
     z-index: 100;
 }
@@ -580,13 +580,13 @@ section .main-item {
     font-weight: bold;
     font-size: 28px;
     line-height: 38px;
-    text-transform: uppercase;
 }
 
 .hero {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 .hero::before {
@@ -905,6 +905,123 @@ ul.social-button li>a>i:hover {
     width: 140px;
 }
 
+.topevent-section .bg-img * {
+    color: #FFF !important;
+    fill: #FFF !important;
+}
+
+.topevent-section .item {
+    padding: 40px 30px;
+}
+
+.topevent-section .item .date {
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.6;
+    margin-bottom: 10px;
+} 
+
+.topevent-section .item .title {
+    font-family: EuropeExt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.topevent-section .item .arrow-right {
+    cursor: pointer;
+}
+
+.topevent-section .item .arrow-right:hover a{
+    animation: fadeInRight 1s;
+}
+
+.recent-events .item {
+    padding: 30px 0 0;
+}
+
+.recent-events .item .item-img {
+    max-height: 200px;
+}
+
+.recent-events .item .date {
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.6;
+    padding: 15px 0;
+}
+
+.recent-events .item .title {
+    font-family: EuropeExt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.loading {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.loading .item-loading {
+    display: flex;
+    position: relative;    
+}
+.loading .item-loading .item-logo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rotate {
+    from {
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      -webkit-transform: rotate3d(0, 0, 1, -200deg);
+      transform: rotate3d(0, 0, 1, -200deg);
+    }
+  
+    to {
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      -webkit-transform: translate3d(0, 0, 160deg);
+      transform: translate3d(0, 0, 160deg);
+    }
+  }
+
+.loading .item-loading .item-border-text {
+    animation: rotate 1s infinite;
+    animation-play-state: running;
+}
+
+.loading .item-loading span {
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
 @media (max-width: 450px) {
     #content_wrapper {
         margin-left: 0;
@@ -929,5 +1046,26 @@ ul.social-button li>a>i:hover {
 
     .md-border-r-1 {
         border-right: 0;
+    }
+
+    .sidebar,.sidebar-back {
+        display: none;
+    }
+
+    .topevent-section {
+        margin: 0 !important;
+    }
+
+    .topevent-section .item {
+        padding: 40px 0px;
+        border-bottom: solid 1px gray;
+    }
+
+    .topevent-section .item.bg-img {
+        padding: 40px 30px;
+    }
+
+    .d-flex {
+        display: block !important;
     }
 }

@@ -21,6 +21,13 @@ Route::get('article', function() {
     return view('article');
 });
 
+Route::get('events', function() {
+    return view('events');
+});
+
+Route::get('event-details', function() {
+    return view('event-details');
+});
 
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('/todo', 'TodoController');
