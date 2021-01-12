@@ -82,7 +82,7 @@
       <div class="news-item-content flex-wrap px-3 px-md-5">
         <div class="w-100">
           <a href="#" class="btn btn-primary">#streetart</a>
-          <div class=" d-flex">
+          <div class="date-time-item d-flex">
             <div class="time-item">
               <div class="d-flex">
                 <p>10</p>
@@ -119,7 +119,7 @@
           <h3 class="text-black text-uppercase">Tyler The Creator X golf Wang Tour 2020</h3>        
         </div>
         <div class="px-3 px-md-5">
-          <a href="#" class="btn btn-more">more info 
+          <a href="{{ url('/events') }}" class="btn btn-more">more info 
             
           </a>
         </div>
@@ -370,7 +370,7 @@
       {{-- end product --}}
     </div>
     <div class="view-more my-5">
-      <a href="" class="btn btn-more">view all products</a>
+      <a href="{{ url('/shop') }}" class="btn btn-more">view all products</a>
     </div>
   </div>
 </section>
@@ -784,6 +784,14 @@
     </div>
 </section>
 {{-- End Comission Section --}}
+@endsection
+
+@section('script')
+<script>
+    $(document).on('click', '.item-img', () => {
+        location.href = "/news-details";
+    });  
+</script>    
 @endsection
 
 @section('footer')

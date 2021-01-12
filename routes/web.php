@@ -14,19 +14,23 @@
 Auth::routes();
 
 Route::get('/', function () {
-    return view('concept');
+    return view('news');
 });
 
-Route::get('article', function() {
-    return view('article');
+Route::get('news-details', function() {
+    return view('news-details');
 });
-
 Route::get('events', function() {
     return view('events');
 });
-
 Route::get('event-details', function() {
     return view('event-details');
+});
+Route::get('shop', function() {
+    return view('shop');
+});
+Route::get('shop-details', function() {
+    return view('shop-details');
 });
 
 Route::group(['middleware' => 'auth'], function () {

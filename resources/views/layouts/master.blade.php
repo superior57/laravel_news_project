@@ -58,5 +58,7 @@
     <script src="js/default/jquery.passwordstrength.js"></script>
     <script src="js/default/mail.js"></script>
     <script src="js/default/active.js"></script>
+
+    @yield('script')
   </body>
 </html>

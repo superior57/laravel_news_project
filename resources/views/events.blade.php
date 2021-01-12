@@ -10,7 +10,7 @@
 
 @section('content')
 
-<section class="hero" style="background-image: url('img/events/back.png');">
+<section class="hero hero-sm" style="background-image: url('img/events/back.png');">
     <div class="hero-content py-5 px-3 px-md-5">
         <div class="head">            
             <div>
@@ -370,6 +370,7 @@
             {{-- end recent item --}}           
             
         </div>
+        {{-- loading --}}
         <div class="loading">
             <div class="item-loading">
                 <div class="item-logo">
@@ -401,9 +402,19 @@
                 </i>                   
             </div>
         </div>
+        {{-- End loading --}}
     </div>
 </section>
 @endsection
+
+@section('script')
+<script>
+    $(document).on('click', '.item-img', () => {
+        location.href = "/event-details";
+    });  
+</script>    
+@endsection
+
 
 @section('footer')
   @include('layouts.footer-1')    
