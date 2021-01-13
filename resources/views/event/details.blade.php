@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Event | 
+    Event
 @endsection
 
 @section('sidebar')

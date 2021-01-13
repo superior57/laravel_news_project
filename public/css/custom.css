@@ -10,6 +10,11 @@
     color: #000;
 }
 
+select {
+    border: 1px solid #808080;
+    outline: none;
+}
+
 /* button */
 
 .btn {
@@ -1251,13 +1256,124 @@ section .subtitle {
     background-color: #000;
 }
 
-.btn-md {
+.btn-size-md {
     padding: 30px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.cart {
+    font-family: HelveticaNeueCyr;
+}
+
+.cart .title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    border-bottom: 1px solid #E7E7E7;    
+}
+
+.cart .bag {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart .bag .item {
+    display: flex;
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.cart .bag .item:last-child {
+    border: 0;
+}
+
+.cart .bag .item .item-img {
+    min-width: 100px;
+}
+
+.cart .bag .item .item-details {
+    width: 100%;
+    padding-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart .bag .item .item-details .price {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    width: 100%;
+}
+.cart .bag .item .item-details .name {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    width: 100%;
+}
+
+.cart .bag .item .item-details .size-qty {
+    width: 100%;
+}
+.cart .bag .item .item-details .size-qty *{
+    font-size: 16px;
+    line-height: 22px;
+    color: #808080;
+    padding-right: 15px;
+} 
+
+.cart .bag .item .item-details .size-qty select {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+.cart .bag .item .remove {
+    display: flex;
+}
+
+.cart .bag .item .remove a {
+    margin: auto;
+}
+
+.paper {
+    background: #FFF !important;
+}
+
+.cart .bag .bag-foot {
+    width: 100%;
+    text-align: right;
+}
+
+.cart .subtitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;    
+    color: #000000;
+}
+
+.cart .cart-foot .subtitle {
+    text-align: right;
+}
+
+.cart .bag .bag-foot span {
+    padding-left: 15px;
+}
+
+.cart .total h5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart .total select {
+    padding: 15px;
+}
 
 @media (max-width: 450px) {
     #content_wrapper {

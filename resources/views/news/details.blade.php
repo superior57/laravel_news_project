@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    News site | Article
+    News
 @endsection
 
 @section('sidebar')

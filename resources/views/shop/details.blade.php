@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    News site | Shop
+    Shop
 @endsection
 
 @section('sidebar')
@@ -56,7 +56,7 @@
                     </div>
 
                     <div class="w-100 d-flex">
-                        <a href="" class="btn btn-secondary btn-md">BUY PRODUCT</a>
+                        <a href="" class="btn btn-secondary btn-size-md">BUY PRODUCT</a>
                     </div>
 
                 </div>

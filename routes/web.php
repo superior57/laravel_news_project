@@ -14,23 +14,32 @@
 Auth::routes();
 
 Route::get('/', function () {
-    return view('news');
+    return redirect('/news');
 });
 
-Route::get('news-details', function() {
-    return view('news-details');
+Route::get('news', function() {
+    return view('news.index');
 });
+Route::get('news-details', function() {
+    return view('news.details');
+});
+
 Route::get('events', function() {
-    return view('events');
+    return view('event.index');
 });
 Route::get('event-details', function() {
-    return view('event-details');
+    return view('event.details');
 });
+
 Route::get('shop', function() {
-    return view('shop');
+    return view('shop.index');
 });
 Route::get('shop-details', function() {
-    return view('shop-details');
+    return view('shop.details');
+});
+
+Route::get('cart', function() {
+    return view('cart.index');
 });
 
 Route::group(['middleware' => 'auth'], function () {
