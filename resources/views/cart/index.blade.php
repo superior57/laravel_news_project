@@ -18,14 +18,14 @@
 </div>
 
 {{-- Main Section --}}
-<section class="w-100 shop-section">
+<section class="w-100 shop-section mb-5">
     <div class="w-100 p-3 px-md-5 d-block">
-         <div class="mb-50">
-            <h3 class="title">Your cart</h3>        
+         <div class="mb-4">
+            <h3 class="title size-lg">Your cart</h3>        
          </div>
          <div class="body">
-             <div class="row cart">
-                 <div class="col-md-7">
+             <div class="row cart container-lg">
+                 <div class="col-md-8 mb-5">
                      <div class="w-100 paper p-3 p-md-4 bag">
                          <h5 class="title mb-0 pb-3">My bag</h5>
                          <div class="w-100 bag-list">
@@ -103,7 +103,7 @@
                          </div>
                      </div>
                  </div>
-                 <div class="col-md-5">
+                 <div class="col-md-4">
                      <div class="paper p-3 p-md-4 total">
                         <h5 class="title mb-0 pb-3">Total</h5>
                         <div class="body pt-4">
@@ -117,10 +117,30 @@
                             </h5>
                             <select class="w-100 mb-4" name="" id="">
                                 <option value="">Express Delivery ($15)</option>
-                                <option value="">Express Delivery ($15)</option>
-                                <option value="">Express Delivery ($15)</option>
+                                <option value="">Credit Card Delivery ($5)</option>
+                                <option value="">Direct Delivery ($20)</option>
                             </select>
-                            <a href="#" class="btn btn-secondary btn-size-md">CHECKOUT</a>
+                            <a href="{{ url('cart/checkout') }}" class="btn btn-secondary w-100 btn-size-md mb-4">CHECKOUT</a>
+                            <h5 class="subtitle mb-4">
+                                We accept
+                            </h5>
+                            <div class="d-flex">
+                                <span class="accept-payment-item">
+                                    <img src="{{ asset('img/accept-payments/visa.svg') }}" alt="Visa">
+                                </span>
+                                <span class="accept-payment-item">
+                                    <img src="{{ asset('img/accept-payments/mastercard.svg') }}" alt="MasterCard">
+                                </span>
+                                <span class="accept-payment-item">
+                                    <img src="{{ asset('img/accept-payments/paypal.svg') }}" alt="Paypal">
+                                </span>
+                                <span class="accept-payment-item">
+                                    <img src="{{ asset('img/accept-payments/scb.svg') }}" alt="SCB">
+                                </span>
+                                <span class="accept-payment-item">
+                                    <img src="{{ asset('img/accept-payments/bank.png') }}" width="29" alt="bank">
+                                </span>
+                            </div>
                         </div>
                      </div>
                  </div>

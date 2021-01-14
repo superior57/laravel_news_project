@@ -10,7 +10,7 @@
 
 @section('content')
 
-<section class="hero" style="background-image: url('img/back1.png');">
+<section class="hero" style="background-image: url('{{ asset('img/back1.png') }}');">
     <div class="hero-content py-5 px-3 px-md-5">
         <div class="mb-4">
             <a href="{{ url('/') }}" class="btn-back">Back to all news</a>
@@ -61,7 +61,7 @@
             </li>
         </ul> 
          {{-- end social button group --}}
-        <div class="body mx-3 mx-md-5">
+        <div class="body mx-3 mx-md-5 container-md">
             <div class="w-100">
                 <p class="mb-50">
                     The fascination for the ultras world comes from the English terrace and from the supporters

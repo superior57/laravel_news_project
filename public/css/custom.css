@@ -15,6 +15,32 @@ select {
     outline: none;
 }
 
+/* scrollbar */
+
+*::-webkit-scrollbar-track {
+    margin: 2px 0;
+    background-color: #ECECEC;
+}
+  
+*::-webkit-scrollbar {
+    width: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #808080;
+}
+
+/* end scrollbar */
+.form-check-input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2.5' fill='%55000'/%3e%3c/svg%3e")
+}
+
+.form-check-input:checked {
+    background-color: #FFF;
+    border-color: #000000;
+}
+
+
 /* button */
 
 .btn {
@@ -690,10 +716,6 @@ ul.social-button li>a>i:hover {
     fill: #FFF;
 }
 
-.details .body {
-    max-width: 760px;
-}
-
 .article-section p,
 .article-section span {
     font-family: HelveticaNeueCyr;
@@ -1257,10 +1279,8 @@ section .subtitle {
 }
 
 .btn-size-md {
-    padding: 30px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 62px;
+    padding: 1.3rem;
 }
 
 .cart {
@@ -1375,6 +1395,223 @@ section .subtitle {
     padding: 15px;
 }
 
+.accept-payment-item {
+    height: 26px;
+    width: 45px;
+    border: 1px solid #b5b5b599;
+    display: flex;
+    margin-right: 10px;
+}
+.accept-payment-item img{
+    margin: auto;
+}
+
+.scrollbox {
+    overflow: hidden;
+    overflow: auto;
+}
+
+.cart .bag-list.size-small {
+    border-bottom: 1px solid #E7E7E7;    
+    padding: 30px 0;
+}
+
+.cart .bag-list.size-small .item {
+    border: 0;
+    padding: 0 0 15px;
+}
+
+.cart .bag-list.size-small .item:last-child {
+    padding: 0;
+}
+
+.cart .bag-list.size-small .item .price {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.cart .bag-list.size-small .item .name {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.cart .bag-list.size-small .item .size-qty * {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text-16 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #808080;
+}
+
+.text-18 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.form-group label {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.form-group .form-control {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #808080;
+}
+
+.delivery-option b {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.delivery-option span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.text-gray {
+    color: #808080 !important;
+}
+
+.btn-payment.paypal span {
+    margin-right: 2.2rem;    
+}
+
+.btn-payment.credit-card span img{
+    min-width: 30px;
+}   
+
+.btn-payment {
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #808080;
+    width: 100%;
+    justify-content: unset;
+}
+
+.btn-payment span {
+    display: flex;
+    margin-right: 30px;
+}
+
+.container-lg {
+    max-width: 1200px;
+    padding: 0;
+}
+
+.container-md {
+    max-width: 760px;
+    padding: 0;
+}
+
+.information-item span {
+    width: 100%;
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contact-sidebar {
+    padding: 0;
+}
+
+.contact-sidebar>li {
+    display: flex;
+}
+
+.contact-sidebar>li>a {
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: #808080;
+    transition: 0s;
+}
+
+.contact-sidebar>li.active>a {
+    border-left: 2px solid #FF7BC9;
+    color: #000000;
+}
+
+.contact-sidebar>li>a:hover {
+    border-left: 2px solid #FF7BC9;
+    color: #000000;
+    opacity: .6;
+}
+
+.size-md {
+    font-size: 28px !important;
+    line-height: 38px;
+}
+
+.contact-us {
+    font-family: HelveticaNeueCyr;
+}
+
+.contact-us .title {
+    font-family: EuropeExt;
+}
+
+a.go-to {
+    text-decoration: underline;
+}
+
+a.go-to:hover {
+    text-decoration: none;
+    opacity: .6;
+}
+
+.dropzone {
+    border: 1px dashed #000000;
+}
+
+.member {
+    padding: 30px 0;
+}
+
+.member .item-img {
+    max-height: 260px;
+}
+
+.member .role {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #808080;
+    width: 100%;
+}
+
+.member .name {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    width: 100%;
+}
+
 @media (max-width: 450px) {
     #content_wrapper {
         margin-left: 0;
@@ -1418,9 +1655,9 @@ section .subtitle {
         padding: 40px 30px;
     }
 
-    .d-flex {
+    /* .d-flex {
         display: block !important;
-    }
+    } */
     
 }
 

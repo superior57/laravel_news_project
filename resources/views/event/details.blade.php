@@ -10,7 +10,7 @@
 
 @section('content')
 
-<section class="hero" style="background-image: url('img/events/details-back.png');">
+<section class="hero" style="background-image: url('{{ asset('img/events/details-back.png') }}');">
     <div class="hero-content py-5 px-3 px-md-5">
         <div class="mb-4">
             <a href="{{ url('/events') }}" class="btn-back">Back to all events</a>
@@ -84,7 +84,7 @@
             </li>
         </ul> 
          {{-- end social button group --}}
-        <div class="body mx-3 mx-md-5">
+        <div class="body mx-3 mx-md-5 container-md">
             <div class="w-100">
                 <div class="top-infomation mb-50">
                     <div class="row">

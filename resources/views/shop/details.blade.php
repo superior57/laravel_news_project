@@ -19,7 +19,7 @@
 {{-- Shop details section --}}
 <section class="shop details mb-50">
     <div class="w-100 p-3 px-md-5">        
-        <div class="body">
+        <div class="body container-md">
             <div class="row">
                 <div class="col-md-6 pr-md-30">
                     <div class="item-img">

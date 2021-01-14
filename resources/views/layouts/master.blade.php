@@ -15,10 +15,7 @@
     <!-- Core Stylesheet-->
     <link rel="stylesheet" href="{{ asset('style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
-    <script src="js/jquery.min.js"></script>
-    <script>
-        
-    </script>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/global.js') }}"></script>
   </head>
   <body>
@@ -39,25 +36,26 @@
         @yield('footer')
     </div>    
     <!-- All JavaScript Files-->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>    
-    <script src="js/default/classy-nav.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/default/jquery.scrollup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/default/isotope.pkgd.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.animatedheadline.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jarallax.min.js"></script>
-    <script src="js/jarallax-video.min.js"></script>
-    <script src="js/default/cookiealert.js"></script>
-    <script src="js/default/jquery.passwordstrength.js"></script>
-    <script src="js/default/mail.js"></script>
-    <script src="js/default/active.js"></script>
+    <script src="{{ asset('js/popper.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>    
+    <script src="{{ asset('js/default/classy-nav.min.js') }}"></script>
+    <script src="{{ asset('js/waypoints.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+    <script src="{{ asset('js/default/jquery.scrollup.min.js') }}"></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('js/default/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.animatedheadline.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
+    <script src="{{ asset('js/wow.min.js') }}"></script>
+    <script src="{{ asset('js/jarallax.min.js') }}"></script>
+    <script src="{{ asset('js/jarallax-video.min.js') }}"></script>
+    <script src="{{ asset('js/default/cookiealert.js') }}"></script>
+    <script src="{{ asset('js/default/jquery.passwordstrength.js') }}"></script>
+    <script src="{{ asset('js/default/mail.js') }}"></script>
+    <script src="{{ asset('js/default/active.js') }}"></script>
+    <script src="{{ asset('js/dropzone.min.js') }}"></script>
 
     @yield('script')
   </body>

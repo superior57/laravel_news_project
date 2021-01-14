@@ -789,7 +789,7 @@
 @section('script')
 <script>
     $(document).on('click', '.item-img', () => {
-        location.href = "/news-details";
+        location.href = "/news/details";
     });  
 </script>    
 @endsection

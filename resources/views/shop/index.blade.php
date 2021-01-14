@@ -21,7 +21,7 @@
 <section class="w-100 shop-section">
     <div class="w-100 p-3 px-md-5 d-block">
          <div class="mb-50">
-            <h3 class="title">Shop</h3>        
+            <h3 class="title size-lg">Shop</h3>        
             <span class="subtitle">products designed in-house by GIA</span>
          </div>
          <div class="body">
@@ -555,7 +555,7 @@
 @section('script')
 <script>
     $(document).on('click', '.item-img', () => {
-        location.href = "/shop-details";
+        location.href = "/shop/details";
     });  
 </script>    
 @endsection

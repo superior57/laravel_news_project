@@ -410,7 +410,7 @@
 @section('script')
 <script>
     $(document).on('click', '.item-img', () => {
-        location.href = "/event-details";
+        location.href = "/event/details";
     });  
 </script>    
 @endsection
