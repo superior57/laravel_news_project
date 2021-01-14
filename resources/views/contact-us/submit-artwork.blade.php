@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Contact us | Submit Artwork
+    Submit Artwork
 @endsection
 
 @section('sidebar')

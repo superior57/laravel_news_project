@@ -40,7 +40,7 @@
             </ul>
             <div class="tab-content">
                 {{-- tab all artists --}}
-                <div class="tab-pane" id="allartists" style="display: block;">     
+                <div class="tab-pane fadeInLeft animated" id="allartists" style="display: block;">     
                     {{-- Artist Item --}}
                     <div class="artist-item">
                         <div class="item-img">
@@ -52,7 +52,7 @@
                     </div> 
                     {{-- End artist item --}}
                     {{-- Artist Item --}}
-                    <div class="artist-item">
+                    <div class="artist-item wow fadeInLeft animated">
                         <div class="item-img">
                             <img src="{{ asset('img/artists/2.png') }}" alt="Artist">
                         </div>       
@@ -62,7 +62,7 @@
                     </div> 
                     {{-- End artist item --}}
                     {{-- Artist Item --}}
-                    <div class="artist-item">
+                    <div class="artist-item wow fadeInLeft animated">
                         <div class="item-img">
                             <img src="{{ asset('img/artists/3.png') }}" alt="Artist">
                         </div>       
@@ -72,7 +72,7 @@
                     </div> 
                     {{-- End artist item --}}
                     {{-- Artist Item --}}
-                    <div class="artist-item">
+                    <div class="artist-item wow fadeInLeft animated">
                         <div class="item-img">
                             <img src="{{ asset('img/artists/4.png') }}" alt="Artist">
                         </div>       
@@ -83,6 +83,50 @@
                     {{-- End artist item --}}         
                 </div>
                 {{-- End tab all artists --}}
+                {{-- popular --}}
+                <div class="tab-pane fadeInLeft animated" id="popular">     
+                    {{-- Artist Item --}}
+                    <div class="artist-item">
+                        <div class="item-img">
+                            <img src="{{ asset('img/artists/1.png') }}" alt="Artist">
+                        </div>       
+                        <div class="overal-text">
+                            <span>Kanut Sanan</span>                
+                        </div>     
+                    </div> 
+                    {{-- End artist item --}}
+                    {{-- Artist Item --}}
+                    <div class="artist-item wow fadeInLeft animated">
+                        <div class="item-img">
+                            <img src="{{ asset('img/artists/2.png') }}" alt="Artist">
+                        </div>       
+                        <div class="overal-text">
+                            <span>Stefania Picelli</span>                
+                        </div>     
+                    </div> 
+                    {{-- End artist item --}}
+                    {{-- Artist Item --}}
+                    <div class="artist-item wow fadeInLeft animated">
+                        <div class="item-img">
+                            <img src="{{ asset('img/artists/3.png') }}" alt="Artist">
+                        </div>       
+                        <div class="overal-text">
+                            <span>Jacob Elordi</span>                
+                        </div>     
+                    </div> 
+                    {{-- End artist item --}}
+                    {{-- Artist Item --}}
+                    <div class="artist-item wow fadeInLeft animated">
+                        <div class="item-img">
+                            <img src="{{ asset('img/artists/4.png') }}" alt="Artist">
+                        </div>       
+                        <div class="overal-text">
+                            <span>Mattia Baldi</span>                
+                        </div>     
+                    </div> 
+                    {{-- End artist item --}}         
+                </div>
+                {{-- end popular --}}
             </div>
             {{-- loading --}}
             <div class="loading py-5">

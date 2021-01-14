@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Cart
+    Commission Project
 @endsection
 
 @section('sidebar')

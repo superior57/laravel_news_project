@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    All events
+    Projects
 @endsection
 
 @section('sidebar')

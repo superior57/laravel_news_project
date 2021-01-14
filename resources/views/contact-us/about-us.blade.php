@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Cart
+    About us
 @endsection
 
 @section('sidebar')
