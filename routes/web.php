@@ -61,6 +61,15 @@ Route::get('contact-us/about-us', function() {
     return view('contact-us.about-us');
 });
 
+Route::get('projects', function() {
+    return view('projects.index');
+});
+
+Route::get('artists', function() {
+    return view('artists.index');
+});
+
+
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('/todo', 'TodoController');
 });

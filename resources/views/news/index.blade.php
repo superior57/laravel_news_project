@@ -119,8 +119,7 @@
           <h3 class="text-black text-uppercase">Tyler The Creator X golf Wang Tour 2020</h3>        
         </div>
         <div class="px-3 px-md-5">
-          <a href="{{ url('/events') }}" class="btn btn-more">more info 
-            
+          <a href="{{ url('/events') }}" class="btn btn-more">more info             
           </a>
         </div>
       </div>

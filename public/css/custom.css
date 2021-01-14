@@ -1150,7 +1150,7 @@ section .subtitle {
     transition-duration: 0.8s;
     transition-timing-function: ease-out;
     background: #FF7BC9;
-    animation: slideInLeft 1s;
+    /* animation: slideInLeft 1s; */
     z-index: 3;
 }
 
@@ -1612,6 +1612,108 @@ a.go-to:hover {
     width: 100%;
 }
 
+.project-item {
+    display: flex;
+}
+
+.project-item .item-brief {
+    width: 100%;
+    display: flex;
+}
+
+.project-item .item-img {
+    max-height: 530px;
+    width: 100%;
+}
+
+.project-item span {
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.project-item .btn-more {
+    background-color: #ECECEC;   
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000; 
+    height: auto;
+    padding: 15px;
+}
+
+.project-item .btn-more span {
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.artist-item {
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid #141414;
+}
+
+.artist-item .item-img {
+    max-height: 475px;
+}
+.artist-item .overal-text {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.artist-item .overal-text span {
+    margin: auto;
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.artist-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #141414;
+    opacity: 0.3;
+}
+
+.artist-item:hover {
+    opacity: .8;
+}
+
+.artist-section .tab-bar>li>a {
+    border-color: rgba(236, 236, 236, 0.15);
+}
+
+.artist-section .tab-bar>li.active>a {
+    color: #FFFFFF;
+}
+
+.artist-section .tab-bar>li>a:hover {
+    color: #FFFFFF;
+    border-color: #FF7BC9;
+}
+
+.loading-white * {
+    color: #FFF;
+    fill: #FFF;
+}
+
 @media (max-width: 450px) {
     #content_wrapper {
         margin-left: 0;
@@ -1653,6 +1755,10 @@ a.go-to:hover {
 
     .topevent-section .item.bg-img {
         padding: 40px 30px;
+    }
+
+    .project-item {
+        display: block;
     }
 
     /* .d-flex {

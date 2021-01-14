@@ -162,7 +162,7 @@
              </div>
          </div>
          <div class="foot text-center">
-            <a href="" class="btn btn-secondary btn-size-md px-5">Back to home</a>
+            <a href="{{ url('/') }}" class="btn btn-secondary btn-size-md px-5">Back to home</a>
          </div>
     </div>
 </section>
