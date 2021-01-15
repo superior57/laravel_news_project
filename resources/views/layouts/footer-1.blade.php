@@ -1,6 +1,6 @@
 <footer class="footer-area footer2 pt-5 px-3 px-md-5 footer-1">
-  <div class="w-100 d-flex mb-100">    
-    <div class="col-md-8 d-flex">
+  <div class="row d-flex mb-100">    
+    <div class="col-12 col-md-8 d-flex">
       <div class="foot-logo">
         <a href="/"><img src="{{ asset('img/logo-1.png') }}" alt="Logo"></a>
       </div>
@@ -49,7 +49,7 @@
         </ul>        
       </div>
     </div>
-    <div class="col-md-4 d-flex">
+    <div class="col-12 col-md-4 d-flex">
       <div class="foot-item">        
         <h5 class=" text-uppercase">Stay updated</h5>
         <p class="new-letter">Subscribe to our newsletter</p>

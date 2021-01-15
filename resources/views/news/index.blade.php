@@ -268,9 +268,9 @@
   </div>
 
   <div class="stream-text">
-    <marquee behavior="slide" direction="right">
+    {{-- <marquee behavior="slide" direction="left"> --}}
       <h1>#JOIN THE MOVEMENT</h1>
-    </marquee>
+    {{-- </marquee> --}}
   </div>
 </section>
 
@@ -509,9 +509,9 @@
   
   
   <div class="stream-text border-b-1">
-    <marquee behavior="slide" direction="right">
+    {{-- <marquee behavior="slide" direction="left" loop="infinite"> --}}
       <h1>#find the g spot</h1>
-    </marquee>
+    {{-- </marquee> --}}
   </div>
 </section>
 {{-- End Popular --}}

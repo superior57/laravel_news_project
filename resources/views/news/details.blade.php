@@ -253,7 +253,21 @@
         <div class="col-md-6">
           <h3 class="w-100 text-uppercase">Have an idea for the creative project?</h3>
           <p class="w-100">Tell us about the project in 60 seconds</p>
-          <a href="" class="btn btn-secondary">Comission a project</a>
+          <div class="w-100 d-flex">
+            <a href="{{ url('contact-us/commission-project') }}">
+                <div class="btn-layout">
+                    <svg viewBox="0 0 236 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H230V61H1V1Z" class="stroke" stroke="black" stroke-width="2"/>
+                        <path class="no-stroke" d="M5 5H236V67H5V5Z" fill="black"/>
+                    </svg>
+                    <div>
+                        <span>
+                            Commission a project
+                        </span>    
+                    </div>
+                </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>

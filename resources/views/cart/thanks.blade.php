@@ -161,8 +161,20 @@
                  </div>
              </div>
          </div>
-         <div class="foot text-center">
-            <a href="{{ url('/') }}" class="btn btn-secondary btn-size-md px-5">Back to home</a>
+         <div class="foot w-100 d-flex justify-content-center">
+            <a href="{{ url('/') }}">
+                <div class="btn-layout">
+                    <svg viewBox="0 0 236 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H230V61H1V1Z" class="stroke" stroke="black" stroke-width="2"/>
+                        <path class="no-stroke" d="M5 5H236V67H5V5Z" fill="black"/>
+                    </svg>
+                    <div>
+                        <span>
+                            Back to home
+                        </span>    
+                    </div>
+                </div>
+            </a>
          </div>
     </div>
 </section>

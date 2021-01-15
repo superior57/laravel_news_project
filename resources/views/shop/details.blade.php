@@ -56,7 +56,19 @@
                     </div>
 
                     <div class="w-100 d-flex">
-                        <a href="" class="btn btn-secondary btn-size-md">BUY PRODUCT</a>
+                        <a href="{{ url('cart') }}">
+                            <div class="btn-layout">
+                                <svg viewBox="0 0 236 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1H230V61H1V1Z" class="stroke" stroke="black" stroke-width="2"/>
+                                    <path class="no-stroke" d="M5 5H236V67H5V5Z" fill="black"/>
+                                </svg>
+                                <div>
+                                    <span>
+                                        Buy Product
+                                    </span>    
+                                </div>
+                            </div>
+                        </a>
                     </div>
 
                 </div>

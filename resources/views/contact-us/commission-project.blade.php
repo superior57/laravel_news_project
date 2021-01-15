@@ -28,10 +28,10 @@
          </div>
          <div class="body">
             <div class="row container-lg mb-5">
-                <div class="col-md-5">
+                <div class="col-md-4">
                     @include('contact-us.layouts.sidebar')
                 </div>     
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <h5 class="title size-md">Have an idea for the <br>creative project?</h5>
                     <span class="text-gray mb-4">Tell us about the project in 60 seconds</span>
                     <form id="commission_project" action="">
@@ -47,8 +47,20 @@
                             <label for="message">Message</label>
                             <textarea name="message" id="message" rows="5" class="form-control"></textarea>
                         </div>
-                        <div class="w-100">
-                            <input type="submit" class="btn btn-secondary btn-size-md px-5 mb-3" value="Send message">
+                        <div class="w-100 mb-3">
+                            <a type="submit" onclick="$('#commission_project').submit();">
+                                <div class="btn-layout">
+                                    <svg viewBox="0 0 236 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H230V61H1V1Z" class="stroke" stroke="black" stroke-width="2"/>
+                                        <path class="no-stroke" d="M5 5H236V67H5V5Z" fill="black"/>
+                                    </svg>
+                                    <div>
+                                        <span>
+                                            Send message
+                                        </span>    
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                         <span>
                             By submiting the form, you agree to our <br>

@@ -28,10 +28,10 @@
          </div>
          <div class="body">
             <div class="row container-lg mb-5">
-                <div class="col-md-5">
+                <div class="col-md-4">
                     @include('contact-us.layouts.sidebar')
                 </div>     
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <h5 class="title size-md mb-4">About us</h5>                    
                     <div class="row mb-4">
                         <div class="col-md-6 mb-4">
