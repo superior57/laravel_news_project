@@ -13,7 +13,7 @@
 <section class="hero" style="background-image: url('{{ asset('img/back1.png') }}');">
     <div class="hero-content py-5 px-3 px-md-5">
         <div class="mb-4">
-            <a href="{{ url('/') }}" class="btn-back">Back to all news</a>
+            <a href="{{ url('news') }}" class="btn-back">Back to all news</a>
         </div>
         <div class="head">            
             <div>
