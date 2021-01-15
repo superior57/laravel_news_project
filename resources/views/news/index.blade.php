@@ -5,784 +5,487 @@
 @endsection
 
 @section('sidebar')
-  @include('layouts.sidebar')
+    @include('layouts.sidebar-1')    
 @endsection
 
 @section('content')
 
-<!-- News section 1-->
-<section class="news-section-1">
-  {{-- Main News --}}
-  <div class="col-12 col-md-5">
-    <div class="news-item main-item overaly border-b-1 border-r-1">
-      <img src="{{ asset('img/concept/news/1.png') }}" alt="Main news">
-      <div class="news-item-content flex-wrap px-3 px-md-5">
-        <div class="w-100">
-          <h5>"Find the G Spot"</h5>
-          <p>online platform</p>
-        </div>
-        <div class="px-md5 w-100">
-          <h3>We promote <br> awareness of <br> the androgynous <br> society in Thailand</h3>
-        </div>
-        <div class="mb-5 w-100">
-          <a >
-            <img src="{{ asset('img/svg/play-button.svg') }}" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {{-- Videos ... --}}
-  <div class="col-12 col-md-7">
-    <div class="videos">
-      <div class="news-item overaly video-item border-b-1 animated fadeInRight">
-        {{-- <video src="{{ asset('uploads/video/artist long1.mp4') }}" autoplay muted loop></video> --}}
-        <img src="{{ asset('img/concept/news/artists.png') }}" alt="">
-        <div class="news-item-content">
-          <div class="px-3 px-md-5 w-100">
-            <h3>Artists</h3>
-            <p>street art / music / photo / video</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .2s;">
-        <img src="{{ asset('img/concept/news/project.png') }}" alt="">
-        <div class="news-item-content">
-          <div class="px-3 px-md-5 w-100">
-            <h3>projects</h3>
-            <p>art events / meetups</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .4s;">
-        <img src="{{ asset('img/concept/news/shop.png') }}" alt="">
-        <div class="news-item-content">
-          <div class="px-3 px-md-5 w-100">
-            <h3>shop</h3>
-            <p>products designed in-house by GIA</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .6s;">
-        <img src="{{ asset('img/concept/news/contact-us.png') }}" alt="">
-        <div class="news-item-content">
-          <div class="px-3 px-md-5 w-100">
-            <h3>contact us</h3>
-            <p>submit artwork  / comission a project</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {{-- Event content --}}
-  <div class="col-12 col-md-5">
-    <div class="news-item time-content md-border-r-1 event">      
-      <div class="news-item-content flex-wrap px-3 px-md-5">
-        <div class="w-100">
-          <a href="#" class="btn btn-primary">#streetart</a>
-          <div class="date-time-item d-flex">
-            <div class="time-item">
-              <div class="d-flex">
-                <p>10</p>
-                <p>:</p>
-              </div>
-              days
-            </div>
-            <div class="time-item">
-              <div class="d-flex">
-                <p>06</p>
-                <p>:</p>
-              </div>
-              hours
-            </div>
-            <div class="time-item">
-              <div class="d-flex">
-                <p>34</p>
-              </div>
-              minutes
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="news-section-2">
-  {{-- Tyler --}}
-  <div class="col-12 col-md-5">
-    <div class="event md-border-r-1 border-b-1">
-      <div class="event-title">      
-        <div class="px-3 px-md-5">
-          <h3 class="text-black text-uppercase">Tyler The Creator X golf Wang Tour 2020</h3>        
-        </div>
-        <div class="px-3 px-md-5">
-          <a href="{{ url('/events') }}" class="btn btn-more">more info             
-          </a>
-        </div>
-      </div>
-      <div class="event-image">
-        <img src="{{ asset('img/concept/event-img-1.png') }}" alt="Event Image">
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-12 col-md-7">
-    {{-- Ongoing Projects ... --}}
-    <div class="on-going-project">
-      <div class="project-header py-2 px-3 px-md-5 border-b-1 d-flex align-items-center">
-        <div class="mr-15">
-          <h3>Ongong projects</h3>
-        </div>
-        <div class="user-list d-flex justify-content-between">
-          <div class="circle-avatar-sm mr-15" style="background: url('img/svg/ellipse.svg') no-repeat;">
+<section class="hero hero-sm" style="background-image: url('img/news/back.png');">
+    <div class="hero-content py-5 px-3 px-md-5">
+        <div class="head">            
             <div>
-              <img src="{{ asset('img/concept/users/egiphy_1.png') }}" alt="">
-            </div>            
-          </div> 
-          <div class="circle-avatar-sm mr-15" style="background: url('img/svg/ellipse.svg') no-repeat;">
-            <div>
-              <img src="{{ asset('img/concept/users/e3_1_2.png') }}" alt="">
-            </div>            
-          </div> 
-          <div class="circle-avatar-sm mr-15" style="background: url('img/svg/ellipse.svg') no-repeat;">
-            <div>
-              <img src="{{ asset('img/concept/users/e10496654575_f75748428a_z_1.png') }}" alt="">
-            </div>            
-          </div> 
-          <div class="circle-avatar-sm mr-15" style="background: url('img/svg/ellipse.svg') no-repeat;">
-            <div>
-              <img src="{{ asset('img/concept/users/esb_pakorn_7_of_34_1.png') }}" alt="">
-            </div>            
-          </div> 
-          <div class="circle-avatar-sm mr-15" style="background: url('img/svg/ellipse.svg') no-repeat;">
-            <div>
-              <img src="{{ asset('img/concept/users/etyga_will_be_performing_for_the_sunburn_arena_on_november_29_at_mmrda_bkc__1.png') }}" alt="">
-            </div>            
-          </div> 
+                <span class="path">Mane page / </span>
+                <span class="current-path">News </span>
+            </div>
         </div>
-      </div>
-      <div class="project-content d-flex">
 
-        {{-- item --}}
-        <div class="item col-12 col-md-6 border-b-1 border-r-1">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/ongoing-project/1.png') }}" alt="Ongoing project">
-          </div>
-          <div class="item-body">
-            <div class="tool-bar">
-              <a href="#" class="btn btn-primary">#streetart</a>
-              <div class="social-buttons">
-                <a href="" class="btn btn-primary btn-social">
-                  <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-                </a>
-                <a href="#" class="btn btn-primary btn-social">
-                   <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-                </a>
-                <a href="#" class="btn btn-primary btn-social">
-                  <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-                </a>
-                <a href="#" class="btn btn-primary btn-social">
-                  <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-                </a>
+       
+        <h5 class="title mb-4">
+            News
+        </h5>
+        <span class="hashtag-date mb-3">art events / music</span>
+    </div>
+</section>
+
+{{-- main Section --}}
+<section class="w-100 shop-section">
+  <div class="w-100 py-3 d-block">
+       <div class="body">
+           <div class="tab">
+              <ul class="tab-bar">
+                  <li class="active"><a href="#" class="tab-item px-3 px-md-5" data-t-id="allnews" >All news</a></li>
+                  <li><a href="#" class="tab-item" data-t-id="popular" >Popular</a></li>
+                  <li><a href="#" class="tab-item" data-t-id="streetart" >Street art</a></li>
+                  <li><a href="#" class="tab-item" data-t-id="culture" >Culture</a></li>
+                  <li><a href="#" class="tab-item" data-t-id="music" >Music</a></li>
+              </ul>
+              <div class="tab-content">
+                  {{-- tab all news --}}
+                  <div class="tab-pane" id="allnews" style="display: block;">
+                    <div class="w-100 d-flex flex-wrap">
+                      {{-- news item 1 --}}
+                      <div class="col-md-5 md-border-r-1 border-b-1">
+                        <div class="item-img" style="height: 293px;">
+                          <img src="{{ asset('img/concept/music-1.png') }}" alt="">
+                        </div>
+                        <div class="social-description p-4">          
+                          <div class="item-content">
+                            <p>
+                              A massive art fair featuring exhibitions from over 160 artists, plus workshops, activities, live. A massive art fair featuring exhibitions from over 160 artists, plus workshops, activities, live
+                            </p>  
+                          </div> 
+                          <div class="tool-bar">
+                            <div class="social-buttons">
+                              {{-- social button group  --}}
+                              <ul class="social-button d-flex">
+                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa ico">
+                                            <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21.9549 6.95073C20.5588 6.95073 19.2707 6.48188 18.2363 5.69092C17.0499 4.78421 16.1975 3.45417 15.8965 1.92118C15.822 1.54241 15.7819 1.15154 15.778 0.750977H11.7899V11.7982L11.7852 17.8492C11.7852 19.467 10.746 20.8387 9.30543 21.3211C8.88737 21.4611 8.43585 21.5274 7.96571 21.5013C7.36561 21.4679 6.80325 21.2843 6.31447 20.9879C5.27433 20.3572 4.56911 19.2132 4.55 17.9044C4.5199 15.859 6.15107 14.1914 8.16734 14.1914C8.56534 14.1914 8.94757 14.2572 9.30543 14.3769V11.3574V10.272C8.92798 10.2153 8.54384 10.1857 8.15539 10.1857C5.94849 10.1857 3.88444 11.1157 2.40903 12.7911C1.29387 14.0572 0.624965 15.6725 0.521762 17.3663C0.386548 19.5915 1.18971 21.7066 2.7473 23.2672C2.97616 23.4963 3.21649 23.709 3.46781 23.9051C4.80323 24.947 6.43583 25.5117 8.15539 25.5117C8.54384 25.5117 8.92798 25.4827 9.30543 25.426C10.9118 25.1848 12.3939 24.4394 13.5635 23.2672C15.0007 21.8272 15.7948 19.9155 15.8034 17.8807L15.7828 8.84457C16.4684 9.38075 17.2181 9.82442 18.0227 10.1688C19.274 10.704 20.6008 10.9752 21.9664 10.9748V8.03908V6.94976C21.9673 6.95073 21.9558 6.95073 21.9549 6.95073Z" fill="#000"/>
+                                            </svg>    
+                                        </i>                      
+                                    </a>
+                                </li>
+                                <li>
+                                  <a href="">
+                                      <i class="fa ico">
+                                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17.3325" cy="27.7632" r="2.47608" fill="black"/>
+                                            <circle cx="27.2368" cy="27.7632" r="2.47608" fill="black"/>
+                                            <circle cx="37.1411" cy="27.7632" r="2.47608" fill="black"/>
+                                        </svg>      
+                                      </i>
+                                  </a>
+                                </li>
+                              </ul> 
+                              {{-- end social button group --}}            
+                            </div>
+                            <a href="#" class="btn btn-primary">#culture</a>
+                          </div> 
+                        </div>
+                      </div>
+                      {{-- end news item 1 --}}
+                      {{-- news item 2 --}}
+                      <div class="col-md-7 d-flex">
+                        <div class="col-md-6 border-b-1">
+                          <div class="social-description p-4">          
+                            <div class="item-content">
+                              <p>
+                                Tyla Yaweh and Post Malone have just released the video for their “Tommy Lee” track where they can be seen riding on four-wheelers through a pastoral setting.
+                                <br />
+                                <br>
+                                Watch the visual above. Adding another layer to the celebration of the Mötley Crüe drummer, Tommy Lee also plays the drums heard on the track. The distinct drumline in the background is accented by strings and choice chimes that serve as a base for emotive verses from Tyla and Post. Aside from outlining the positive tied to their respective “rockstar” personas, the two also touch on the tribulations of their position
+                              </p>  
+                            </div> 
+                            <div class="tool-bar">
+                              <div class="social-buttons">
+                                {{-- social button group  --}}
+                                <ul class="social-button d-flex">
+                                  <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                  <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                  <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                  <li>
+                                      <a href="">
+                                          <i class="fa ico">
+                                              <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M21.9549 6.95073C20.5588 6.95073 19.2707 6.48188 18.2363 5.69092C17.0499 4.78421 16.1975 3.45417 15.8965 1.92118C15.822 1.54241 15.7819 1.15154 15.778 0.750977H11.7899V11.7982L11.7852 17.8492C11.7852 19.467 10.746 20.8387 9.30543 21.3211C8.88737 21.4611 8.43585 21.5274 7.96571 21.5013C7.36561 21.4679 6.80325 21.2843 6.31447 20.9879C5.27433 20.3572 4.56911 19.2132 4.55 17.9044C4.5199 15.859 6.15107 14.1914 8.16734 14.1914C8.56534 14.1914 8.94757 14.2572 9.30543 14.3769V11.3574V10.272C8.92798 10.2153 8.54384 10.1857 8.15539 10.1857C5.94849 10.1857 3.88444 11.1157 2.40903 12.7911C1.29387 14.0572 0.624965 15.6725 0.521762 17.3663C0.386548 19.5915 1.18971 21.7066 2.7473 23.2672C2.97616 23.4963 3.21649 23.709 3.46781 23.9051C4.80323 24.947 6.43583 25.5117 8.15539 25.5117C8.54384 25.5117 8.92798 25.4827 9.30543 25.426C10.9118 25.1848 12.3939 24.4394 13.5635 23.2672C15.0007 21.8272 15.7948 19.9155 15.8034 17.8807L15.7828 8.84457C16.4684 9.38075 17.2181 9.82442 18.0227 10.1688C19.274 10.704 20.6008 10.9752 21.9664 10.9748V8.03908V6.94976C21.9673 6.95073 21.9558 6.95073 21.9549 6.95073Z" fill="#000"/>
+                                              </svg>    
+                                          </i>                      
+                                      </a>
+                                  </li>
+                                  <li>
+                                    <a href="">
+                                        <i class="fa ico">
+                                          <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <circle cx="17.3325" cy="27.7632" r="2.47608" fill="black"/>
+                                              <circle cx="27.2368" cy="27.7632" r="2.47608" fill="black"/>
+                                              <circle cx="37.1411" cy="27.7632" r="2.47608" fill="black"/>
+                                          </svg>      
+                                        </i>
+                                    </a>
+                                  </li>
+                                </ul> 
+                                {{-- end social button group --}}            
+                              </div>
+                              <a href="#" class="btn btn-primary">#culture</a>
+                            </div> 
+                          </div> 
+                        </div>
+                        <div class="col-md-6 border-b-1">
+                          <div class="item-img" style="height: 537px;">
+                            <img src="{{ asset('img/concept/music-2.png') }}" alt="">
+                          </div>
+                        </div>      
+                      </div>
+                      {{-- end news item 2 --}}
+                  
+                      {{-- news item 3 htype --}}
+                      <div class="col-md-5 border-b-1">
+                        <div class="social-description p-4">
+                          <div class="tool-bar">
+                            <a href="#" class="btn btn-primary">#music</a>
+                            <div class="social-buttons">
+                              {{-- social button group  --}}
+                              <ul class="social-button d-flex">
+                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa ico">
+                                            <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21.9549 6.95073C20.5588 6.95073 19.2707 6.48188 18.2363 5.69092C17.0499 4.78421 16.1975 3.45417 15.8965 1.92118C15.822 1.54241 15.7819 1.15154 15.778 0.750977H11.7899V11.7982L11.7852 17.8492C11.7852 19.467 10.746 20.8387 9.30543 21.3211C8.88737 21.4611 8.43585 21.5274 7.96571 21.5013C7.36561 21.4679 6.80325 21.2843 6.31447 20.9879C5.27433 20.3572 4.56911 19.2132 4.55 17.9044C4.5199 15.859 6.15107 14.1914 8.16734 14.1914C8.56534 14.1914 8.94757 14.2572 9.30543 14.3769V11.3574V10.272C8.92798 10.2153 8.54384 10.1857 8.15539 10.1857C5.94849 10.1857 3.88444 11.1157 2.40903 12.7911C1.29387 14.0572 0.624965 15.6725 0.521762 17.3663C0.386548 19.5915 1.18971 21.7066 2.7473 23.2672C2.97616 23.4963 3.21649 23.709 3.46781 23.9051C4.80323 24.947 6.43583 25.5117 8.15539 25.5117C8.54384 25.5117 8.92798 25.4827 9.30543 25.426C10.9118 25.1848 12.3939 24.4394 13.5635 23.2672C15.0007 21.8272 15.7948 19.9155 15.8034 17.8807L15.7828 8.84457C16.4684 9.38075 17.2181 9.82442 18.0227 10.1688C19.274 10.704 20.6008 10.9752 21.9664 10.9748V8.03908V6.94976C21.9673 6.95073 21.9558 6.95073 21.9549 6.95073Z" fill="#000"/>
+                                            </svg>    
+                                        </i>                      
+                                    </a>
+                                </li>
+                                <li>
+                                  <a href="">
+                                      <i class="fa ico">
+                                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17.3325" cy="27.7632" r="2.47608" fill="black"/>
+                                            <circle cx="27.2368" cy="27.7632" r="2.47608" fill="black"/>
+                                            <circle cx="37.1411" cy="27.7632" r="2.47608" fill="black"/>
+                                        </svg>      
+                                      </i>
+                                  </a>
+                                </li>
+                              </ul> 
+                              {{-- end social button group --}}            
+                            </div>          
+                          </div>  
+                          <div class="item-content">
+                            <p>
+                              Kendrick Lamar has joined William Faulkner and Robert Frost in the pantheon of Pulitzer Prize winners
+                            </p>  
+                          </div> 
+                        </div>
+                      </div>
+                      <div class="col-md-7 border-b-1">
+                        <div class="item-img" style="height: 187px;">
+                          <img src="{{ asset('img/concept/music-3.png') }}" alt="">
+                        </div>
+                      </div>
+                      {{-- end news item 3 htype --}}
+                  
+                      {{-- news item 4 --}}
+                      <div class="col-md-5 md-border-r-1 border-b-1">
+                        <div class="item-img" style="max-height: 348px;">
+                          <img src="{{ asset('img/events/art-2.png') }}" alt="">
+                        </div>
+                        <div class="social-description p-4">
+                          <div class="item-content">
+                            <p>
+                              ARIS, FRANCE - JANUARY 23: (L-R) Rapper ASAP Rocky and Fashion designer Kris Van Assche pose Backstage after the Dior Homme Menswear Fall/Winter 2016-2017 show as part of Paris Fashion Week on January 23
+                            </p>  
+                          </div> 
+                          <div class="tool-bar">
+                            <div class="social-buttons">
+                              {{-- social button group  --}}
+                              <ul class="social-button d-flex">
+                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa ico">
+                                            <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21.9549 6.95073C20.5588 6.95073 19.2707 6.48188 18.2363 5.69092C17.0499 4.78421 16.1975 3.45417 15.8965 1.92118C15.822 1.54241 15.7819 1.15154 15.778 0.750977H11.7899V11.7982L11.7852 17.8492C11.7852 19.467 10.746 20.8387 9.30543 21.3211C8.88737 21.4611 8.43585 21.5274 7.96571 21.5013C7.36561 21.4679 6.80325 21.2843 6.31447 20.9879C5.27433 20.3572 4.56911 19.2132 4.55 17.9044C4.5199 15.859 6.15107 14.1914 8.16734 14.1914C8.56534 14.1914 8.94757 14.2572 9.30543 14.3769V11.3574V10.272C8.92798 10.2153 8.54384 10.1857 8.15539 10.1857C5.94849 10.1857 3.88444 11.1157 2.40903 12.7911C1.29387 14.0572 0.624965 15.6725 0.521762 17.3663C0.386548 19.5915 1.18971 21.7066 2.7473 23.2672C2.97616 23.4963 3.21649 23.709 3.46781 23.9051C4.80323 24.947 6.43583 25.5117 8.15539 25.5117C8.54384 25.5117 8.92798 25.4827 9.30543 25.426C10.9118 25.1848 12.3939 24.4394 13.5635 23.2672C15.0007 21.8272 15.7948 19.9155 15.8034 17.8807L15.7828 8.84457C16.4684 9.38075 17.2181 9.82442 18.0227 10.1688C19.274 10.704 20.6008 10.9752 21.9664 10.9748V8.03908V6.94976C21.9673 6.95073 21.9558 6.95073 21.9549 6.95073Z" fill="#000"/>
+                                            </svg>    
+                                        </i>                      
+                                    </a>
+                                </li>
+                                <li>
+                                  <a href="">
+                                      <i class="fa ico">
+                                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17.3325" cy="27.7632" r="2.47608" fill="black"/>
+                                            <circle cx="27.2368" cy="27.7632" r="2.47608" fill="black"/>
+                                            <circle cx="37.1411" cy="27.7632" r="2.47608" fill="black"/>
+                                        </svg>      
+                                      </i>
+                                  </a>
+                                </li>
+                              </ul> 
+                              {{-- end social button group --}}            
+                            </div>  
+                            <a href="#" class="btn btn-primary">#culture</a>        
+                          </div> 
+                        </div>    
+                      </div>
+                      {{-- end news item 4 --}}
+                  
+                      <div class="col-md-7">
+                          {{-- news item 5 htype --}}
+                          <div class="w-100 d-flex">
+                            <div class="col-md-6 border-b-1">
+                              <div class="social-description p-4">
+                                <div class="tool-bar">
+                                  <a href="#" class="btn btn-primary">#culture</a> 
+                                  <div class="social-buttons">
+                                    {{-- social button group  --}}
+                                    <ul class="social-button d-flex">
+                                      <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                      <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                      <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                      <li>
+                                          <a href="">
+                                              <i class="fa ico">
+                                                  <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                      <path d="M21.9549 6.95073C20.5588 6.95073 19.2707 6.48188 18.2363 5.69092C17.0499 4.78421 16.1975 3.45417 15.8965 1.92118C15.822 1.54241 15.7819 1.15154 15.778 0.750977H11.7899V11.7982L11.7852 17.8492C11.7852 19.467 10.746 20.8387 9.30543 21.3211C8.88737 21.4611 8.43585 21.5274 7.96571 21.5013C7.36561 21.4679 6.80325 21.2843 6.31447 20.9879C5.27433 20.3572 4.56911 19.2132 4.55 17.9044C4.5199 15.859 6.15107 14.1914 8.16734 14.1914C8.56534 14.1914 8.94757 14.2572 9.30543 14.3769V11.3574V10.272C8.92798 10.2153 8.54384 10.1857 8.15539 10.1857C5.94849 10.1857 3.88444 11.1157 2.40903 12.7911C1.29387 14.0572 0.624965 15.6725 0.521762 17.3663C0.386548 19.5915 1.18971 21.7066 2.7473 23.2672C2.97616 23.4963 3.21649 23.709 3.46781 23.9051C4.80323 24.947 6.43583 25.5117 8.15539 25.5117C8.54384 25.5117 8.92798 25.4827 9.30543 25.426C10.9118 25.1848 12.3939 24.4394 13.5635 23.2672C15.0007 21.8272 15.7948 19.9155 15.8034 17.8807L15.7828 8.84457C16.4684 9.38075 17.2181 9.82442 18.0227 10.1688C19.274 10.704 20.6008 10.9752 21.9664 10.9748V8.03908V6.94976C21.9673 6.95073 21.9558 6.95073 21.9549 6.95073Z" fill="#000"/>
+                                                  </svg>    
+                                              </i>                      
+                                          </a>
+                                      </li>
+                                      <li>
+                                        <a href="">
+                                            <i class="fa ico">
+                                              <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <circle cx="17.3325" cy="27.7632" r="2.47608" fill="black"/>
+                                                  <circle cx="27.2368" cy="27.7632" r="2.47608" fill="black"/>
+                                                  <circle cx="37.1411" cy="27.7632" r="2.47608" fill="black"/>
+                                              </svg>      
+                                            </i>
+                                        </a>
+                                      </li>
+                                    </ul> 
+                                    {{-- end social button group --}}            
+                                  </div>         
+                                </div> 
+                                <div class="item-content">
+                                  <p>
+                                    On Friday, J-Hope, the K-pop group's rapper will be releasing "Chicken Noodle Soup" featuring the songstress, as well 
+                                  </p>  
+                                </div> 
+                              </div>
+                            </div>
+                            <div class="col-md-6 border-b-1">
+                              <div class="item-img" style="height: 194px;">
+                                <img src="{{ asset('img/concept/popular-4.png') }}" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          {{-- end news item 5 htype --}}
+                  
+                          {{-- news item 6 htype --}}
+                          <div class="w-100 d-flex">
+                            <div class="col-md-6 border-b-1">
+                              <div class="item-img" style="height: 194px;">
+                                <img src="{{ asset('img/concept/popular-1.png') }}" alt="">
+                              </div>
+                            </div>
+                            <div class="col-md-6 border-b-1">
+                              <div class="social-description p-4">
+                                <div class="tool-bar">
+                                  <a href="#" class="btn btn-primary">#culture</a> 
+                                  <div class="social-buttons">
+                                    {{-- social button group  --}}
+                                    <ul class="social-button d-flex">
+                                      <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                      <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                      <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                      <li>
+                                          <a href="">
+                                              <i class="fa ico">
+                                                  <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                      <path d="M21.9549 6.95073C20.5588 6.95073 19.2707 6.48188 18.2363 5.69092C17.0499 4.78421 16.1975 3.45417 15.8965 1.92118C15.822 1.54241 15.7819 1.15154 15.778 0.750977H11.7899V11.7982L11.7852 17.8492C11.7852 19.467 10.746 20.8387 9.30543 21.3211C8.88737 21.4611 8.43585 21.5274 7.96571 21.5013C7.36561 21.4679 6.80325 21.2843 6.31447 20.9879C5.27433 20.3572 4.56911 19.2132 4.55 17.9044C4.5199 15.859 6.15107 14.1914 8.16734 14.1914C8.56534 14.1914 8.94757 14.2572 9.30543 14.3769V11.3574V10.272C8.92798 10.2153 8.54384 10.1857 8.15539 10.1857C5.94849 10.1857 3.88444 11.1157 2.40903 12.7911C1.29387 14.0572 0.624965 15.6725 0.521762 17.3663C0.386548 19.5915 1.18971 21.7066 2.7473 23.2672C2.97616 23.4963 3.21649 23.709 3.46781 23.9051C4.80323 24.947 6.43583 25.5117 8.15539 25.5117C8.54384 25.5117 8.92798 25.4827 9.30543 25.426C10.9118 25.1848 12.3939 24.4394 13.5635 23.2672C15.0007 21.8272 15.7948 19.9155 15.8034 17.8807L15.7828 8.84457C16.4684 9.38075 17.2181 9.82442 18.0227 10.1688C19.274 10.704 20.6008 10.9752 21.9664 10.9748V8.03908V6.94976C21.9673 6.95073 21.9558 6.95073 21.9549 6.95073Z" fill="#000"/>
+                                                  </svg>    
+                                              </i>                      
+                                          </a>
+                                      </li>
+                                      <li>
+                                        <a href="">
+                                            <i class="fa ico">
+                                              <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <circle cx="17.3325" cy="27.7632" r="2.47608" fill="black"/>
+                                                  <circle cx="27.2368" cy="27.7632" r="2.47608" fill="black"/>
+                                                  <circle cx="37.1411" cy="27.7632" r="2.47608" fill="black"/>
+                                              </svg>      
+                                            </i>
+                                        </a>
+                                      </li>
+                                    </ul> 
+                                    {{-- end social button group --}}            
+                                  </div>         
+                                </div> 
+                                <div class="item-content">
+                                  <p>
+                                    On Friday, J-Hope, the K-pop group's rapper will be releasing "Chicken Noodle Soup" featuring the songstress, as well 
+                                  </p>  
+                                </div> 
+                              </div>
+                            </div>
+                          </div>
+                          {{-- end news item 6 htype --}}
+                  
+                          {{-- news item 7 htype --}}
+                          <div class="w-100 d-flex">
+                            <div class="col-md-6 border-b-1">
+                              <div class="social-description p-4">
+                                <div class="tool-bar">
+                                  <a href="#" class="btn btn-primary">#culture</a> 
+                                  <div class="social-buttons">
+                                    {{-- social button group  --}}
+                                    <ul class="social-button d-flex">
+                                      <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                      <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                      <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                      <li>
+                                          <a href="">
+                                              <i class="fa ico">
+                                                  <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                      <path d="M21.9549 6.95073C20.5588 6.95073 19.2707 6.48188 18.2363 5.69092C17.0499 4.78421 16.1975 3.45417 15.8965 1.92118C15.822 1.54241 15.7819 1.15154 15.778 0.750977H11.7899V11.7982L11.7852 17.8492C11.7852 19.467 10.746 20.8387 9.30543 21.3211C8.88737 21.4611 8.43585 21.5274 7.96571 21.5013C7.36561 21.4679 6.80325 21.2843 6.31447 20.9879C5.27433 20.3572 4.56911 19.2132 4.55 17.9044C4.5199 15.859 6.15107 14.1914 8.16734 14.1914C8.56534 14.1914 8.94757 14.2572 9.30543 14.3769V11.3574V10.272C8.92798 10.2153 8.54384 10.1857 8.15539 10.1857C5.94849 10.1857 3.88444 11.1157 2.40903 12.7911C1.29387 14.0572 0.624965 15.6725 0.521762 17.3663C0.386548 19.5915 1.18971 21.7066 2.7473 23.2672C2.97616 23.4963 3.21649 23.709 3.46781 23.9051C4.80323 24.947 6.43583 25.5117 8.15539 25.5117C8.54384 25.5117 8.92798 25.4827 9.30543 25.426C10.9118 25.1848 12.3939 24.4394 13.5635 23.2672C15.0007 21.8272 15.7948 19.9155 15.8034 17.8807L15.7828 8.84457C16.4684 9.38075 17.2181 9.82442 18.0227 10.1688C19.274 10.704 20.6008 10.9752 21.9664 10.9748V8.03908V6.94976C21.9673 6.95073 21.9558 6.95073 21.9549 6.95073Z" fill="#000"/>
+                                                  </svg>    
+                                              </i>                      
+                                          </a>
+                                      </li>
+                                      <li>
+                                        <a href="">
+                                            <i class="fa ico">
+                                              <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <circle cx="17.3325" cy="27.7632" r="2.47608" fill="black"/>
+                                                  <circle cx="27.2368" cy="27.7632" r="2.47608" fill="black"/>
+                                                  <circle cx="37.1411" cy="27.7632" r="2.47608" fill="black"/>
+                                              </svg>      
+                                            </i>
+                                        </a>
+                                      </li>
+                                    </ul> 
+                                    {{-- end social button group --}}            
+                                  </div>         
+                                </div> 
+                                <div class="item-content">
+                                  <p>
+                                    On Friday, J-Hope, the K-pop group's rapper will be releasing "Chicken Noodle Soup" featuring the songstress, as well 
+                                  </p>  
+                                </div> 
+                              </div>
+                            </div>
+                            <div class="col-md-6 border-b-1">
+                              <div class="item-img" style="height: 194px;">
+                                <img src="{{ asset('img/concept/ongoing-project/1.png') }}" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          {{-- end news item 7 htype --}}
+                      </div>    
+                  
+                      {{-- news item 8 htype --}}
+                      <div class="col-md-5 border-b-1">
+                        <div class="social-description p-4">
+                          <div class="tool-bar">
+                            <a href="#" class="btn btn-primary">#music</a>
+                            <div class="social-buttons">
+                              {{-- social button group  --}}
+                              <ul class="social-button d-flex">
+                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa ico">
+                                            <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21.9549 6.95073C20.5588 6.95073 19.2707 6.48188 18.2363 5.69092C17.0499 4.78421 16.1975 3.45417 15.8965 1.92118C15.822 1.54241 15.7819 1.15154 15.778 0.750977H11.7899V11.7982L11.7852 17.8492C11.7852 19.467 10.746 20.8387 9.30543 21.3211C8.88737 21.4611 8.43585 21.5274 7.96571 21.5013C7.36561 21.4679 6.80325 21.2843 6.31447 20.9879C5.27433 20.3572 4.56911 19.2132 4.55 17.9044C4.5199 15.859 6.15107 14.1914 8.16734 14.1914C8.56534 14.1914 8.94757 14.2572 9.30543 14.3769V11.3574V10.272C8.92798 10.2153 8.54384 10.1857 8.15539 10.1857C5.94849 10.1857 3.88444 11.1157 2.40903 12.7911C1.29387 14.0572 0.624965 15.6725 0.521762 17.3663C0.386548 19.5915 1.18971 21.7066 2.7473 23.2672C2.97616 23.4963 3.21649 23.709 3.46781 23.9051C4.80323 24.947 6.43583 25.5117 8.15539 25.5117C8.54384 25.5117 8.92798 25.4827 9.30543 25.426C10.9118 25.1848 12.3939 24.4394 13.5635 23.2672C15.0007 21.8272 15.7948 19.9155 15.8034 17.8807L15.7828 8.84457C16.4684 9.38075 17.2181 9.82442 18.0227 10.1688C19.274 10.704 20.6008 10.9752 21.9664 10.9748V8.03908V6.94976C21.9673 6.95073 21.9558 6.95073 21.9549 6.95073Z" fill="#000"/>
+                                            </svg>    
+                                        </i>                      
+                                    </a>
+                                </li>
+                                <li>
+                                  <a href="">
+                                      <i class="fa ico">
+                                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17.3325" cy="27.7632" r="2.47608" fill="black"/>
+                                            <circle cx="27.2368" cy="27.7632" r="2.47608" fill="black"/>
+                                            <circle cx="37.1411" cy="27.7632" r="2.47608" fill="black"/>
+                                        </svg>      
+                                      </i>
+                                  </a>
+                                </li>
+                              </ul> 
+                              {{-- end social button group --}}            
+                            </div>          
+                          </div>  
+                          <div class="item-content">
+                            <p>
+                              Kendrick Lamar has joined William Faulkner and Robert Frost in the pantheon of Pulitzer Prize winners
+                            </p>  
+                          </div> 
+                        </div>
+                      </div>
+                      <div class="col-md-7 border-b-1">
+                        <div class="item-img" style="height: 187px;">
+                          <img src="{{ asset('img/concept/music-3.png') }}" alt="">
+                        </div>
+                      </div>
+                      {{-- end news item 8 htype --}}
+                    </div>             
+                  </div>
+                  {{-- End tab all news --}}
               </div>
-            </div> 
-            <div class="item-content">
-              <p>
-                A massive art fair featuring exhibitions from over 160 artists, plus workshops, activities, live music, food
-              </p>  
-            </div>           
-          </div>
-        </div>
-        {{-- end item --}}
-
-        {{-- item --}}
-        <div class="item col-12 col-md-6 border-b-1">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/ongoing-project/2.png') }}" alt="Ongoing project">
-          </div>
-          <div class="item-body">
-            <div class="tool-bar">
-              <a href="#" class="btn btn-primary">#music</a>
-              <div class="social-buttons">
-                <a href="" class="btn btn-primary btn-social">
-                  <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-                </a>
-                <a href="#" class="btn btn-primary btn-social">
-                   <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-                </a>
-                <a href="#" class="btn btn-primary btn-social">
-                  <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-                </a>
-                <a href="#" class="btn btn-primary btn-social">
-                  <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-                </a>
-              </div>
-            </div> 
-            <div class="item-content">
-              <p>
-                A massive art fair featuring exhibitions from over 160 artists, plus workshops
-              </p>  
-            </div>           
-          </div>
-        </div>
-        {{-- end item --}}
-        
-      </div>
-    </div>  
-
-    {{-- End Ongoing Projects --}}
-
-  </div>
-
-  <div class="h-on-going-project border-b-1">
-    <div class="col-12 col-md-5 p-4">
-      <div class="tool-bar">
-        <a href="#" class="btn btn-primary">#streetart</a>
-        <div class="social-buttons">
-          <a href="" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-             <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-          </a>
-        </div>
-      </div> 
-      <div class="item-content">
-        <p>
-          A massive art fair featuring exhibitions from over 160 artists, plus workshops
-        </p>  
-      </div> 
-    </div>
-    <div class="item-img col-12 col-md-7">
-      <img src="{{ asset('img/concept/news/1.png') }}" alt="">
-    </div>
-  </div>
-
-  <div class="stream-text">
-    <marquee scrollamount="10" loop="infinite">
-      <h1>#JOIN THE MOVEMENT</h1>
-    </marquee>
+           </div>
+       </div>
   </div>
 </section>
-
-{{-- Shop --}}
-<section class="shop-section border-b-1">
-  <div class="w-100 p-3 px-md-5">
-    <h3>Shop</h3>
-    <div class="row">
-      {{-- product --}}
-      <div class="col-md-3 mb-3 wow animated fadeInUp">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/1.png') }}" alt="">
-          </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
-      </div>
-      {{-- end product --}}
-      {{-- product --}}
-      <div class="col-md-3 mb-3 wow animated fadeInUp" style="animation-delay: .2s;">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/2.png') }}" alt="">
-          </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
-      </div>
-      {{-- end product --}}
-      {{-- product --}}
-      <div class="col-md-3 mb-3 wow animated fadeInUp"  style="animation-delay: .4s;">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/3.png') }}" alt="">
-          </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
-      </div>
-      {{-- end product --}}
-      {{-- product --}}
-      <div class="col-md-3 mb-3 wow animated fadeInUp" style="animation-delay: .8s;">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/4.png') }}" alt="">
-          </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
-      </div>
-      {{-- end product --}}
-      {{-- product --}}
-      <div class="col-md-3 mb-3 wow animated fadeInUp">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/3.png') }}" alt="">
-          </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
-      </div>
-      {{-- end product --}}
-      {{-- product --}}
-      <div class="col-md-3 mb-3 wow animated fadeInUp" style="animation-delay: .2s;">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/2.png') }}" alt="">
-          </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
-      </div>
-      {{-- end product --}}
-      {{-- product --}}
-      <div class="col-md-3 mb-3 wow animated fadeInUp" style="animation-delay: .4s;">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/4.png') }}" alt="">
-          </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
-      </div>
-      {{-- end product --}}
-      {{-- product --}}
-      <div class="col-md-3 mb-3 wow animated fadeInUp" style="animation-delay: .6s;">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/1.png') }}" alt="">
-          </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
-      </div>
-      {{-- end product --}}
-    </div>
-    <div class="view-more my-5">
-      <a href="{{ url('/shop') }}" class="btn btn-more">view all products</a>
-    </div>
-  </div>
-</section>
-{{-- End Shop --}}
-
-{{-- Popular --}}
-<section class="popular-section">
-  <div class="popular-1 col-md-5 md-border-r-1 border-b-1">
-    <h3 class="section-title border-b-1 px-3 px-md-5">Popular</h3>
-    <div class="social-description p-4">
-      <div class="tool-bar">
-        <a href="#" class="btn btn-primary">#music</a>
-        <div class="social-buttons">
-          <a href="" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-             <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-          </a>
-        </div>
-      </div> 
-      <div class="item-content">
-        <p>
-          ARIS, FRANCE - JANUARY 23: (L-R) Rapper ASAP Rocky and Fashion designer Kris Van Assche pose Backstage after the Dior Homme Menswear Fall/Winter 2016-2017 show as part of Paris Fashion Week on January 23
-        </p>  
-      </div> 
-    </div>
-    <div class="item-img">
-      <img src="{{ asset('img/concept/popular-1.png') }}" alt="">
-    </div>
-  </div>
-  <div class="col-md-7">
-    <div class="w-full d-flex">
-      {{-- Pop 2 --}}
-      <div class="col-12 col-md-6 border-b-1 md-border-r-1">
-        <div class="item-img" style="height: 293px;">
-          <img src="{{ asset('img/concept/popular-2.png') }}" alt="">
-        </div>
-        <div class="social-description p-4">
-          <div class="tool-bar">
-            <a href="#" class="btn btn-primary">#music</a>
-            <div class="social-buttons">
-              <a href="" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                 <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-              </a>
-            </div>
-          </div> 
-          <div class="item-content">
-            <p>
-              Kendrick Lamar has joined William Faulkner and Robert Frost in the pantheon of Pulitzer Prize winners
-            </p>  
-          </div> 
-        </div>
-      </div>
-      {{-- End pop 2 --}}
-      {{-- Pop 3 --}}
-      <div class="col-12 col-md-6 border-b-1">
-        <div class="item-img" style="height: 293px;">
-          <img src="{{ asset('img/concept/popular-3.png') }}" alt="">
-        </div>
-        <div class="social-description p-4">
-          <div class="tool-bar">
-            <a href="#" class="btn btn-primary">#streetart</a>
-            <div class="social-buttons">
-              <a href="" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                 <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-              </a>
-            </div>
-          </div> 
-          <div class="item-content">
-            <p>
-              A massive art fair featuring exhibitions from over 160 artists, plus workshops
-            </p>  
-          </div> 
-        </div>
-      </div>
-      {{-- End pop 3 --}}
-    </div>
-    <div class="w-100 d-flex">
-      <div class="col-md-6 border-b-1">
-        <div class="social-description p-4">
-          <div class="tool-bar">
-            <a href="#" class="btn btn-primary">#culture</a>
-            <div class="social-buttons">
-              <a href="" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                 <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-              </a>
-            </div>
-          </div> 
-          <div class="item-content">
-            <p>
-              On Friday, J-Hope, the K-pop group's rapper will be releasing "Chicken Noodle Soup" featuring the songstress, as well 
-            </p>  
-          </div> 
-        </div>
-      </div>
-      <div class="col-md-6 border-b-1">
-        <div class="item-img" style="height: 187px;">
-          <img src="{{ asset('img/concept/popular-4.png') }}" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div class="stream-text border-b-1">
-    <marquee scrollamount="10" loop="infinite">
-      <h1>#find the g spot</h1>
-    </marquee>
-  </div>
-</section>
-{{-- End Popular --}}
-
-{{-- Street art --}}
-<section class="street-art-section">
-
-  <div class="col-md-7 md-border-r-1">
-    <h3 class="section-title border-b-1 px-3 px-md-5">Street art</h3>
-    <div class="w-100 d-flex">
-      {{-- art 1 --}}
-      <div class="col-12 col-md-6 border-b-1 md-border-r-1">
-        <div class="item-img" style="height: 293px;">
-          <img src="{{ asset('img/concept/art-1.png') }}" alt="">
-        </div>
-        <div class="social-description p-4">          
-          <div class="item-content">
-            <p>
-              Kendrick Lamar has joined William Faulkner and Robert Frost in the pantheon of Pulitzer Prize winners
-            </p>  
-          </div> 
-          <div class="tool-bar">
-            <div class="social-buttons">
-              <a href="" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                 <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-              </a>
-            </div>
-          </div> 
-        </div>
-      </div>
-      {{-- end art 1 --}}
-      {{-- art 2 --}}
-      <div class="col-12 col-md-6 border-b-1">
-        <div class="item-img" style="height: 293px;">
-          <img src="{{ asset('img/concept/art-2.png') }}" alt="">
-        </div>
-        <div class="social-description p-4">          
-          <div class="item-content">
-            <p>
-              A massive art fair featuring exhibitions from over 160 artists, plus workshops
-            </p>  
-          </div> 
-          <div class="tool-bar">
-            <div class="social-buttons">
-              <a href="" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                 <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-              </a>
-            </div>
-          </div> 
-        </div>
-      </div>
-      {{-- end art 2 --}}
-    </div>    
-  </div>
-  {{-- art 3 --}}
-  <div class="col-md-5 border-b-1">    
-    <div class="social-description p-4">      
-      <div class="item-content">
-        <p>
-          ARIS, FRANCE - JANUARY 23: (L-R) Rapper ASAP Rocky and Fashion designer Kris Van Assche pose Backstage after the Dior Homme Menswear Fall/Winter 2016-2017 show as part of Paris Fashion Week on January 23
-        </p>  
-      </div> 
-      <div class="tool-bar">
-        <div class="social-buttons">
-          <a href="" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-             <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-          </a>
-        </div>
-      </div> 
-    </div>
-    <div class="item-img" style="height: 350px;">
-      <img src="{{ asset('img/concept/art-3.png') }}" alt="">
-    </div>
-  </div>
-  {{-- end art 3 --}}
-
-  {{-- art 4 --}}
-  <div class="w-100 d-flex">
-    <div class="col-md-7 border-b-1">
-      <div class="item-img" style="height: 187px;">
-        <img src="{{ asset('img/concept/art-4.png') }}" alt="">
-      </div>
-    </div>
-    <div class="col-md-5 border-b-1">
-      <div class="social-description p-4">        
-        <div class="item-content">
-          <p>
-            A massive art fair featuring exhibitions from over 160 artists, plus workshops, activities, live. A massive art fair featuring exhibitions from over 160 artists, plus workshops, activities, live
-          </p>  
-        </div> 
-        <div class="tool-bar">
-          <div class="social-buttons">
-            <a href="" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-               <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-            </a>
-          </div>
-        </div> 
-      </div>
-    </div>    
-  </div>
-  {{-- end art 4 --}}
-  
-</section>
-{{-- End Street art --}}
-
-{{-- Music --}}
-<section class="music-section">
-  <h3 class="section-title px-3 px-md-5 border-b-1">Music</h3>
-  <div class="w-100 d-flex">
-    {{-- music 1 --}}
-    <div class="col-md-5 md-border-r-1 border-b-1">
-      <div class="item-img" style="height: 293px;">
-        <img src="{{ asset('img/concept/music-1.png') }}" alt="">
-      </div>
-      <div class="social-description p-4">          
-        <div class="item-content">
-          <p>
-            A massive art fair featuring exhibitions from over 160 artists, plus workshops, activities, live. A massive art fair featuring exhibitions from over 160 artists, plus workshops, activities, live
-          </p>  
-        </div> 
-        <div class="tool-bar">
-          <div class="social-buttons">
-            <a href="" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-               <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-            </a>
-          </div>
-        </div> 
-      </div>
-    </div>
-    {{-- end music 1 --}}
-    {{-- music 2 --}}
-    <div class="col-md-7 d-flex">
-      <div class="col-md-6 border-b-1">
-        <div class="social-description p-4">          
-          <div class="item-content">
-            <p>
-              Tyla Yaweh and Post Malone have just released the video for their “Tommy Lee” track where they can be seen riding on four-wheelers through a pastoral setting.
-              <br />
-              <br>
-              Watch the visual above. Adding another layer to the celebration of the Mötley Crüe drummer, Tommy Lee also plays the drums heard on the track. The distinct drumline in the background is accented by strings and choice chimes that serve as a base for emotive verses from Tyla and Post. Aside from outlining the positive tied to their respective “rockstar” personas, the two also touch on the tribulations of their position
-            </p>  
-          </div> 
-          <div class="tool-bar">
-            <div class="social-buttons">
-              <a href="" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                 <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-              </a>
-            </div>
-          </div> 
-        </div> 
-      </div>
-      <div class="col-md-6 border-b-1">
-        <div class="item-img" style="height: 537px;">
-          <img src="{{ asset('img/concept/music-2.png') }}" alt="">
-        </div>
-      </div>
-      
-    </div>
-    {{-- end music 2 --}}    
-  </div>
-  {{-- music 3 --}}
-  <div class="w-100 d-flex">
-    <div class="col-md-5 border-b-1">
-      <div class="social-description p-4">
-        <div class="tool-bar">
-          <a href="#" class="btn btn-primary">#music</a>
-          <div class="social-buttons">
-            <a href="" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-               <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-            </a>
-          </div>
-        </div> 
-        <div class="item-content">
-          <p>
-            Kendrick Lamar has joined William Faulkner and Robert Frost in the pantheon of Pulitzer Prize winners
-          </p>  
-        </div> 
-      </div>
-    </div>
-    <div class="col-md-7 border-b-1">
-      <div class="item-img" style="height: 187px;">
-        <img src="{{ asset('img/concept/music-3.png') }}" alt="">
-      </div>
-    </div>
-  </div>
-  {{-- end music 3 --}}
-</section>
-{{-- End Music --}}
+{{-- End main Section --}}
 
 {{-- Comission Section --}}
-<section class="comission-section">      
-    <div class="w-100 d-flex position-relative">
-      <div class="line position-absolute bottom-0 end-0">
-        <img src="{{ asset('img/concept/comission/line.png') }}" alt="Line">
-      </div>
-      <div class="col-md-5 d-flex justify-content-center align-items-center py-md-5">
-        <img src="{{ asset('img/concept/comission/light.png') }}" alt="Light">
-      </div>
-      <div class="col-md-7 d-flex justify-content-start align-items-center py-md-5 flex-wrap">
-        <div class="col-md-6">
-          <h3 class="w-100 text-uppercase">Have an idea for the creative project?</h3>
-          <p class="w-100">Tell us about the project in 60 seconds</p>
-          <a href="" class="btn btn-secondary">Comission a project</a>
+<section class="comission-section mb-50">      
+  <div class="w-100 d-flex position-relative">
+    <div class="line position-absolute bottom-0 end-0">
+      <img src="{{ asset('img/concept/comission/line.png') }}" alt="Line">
+    </div>
+    <div class="col-md-5 d-flex justify-content-center align-items-center py-md-5">
+      <img src="{{ asset('img/concept/comission/light-white.png') }}" alt="Light">
+    </div>
+    <div class="col-md-7 d-flex justify-content-start align-items-center py-md-5 flex-wrap">
+      <div class="col-md-6">
+        <h3 class="w-100 text-uppercase">Have an idea for the creative project?</h3>
+        <p class="w-100">Tell us about the project in 60 seconds</p>
+        <div class="w-100 d-flex">
+          <a href="{{ url('contact-us/commission-project') }}">
+              <div class="btn-layout">
+                  <svg viewBox="0 0 236 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1H230V61H1V1Z" class="stroke" stroke="black" stroke-width="2"/>
+                      <path class="no-stroke" d="M5 5H236V67H5V5Z" fill="black"/>
+                  </svg>
+                  <div>
+                      <span>
+                          Commission a project
+                      </span>    
+                  </div>
+              </div>
+          </a>
         </div>
       </div>
     </div>
+  </div>
 </section>
 {{-- End Comission Section --}}
+
 @endsection
 
 @section('script')
@@ -793,6 +496,7 @@
 </script>    
 @endsection
 
+
 @section('footer')
-  @include('layouts.footer')    
+  @include('layouts.footer-1')    
 @endsection
