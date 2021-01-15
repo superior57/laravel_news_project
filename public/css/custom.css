@@ -410,6 +410,7 @@ section .main-item {
     text-transform: uppercase;
     padding: 50px 0;
     width: 100%;
+    color: #000;
 }
 
 .product {
@@ -1730,10 +1731,10 @@ a.go-to:hover {
     }
 }
 
-.stream-text * {
-    animation: streamInRight ease-in 30s infinite;
-    white-space: nowrap;
-}
+/* .stream-text * { */
+    /* animation: streamInRight ease-in 30s infinite;
+    white-space: nowrap; */
+/* } */
 
 /* .btn-layout::before {
     content: '';
