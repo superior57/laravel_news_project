@@ -14,7 +14,7 @@
 Auth::routes();
 
 Route::get('/', function () {
-    return redirect('/news');
+    return view('home1');
 });
 
 Route::get('news', function() {

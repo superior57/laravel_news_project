@@ -588,11 +588,11 @@ section .main-item {
 }
 
 .hero .head * {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
 }
 
 .hero .head .path {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -606,7 +606,7 @@ section .main-item {
 }
 
 .hero .hashtag-date {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -650,7 +650,7 @@ section .main-item {
 }
 
 .hero .sub-title {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -670,7 +670,7 @@ section .main-item {
 }
 
 .hero-content a.btn-back {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -681,6 +681,11 @@ section .main-item {
     margin-bottom: 15px;
 }
 
+div.social-buttons .fa {
+    width: 40px;
+    height: 40px;
+}
+
 ul.social-button {
     margin: 0;
     padding: 0;
@@ -688,6 +693,7 @@ ul.social-button {
 
 ul.social-button li {
     margin-bottom: 18px;
+    margin-right: 5px;
 }
 
 ul.social-button li>a>i {
@@ -720,7 +726,7 @@ ul.social-button li>a>i:hover {
 
 .article-section p,
 .article-section span {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -744,7 +750,7 @@ ul.social-button li>a>i:hover {
 }
 
 .review .feedback {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: italic;
     font-weight: 550;
     font-size: 16px;
@@ -759,7 +765,7 @@ ul.social-button li>a>i:hover {
 }
 
 .review .name span {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -774,7 +780,7 @@ ul.social-button li>a>i:hover {
 }
 
 .article-image .brief span:first-child {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -954,7 +960,7 @@ ul.social-button li>a>i:hover {
 }
 
 .topevent-section .item .date {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -991,7 +997,7 @@ ul.social-button li>a>i:hover {
 }
 
 .recent-events .item .date {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -1053,7 +1059,7 @@ ul.social-button li>a>i:hover {
 }
 
 .loading .item-loading span {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -1085,7 +1091,7 @@ ul.social-button li>a>i:hover {
 }
 
 .top-infomation .item span {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1098,7 +1104,7 @@ section .title {
 }
 
 section .subtitle {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1123,7 +1129,7 @@ section .subtitle {
 .tab-bar>li>a {
     padding: 20px 0;
     padding-left: 0;
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -1137,7 +1143,7 @@ section .subtitle {
 
 
 .tab-bar>li.active>a  {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -1169,7 +1175,7 @@ section .subtitle {
 }
 
 .head .path {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1179,7 +1185,7 @@ section .subtitle {
 }
 
 .head .current-path {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1206,7 +1212,7 @@ section .subtitle {
 }
 
 .product .description {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1216,7 +1222,7 @@ section .subtitle {
 }
 
 .select-size h5 {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -1230,7 +1236,7 @@ section .subtitle {
     padding: 0;
 }
 .selectors>li>a {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1258,7 +1264,7 @@ section .subtitle {
 }
 
 .shop.details .product-price {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -1291,7 +1297,7 @@ section .subtitle {
 }
 
 .cart {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
 }
 
 .cart .title {
@@ -1505,7 +1511,7 @@ section .subtitle {
 }   
 
 .btn-payment {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -1534,7 +1540,7 @@ section .subtitle {
 
 .information-item span {
     width: 100%;
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1575,7 +1581,7 @@ section .subtitle {
 }
 
 .contact-us {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
 }
 
 .contact-us .title {
@@ -1634,7 +1640,7 @@ a.go-to:hover {
 }
 
 .project-item span {
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -1644,7 +1650,7 @@ a.go-to:hover {
 
 .project-item .btn-more {
     background-color: #ECECEC;   
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -1679,7 +1685,7 @@ a.go-to:hover {
 
 .artist-item .overal-text span {
     margin: auto;
-    font-family: HelveticaNeueCyr;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 34px;
