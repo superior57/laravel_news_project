@@ -32,7 +32,7 @@
 
         <div class="tab mb-50">
             <ul class="tab-bar">
-                <li class="active"><a href="#" class="tab-item px-5" data-t-id="allartists" >All artists</a></li>
+                <li class="active"><a href="#" class="tab-item px-3 px-md-5" data-t-id="allartists" >All artists</a></li>
                 <li><a href="#" class="tab-item" data-t-id="popular" >Popular</a></li>
                 <li><a href="#" class="tab-item" data-t-id="streetart" >Street art</a></li>
                 <li><a href="#" class="tab-item" data-t-id="photography" >Photography</a></li>
