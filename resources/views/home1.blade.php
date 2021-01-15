@@ -38,40 +38,48 @@
     <div class="videos">
       <div class="news-item overaly video-item border-b-1 animated fadeInRight">
         {{-- <video src="{{ asset('uploads/video/artist long1.mp4') }}" autoplay muted loop></video> --}}
-        <img src="{{ asset('img/concept/news/artists.png') }}" alt="">
-        <div class="news-item-content">
-          <div class="px-3 px-md-5 w-100">
-            <h3>Artists</h3>
-            <p>street art / music / photo / video</p>
+        <a href="{{ url('artists') }}">
+          <img src="{{ asset('img/concept/news/artists.png') }}" alt="">
+          <div class="news-item-content">
+            <div class="px-3 px-md-5 w-100">
+              <h3>Artists</h3>
+              <p>street art / music / photo / video</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .2s;">
-        <img src="{{ asset('img/concept/news/project.png') }}" alt="">
-        <div class="news-item-content">
-          <div class="px-3 px-md-5 w-100">
-            <h3>projects</h3>
-            <p>art events / meetups</p>
+        <a href="{{ url('projects') }}">
+          <img src="{{ asset('img/concept/news/project.png') }}" alt="">
+          <div class="news-item-content">
+            <div class="px-3 px-md-5 w-100">
+              <h3>projects</h3>
+              <p>art events / meetups</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .4s;">
-        <img src="{{ asset('img/concept/news/shop.png') }}" alt="">
-        <div class="news-item-content">
-          <div class="px-3 px-md-5 w-100">
-            <h3>shop</h3>
-            <p>products designed in-house by GIA</p>
+        <a href="{{ url('shop') }}">
+          <img src="{{ asset('img/concept/news/shop.png') }}" alt="">
+          <div class="news-item-content">
+            <div class="px-3 px-md-5 w-100">
+              <h3>shop</h3>
+              <p>products designed in-house by GIA</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .6s;">
-        <img src="{{ asset('img/concept/news/contact-us.png') }}" alt="">
-        <div class="news-item-content">
-          <div class="px-3 px-md-5 w-100">
-            <h3>contact us</h3>
-            <p>submit artwork  / comission a project</p>
+        <a href="{{ url('contact-us') }}">
+          <img src="{{ asset('img/concept/news/contact-us.png') }}" alt="">
+          <div class="news-item-content">
+            <div class="px-3 px-md-5 w-100">
+              <h3>contact us</h3>
+              <p>submit artwork  / comission a project</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -810,5 +818,5 @@
 @endsection
 
 @section('footer')
-  @include('layouts.footer')    
+  @include('layouts.footer-1')    
 @endsection

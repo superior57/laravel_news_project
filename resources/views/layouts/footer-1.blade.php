@@ -7,26 +7,26 @@
       <div class="foot-item">        
         <ul>
           <h5>Sections</h5>  
-          <li><a href="">Artists</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="">News</a></li>
-          <li><a href="">Events</a></li>
+          <li><a href="{{ url('artists') }}">Artists</a></li>
+          <li><a href="{{ url('projects') }}">Projects</a></li>
+          <li><a href="{{ url('shop') }}">Shop</a></li>
+          <li><a href="{{ url('news') }}">News</a></li>
+          <li><a href="{{ url('events') }}">Events</a></li>
         </ul>
       </div>
       <div class="foot-item">        
         <ul>
           <h5>About us</h5>  
-          <li><a href="">About us</a></li>
-          <li><a href="">Our team</a></li>
+          <li><a href="{{ url('contact-us/about-us') }}">About us</a></li>
+          <li><a href="{{ url('contact-us/about-us') }}">Our team</a></li>
         </ul>
       </div>
       <div class="foot-item">        
         <ul>
           <h5>Contact us</h5>  
-          <li><a href="">Contact us</a></li>
-          <li><a href="">Comimsion a project</a></li>
-          <li><a href="">Submit artwork</a></li>
+          <li><a href="{{ url('contact-us') }}">Contact us</a></li>
+          <li><a href="{{ url('contact-us/commission-project') }}">Comimsion a project</a></li>
+          <li><a href="{{ url('contact-us/submit-artwork') }}">Submit artwork</a></li>
           <li class="">
             {{-- social button group  --}}
             <ul class="social-button d-flex">
