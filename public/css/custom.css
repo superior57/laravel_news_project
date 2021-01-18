@@ -368,8 +368,8 @@ section .main-item {
     font-family: EuropeExt;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .item-content p {
@@ -1170,8 +1170,7 @@ section .subtitle {
 .tab-bar>li>a:hover  {
     /* background: #80808036; */
     color: #000000;
-    border-bottom:  3px solid #FF7BC9;
-    opacity: .6;
+    border-bottom:  3px solid #808080;
 }
 
 .head .path {
@@ -1259,8 +1258,7 @@ section .subtitle {
 }
 
 .selectors>li>a:hover {
-    color: #FFF;
-    background-color: #000;
+    background-color: #ECECEC;
 }
 
 .shop.details .product-price {
@@ -1719,7 +1717,8 @@ a.go-to:hover {
 
 .artist-section .tab-bar>li>a:hover {
     color: #FFFFFF;
-    border-color: #FF7BC9;
+    border-color: #FFF;
+    opacity: 1;
 }
 
 .loading-white * {
@@ -1790,16 +1789,14 @@ a.go-to:hover {
     color: #FFFFFF;
 }
 
+
 .btn-layout:hover .stroke {
-    stroke: #b1b1b1;
+    stroke:#CACACA;
 }
 
 .btn-layout:hover .no-stroke {
-    fill: #b1b1b1;
-}
+    fill: #CACACA;
 
-.btn-layout:hover>div>span {
-    color: #000;
 }
 
 @media (max-width: 450px) {
