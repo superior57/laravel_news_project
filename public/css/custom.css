@@ -373,8 +373,8 @@ section .main-item {
 }
 
 .item-content p {
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .tool-bar {
