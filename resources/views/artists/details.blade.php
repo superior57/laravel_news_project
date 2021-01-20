@@ -14,7 +14,7 @@
         <div class="w-100 d-flex">
             <div class="main-body">
                 <div class="w-100 mb-4 p-3">
-                    <a href="{{ url('/events') }}" class="btn-back">Back to all events</a>
+                    <a href="{{ url('/artists') }}" class="btn-back">Back to all artists</a>
                 </div>
                 <div class="w-100 mb-2">
                     <p class="user-name">Mattia Baldi</p>                    

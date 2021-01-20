@@ -173,6 +173,10 @@
         let body = $('body');
         body.css('background-color', '#141414');
     })
+
+    $(document).on('click', '.artist-item', () => {
+        location.href = "/artist/details";
+    });  
 </script>    
 @endsection
 
