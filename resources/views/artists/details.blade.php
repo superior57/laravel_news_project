@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-<section class="artist-details" style="background-image: url('{{ asset('img/artists/main-1.png') }}')">
+<section class="artist-details" style="background-image: url('{{ asset('img/artists/main.png') }}')">
     <div class="w-100 d-flex body">
         <div class="w-100 d-flex">
             <div class="main-body">
