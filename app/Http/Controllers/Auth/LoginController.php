@@ -28,7 +28,7 @@ class LoginController extends Controller
      * @var string
      */
     // protected $redirectTo = RouteServiceProvider::HOME;
-    protected $redirectTo = '/admin/todo';
+    protected $redirectTo = '/admin';
 
 
     /**
@@ -47,7 +47,7 @@ class LoginController extends Controller
     protected function redirectTo()
     {
         if(Auth::user()->usertype == "admin") {
-            return "admin/todo";
+            return "admin";
         } else {
             return "/";
         }

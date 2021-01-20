@@ -75,7 +75,7 @@ Route::get('artist/details', function() {
 
 
 Route::get('admin', function() {
-    return redirect("/admin/todo");
+    return redirect("/admin/event");
 });
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function () {
     Route::resource('/todo', 'Admin\TodoController');
