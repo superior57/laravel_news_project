@@ -1917,6 +1917,12 @@ a.go-to:hover {
     top: 0;
 }
 
+.no-data-found {
+    text-align: center;
+    padding: 30px;
+    color: gray;
+}
+
 @media (max-width: 450px) {
     #content_wrapper {
         margin-left: 0;

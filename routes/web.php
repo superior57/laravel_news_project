@@ -11,11 +11,16 @@
 |
 */
 
-Auth::routes();
+// Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/', function () {
     return view('home1');
 });
+
+Route::get("admin/403", function() {
+    return view("admin.403");
+})->name("admin.403");
 
 Route::get('news', function() {
     return view('news.index');
@@ -24,12 +29,8 @@ Route::get('news/details', function() {
     return view('news.details');
 });
 
-Route::get('events', function() {
-    return view('event.index');
-});
-Route::get('event/details', function() {
-    return view('event.details');
-});
+Route::get('events', "HomeController@event")->name("events");
+Route::get('event/details/{id}', "HomeController@eventDetails");
 
 Route::get('shop', function() {
     return view('shop.index');
@@ -73,7 +74,19 @@ Route::get('artist/details', function() {
 });
 
 
+Route::get('admin', function() {
+    return redirect("/admin/todo");
+});
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function () {
+    Route::resource('/todo', 'Admin\TodoController');
+    Route::resource("/event", "Admin\EventController");
+});
 
-Route::group(['middleware' => 'auth'], function () {
-    Route::resource('/todo', 'TodoController');
+Route::get("create-admin", function() {
+    $user = new App\User();
+    $user->password = Hash::make('123456789');
+    $user->email = 'admin@admin.com';
+    $user->name = 'Admin';
+    $user->usertype = "admin";
+    $user->save();
 });

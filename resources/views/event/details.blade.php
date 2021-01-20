@@ -10,6 +10,16 @@
 
 @section('content')
 
+@php
+    $cur_time = \Carbon\Carbon::now();
+    $event_time = \Carbon\Carbon::create($event->time);   
+    // $left_days = $cur_time->diffInDays($event_time);
+    // $left_hours = $cur_time->diffInHours($event_time->subDays($left_days));
+    // $left_minutes = $cur_time->diffInMinutes($event_time->subHours($left_hours));
+    $left_seconds = $cur_time->diffInSeconds($event_time);
+@endphp
+
+
 <section class="hero" style="background-image: url('{{ asset('img/events/details-back.png') }}');">
     <div class="hero-content py-5 px-3 px-md-5">
         <div class="mb-4">
@@ -18,34 +28,33 @@
         <div class="head" style="margin-bottom: 121px;">            
             <div>
                 <span class="path">Mane page / Events /</span>
-                <span class="current-path">Tyler The Creator x GOLF WANG Tour 2020 </span>
+                <span class="current-path">{!! strip_tags($event->title) !!} </span>
             </div>
         </div>
 
         <h5 class="title mb-4"> 
-            Tyler The Creator x <br>
-            GOLF WANG Tour 2020
+            {!! $event->title !!}
         </h5>
-        <span class="sub-title mb-4">"Can't Smile Without You" - Martin Andersen's <br> book between terrace and casual</span>
+        <span class="sub-title mb-4">{!! $event->description !!}</span>
 
         <div class="date-time-item d-flex">
             <div class="time-item">
               <div class="d-flex">
-                <p>10</p>
-                <p>:</p>
+                <p id="left_days">00</p>
+                <p class="time-point">:</p>
               </div>
               days
             </div>
             <div class="time-item">
               <div class="d-flex">
-                <p>06</p>
-                <p>:</p>
+                <p id="left_hours">00</p>
+                <p class="time-point">:</p>
               </div>
               hours
             </div>
             <div class="time-item">
               <div class="d-flex">
-                <p>34</p>
+                <p id="left_minutes">00</p>
               </div>
               minutes
             </div>
@@ -261,4 +270,23 @@
 
 @section('footer')
   @include('layouts.footer-1')    
+@endsection
+
+@section('script')
+<script>
+    let left_seconds = "{{ $left_seconds }}";
+
+    let lefttime_minute_interval = setInterval(() => {
+        if(left_seconds % 2 == 0) {
+            $('.time-point').css('color', "#FFF");
+        } else {
+            $('.time-point').css('color', "transparent");
+        }
+        const { days, hours, minutes, seconds } = getDateTimeAttrFromSeconds(left_seconds);
+        $('#left_days').text(days);
+        $('#left_hours').text(hours);
+        $('#left_minutes').text(minutes);
+        left_seconds --;
+    }, 1000);
+</script>
 @endsection
