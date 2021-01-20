@@ -669,7 +669,7 @@ section .main-item {
     opacity: 1 !important;
 }
 
-.hero-content a.btn-back {
+a.btn-back {
     font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1797,6 +1797,124 @@ a.go-to:hover {
 .btn-layout:hover .no-stroke {
     fill: #CACACA;
 
+}
+
+.artist-details {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.artist-details::before {
+    content: '';
+    position: absolute;
+    background: #141414;
+    opacity: 0.55;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.artist-details .body {
+    z-index: 2;
+}
+
+.scroll-wrap {
+    max-width: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes scroll-down-hover {
+    25% {
+        transform: rotate(90deg) translateX(0);
+    }
+    50% {
+        transform: rotate(90deg) translateX(20px);
+    }
+    100% {
+        transform: rotate(90deg) translateX(0px);
+    }
+}
+
+.scroll-wrap p {
+    width: max-content;
+    width: max-content;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 130px;
+    font-family: EuropeExt;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.325em;
+    color: #FFFFFF;
+    opacity: .7;
+    cursor: pointer;
+    animation: scroll-down-hover infinite 2s ease-out;   
+    transition: .8s;
+}
+.scroll-wrap p:hover {
+    /* animation: none; */
+}
+
+.main-body {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.main-body .user-name {
+    font-family: EuropeExt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.main-body .user-role {
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.img-clip {
+    clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
+}
+
+.img-back {
+    padding: 30px 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.artist-images {
+    position: relative;
+    width: 456px;
+    height: 416px;
+}
+
+.artist-images img {
+    width: 100%;
+}
+
+.artist-img-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
 }
 
 @media (max-width: 450px) {

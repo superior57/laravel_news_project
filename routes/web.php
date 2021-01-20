@@ -68,6 +68,10 @@ Route::get('projects', function() {
 Route::get('artists', function() {
     return view('artists.index');
 });
+Route::get('artist/details', function() {
+    return view('artists.details');
+});
+
 
 
 Route::group(['middleware' => 'auth'], function () {
