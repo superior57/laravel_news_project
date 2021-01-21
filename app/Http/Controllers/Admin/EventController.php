@@ -17,7 +17,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        $item_list = Event::get();
+        $item_list = Event::orderBy('id', 'desc')->get();
         return view("admin.event.list", ["item_list" => $item_list]);
     }  
     /**
@@ -68,7 +68,7 @@ class EventController extends Controller
      */
     public function edit($id)
     {
-        $item = Event::where(['id' => $id])->first();
+        $item = Event::where(['id' => $id])->orderBy('id', 'asc')->first();
         if ($item) {
             return view('admin.event.edit', [ 'item' => $item ]);
         } else {

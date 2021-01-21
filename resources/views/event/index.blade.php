@@ -31,32 +31,55 @@
 <section class="topevent-section" style="margin-left: -30px;">
     <div class="w-100 py-3 px-3 px-md-5" >
         <div class="row">
-            @forelse ($event_list as $event)
-                {{-- Topevent Item --}}
-                <div class="col-md-3">
-                    <div class="item">
-                        <span class="date">
-                            {{ date("d M Y", strtotime($event->time)) }}
-                            {{-- 10 July 2020 --}}
-                        </span>
-                        <h5 class="title">
-                            {!! $event->title !!}
-                        </h5>
-                        <div class="d-flex">
-                            <div class="arrow-right">
-                                <a href="{{ url('event/details/'.$event->id) }}" class="btn mx-0 px-0">
-                                    <svg width="44" height="25" viewBox="0 0 44 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1459 13.6257L0.5 13.6257V11.3744L39.1459 11.3744L30.3454 2.29911L31.8784 0.718262L43.3035 12.5L31.8784 24.2818L30.3454 22.701L39.1459 13.6257Z" fill="black"/>
-                                    </svg>      
-                                </a>                  
+            <div class="col-md-9">
+                <div class="row">                
+                    @forelse ($event_list as $event)
+                        {{-- Topevent Item --}}
+                        <div class="col-md-4    ">
+                            <div class="item">
+                                <span class="date">
+                                    {{ date("d M Y", strtotime($event->time)) }}
+                                    {{-- 10 July 2020 --}}
+                                </span>
+                                <h5 class="title">
+                                    {!! $event->title !!}
+                                </h5>
+                                <div class="d-flex">
+                                    <div class="arrow-right">
+                                        <a href="{{ url('event/details/'.$event->id) }}" class="btn mx-0 px-0">
+                                            <svg width="44" height="25" viewBox="0 0 44 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1459 13.6257L0.5 13.6257V11.3744L39.1459 11.3744L30.3454 2.29911L31.8784 0.718262L43.3035 12.5L31.8784 24.2818L30.3454 22.701L39.1459 13.6257Z" fill="black"/>
+                                            </svg>      
+                                        </a>                  
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        {{-- End Topevent Item --}}
+                    @empty
+                        <span class="no-data-found">No data found</span>
+                    @endforelse  
+                </div>   
+            </div>   
+            <div class="col-md-3">
+                <div class="item bg-img" style="background: url({{ asset('img/events/event-back.png') }})">
+                    <span class="date">
+                        {{-- 10 July 2020 --}}
+                    </span>
+                    <h5 class="title">
+                        All events
+                    </h5>
+                    <div class="d-flex">
+                        <div class="arrow-right">
+                            <a href="{{ url('/') }}" class="btn mx-0 px-0">
+                                <svg width="44" height="25" viewBox="0 0 44 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1459 13.6257L0.5 13.6257V11.3744L39.1459 11.3744L30.3454 2.29911L31.8784 0.718262L43.3035 12.5L31.8784 24.2818L30.3454 22.701L39.1459 13.6257Z" fill="black"/>
+                                </svg>      
+                            </a>                  
                         </div>
                     </div>
                 </div>
-                {{-- End Topevent Item --}}
-            @empty
-                <span class="no-data-found">No data found</span>
-            @endforelse                        
+            </div>                
         </div>  
     </div>  
 </section>
