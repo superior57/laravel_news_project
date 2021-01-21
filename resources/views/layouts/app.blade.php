@@ -77,5 +77,12 @@
             @yield('content')
         </main>
     </div>
+    <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.ckeditor').ckeditor();
+        });	
+    </script>	
+    @yield('script')
 </body>
 </html>

@@ -42,6 +42,9 @@
 					<label for="main_image">Photo: </label>
 					<input type="file" class="form-control" id="main_image" name="main_image">					
 				</div>
+				<div class="form-group">
+					<textarea name="wysiwyg-editor" id="" class="ckeditor from-control"></textarea>
+				</div>
 				<button type="submit" class="btn btn-primary">Submit</button>
 			</form>
         </div>
