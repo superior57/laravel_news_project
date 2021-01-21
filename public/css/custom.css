@@ -1803,6 +1803,10 @@ a.go-to:hover {
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    background-position: center;
 }
 
 .artist-details::before {
@@ -1824,6 +1828,102 @@ a.go-to:hover {
     position: relative;
     display: flex;
     justify-content: center;
+    margin-right: 100px;
+}
+
+/* Scroll image gallery in artist page */
+.midscreen {
+    position: fixed;
+    z-index: -1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.homepic {
+    top: 50%;
+    left: 50%;
+    margin-top: -25vmin;
+    margin-left: -39vmin;
+    max-height: 768px;
+    max-width: 1366px;
+    width: 70vmin;
+    height: 50vmin;
+    z-index: 5;
+}
+.homepic2 {
+    top: 50%;
+    left: 50%;
+    margin-top: -25vmin;
+    margin-left: -39vmin;
+    max-height: 768px;
+    max-width: 1366px;
+    width: 70vmin;
+    height: 50vmin;
+    z-index: 5;
+}
+
+/* */
+
+.main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 30px;
+}
+#scrollBar {
+    width: 0%;
+    height: 5px;
+    z-index: 15;
+    position: fixed;
+    background-color: #FF7BC9;
+    top: 0;
+    
+}
+#scrollBar::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    background: #FFFFFF;
+    opacity: 0.3;
+}
+.nutsnbolts {
+    width: 400px;
+    height: 400px;
+}
+.vidbackground {
+    top: 50%;
+    left: 50%;
+    margin-top: -25vmin;
+    margin-left: -39vmin;
+    max-height: 768px;
+    max-width: 1366px;
+    width: 70vmin;
+    height: 50vmin;
+    z-index: 1;
+}
+
+.scrollmagic-pin-spacer {
+    width: 0 !important;
+}
+/* End scroll image gallery in artist page */
+
+@keyframes scroll-down-center {
+    25% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 @keyframes scroll-down-hover {
@@ -1859,6 +1959,16 @@ a.go-to:hover {
 }
 .scroll-wrap p:hover {
     /* animation: none; */
+}
+
+.scroll-down-show a {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+}
+
+.scroll-down-show svg {
+    animation: scroll-down-center  infinite 2s ease-out;   
 }
 
 .main-body {
@@ -1906,7 +2016,7 @@ a.go-to:hover {
     height: 416px;
 }
 
-.artist-images img {
+.artist-images * {
     width: 100%;
 }
 

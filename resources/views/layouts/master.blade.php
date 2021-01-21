@@ -11,12 +11,13 @@
         {!! env('APP_NAME') !!} | @yield('title')
     </title>
     <!-- Favicon-->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="{{ asset('img/core-img/favicon.ico') }}">
     <!-- Core Stylesheet-->
     <link rel="stylesheet" href="{{ asset('style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/global.js') }}"></script>
+    @yield('style')
   </head>
   <body>
     <!-- Preloader-->

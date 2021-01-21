@@ -75,7 +75,7 @@
                             HYPEBEAST's daily news section has become an important destination for those interested in the latest developments within the fashion community as well as other aspects of culturally-relevant content such as art, music, design and lifestyle. Several consistent marquee features have provided HYPEBEAST readers with a unique vantage point into the industry. Among the most prominent ongoing features include ESSENTIALS (a look into the daily essentials of several important creatives within the industry), PROCESS (an account from start to finish of how products are created) and PEN & PAPER (an intimate look into the sketchbook of an artist).
                         </span>
                     </div>
-                    <h3 class="title mb-4">Our team</h3>
+                    <h3 id="our_team" class="title mb-4">Our team</h3>
                     <div class="row our-team">
                         <div class="col-6">
                             <div class="member">
