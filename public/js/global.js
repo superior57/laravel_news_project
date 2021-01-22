@@ -58,11 +58,12 @@ function getDateTimeAttrFromSeconds(totalseconds) {
  * @return {string}
  */
 function getNumberFormat2String(number) {
-    return number.toString();
-    // number = Number(number);
-    // if(number.toString().length > 1 ) {
-    //     return String(number);
-    // }
-    // return String((number * 0.1).toString().replace(".", ""));
+    // return number.toString();
+    number = Number(number);
+    if(number.toString().length > 1 ) {
+        return String(number);
+    }
+    let str_num = String(number * 0.1).replace(".", "");
+    return str_num[0] + str_num[1];
 }
 
