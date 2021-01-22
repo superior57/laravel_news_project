@@ -124,8 +124,9 @@
                     </div>                                            
                 </div>
 
+                {!! $event->article !!}
                 {{-- Article 2 --}}
-                <h3 class="mb-3">Horseferry Check by Burberry and Stone Island</h3>
+                {{-- <h3 class="mb-3">Horseferry Check by Burberry and Stone Island</h3>
                 <p class="mb-4">The photographer's point of view made it possible to take rough and biting images, with the taste of beer and cigarettes. 
                     Difficult to recognize a precise year in the photos, which want to highlight the obsession and loyalty of the Spurs fans, 
                     as well as the casual style that has always codified the imaginary</p>
@@ -148,7 +149,7 @@
                     narrating in black and white, with irony and realism, the hooligans habits. Thus was born the photo book "Can't Smile Without You", which takes its 
                     name from the song by Bary Manilow used as a hymn by Tottenham fans. The photographs were taken from 2013 to 2017, during more than one hundred home and 
                     away matches, including the latest historic one at White Heart Lane
-                </p>
+                </p> --}}
                 {{-- End Article 2 --}}
 
                 

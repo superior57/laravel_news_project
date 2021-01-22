@@ -89,6 +89,7 @@ class EventController extends Controller
             return redirect('admin/evebt')->with('error', 'Item not found.');
         }
         $input = $request->input();
+        // dd($input);
         $itemStatus = $item->update($input);
         if ($itemStatus) {
             return redirect('admin/event')->with('success', 'An item successfully updated.');
