@@ -27,6 +27,10 @@ class HomeController extends Controller
     public function index()
     {
         $settings = Setting::find(1);
+        if(! $settings) {
+            $settings = new Setting();
+            $settings->save();
+        }
         return view('home1', ["settings" => $settings]);
     }
 
