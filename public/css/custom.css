@@ -156,12 +156,14 @@ select {
 }
 
 .news-item:hover .right-arrow {
-    display: block;
+    /* display: block; */
+    visibility: visible;
     animation: fadeInLeft .4s;
 }
 
 .right-arrow {
-    display: none;    
+    /* display: none; */
+    visibility: hidden;    
 }
 
 
