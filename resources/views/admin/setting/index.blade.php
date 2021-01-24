@@ -113,6 +113,9 @@
 			<form action="{{ route('settings.store') }}" method="POST" enctype="multipart/form-data">
 				@csrf
 				<div class="form-group">
+					<div class=" text-right">
+						<button type="submit" class="btn btn-success">Save</button>
+					</div>
 					<label for="news_video">Shop video:</label>
 					<input type="file" class="form-control" id="shop_video" name="shop_video" accept="video/*">
 					<div class="text-center py-3">
