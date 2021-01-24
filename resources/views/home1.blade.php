@@ -45,9 +45,14 @@
             <video src="{{ asset($settings->artist_video) }}" muted autoplay loop></video>
           </div>
           <div class="news-item-content">
-            <div class="px-3 px-md-5 w-100">
-              <h3>ATOMIC GURU$</h3>
-              <p>street art / music / photo / video</p>
+            <div class="d-flex justify-content-between align-items-center px-3 px-md-5 w-100">
+              <div>
+                <h3>ATOMIC GURU$</h3>
+                <p>street art / music / photo / video</p>
+              </div>
+              <div class="right-arrow">
+                <img src="{{ asset('img/ico/right-arrow.svg') }}" alt="Right arrow">
+              </div>
             </div>
           </div>
         </a>
@@ -59,9 +64,14 @@
             <video src="{{ asset($settings->project_video) }}" muted autoplay loop></video>
           </div>
           <div class="news-item-content">
-            <div class="px-3 px-md-5 w-100">
-              <h3>RICE BOWLS</h3>
-              <p>art events / meetups</p>
+            <div class="d-flex justify-content-between align-items-center px-3 px-md-5 w-100">
+              <div>
+                <h3>RICE BOWLS</h3>
+                <p>art events / meetups</p>
+              </div>
+              <div class="right-arrow">
+                <img src="{{ asset('img/ico/right-arrow.svg') }}" alt="Right arrow">
+              </div>
             </div>
           </div>
         </a>
@@ -73,9 +83,14 @@
             <video src="{{ asset($settings->shop_video) }}" muted autoplay loop></video>
           </div>
           <div class="news-item-content">
-            <div class="px-3 px-md-5 w-100">
-              <h3>CANDY SHOP</h3>
-              <p>products designed in-house by GIA</p>
+            <div class="d-flex justify-content-between align-items-center px-3 px-md-5 w-100">
+              <div>
+                <h3>CANDY SHOP</h3>
+                <p>products designed in-house by GIA</p>
+              </div>
+              <div class="right-arrow">
+                <img src="{{ asset('img/ico/right-arrow.svg') }}" alt="Right arrow">
+              </div>
             </div>
           </div>
         </a>
@@ -87,9 +102,14 @@
             <video src="{{ asset($settings->contact_us_video) }}" muted autoplay loop></video>
           </div>
           <div class="news-item-content">
-            <div class="px-3 px-md-5 w-100">
-              <h3>CYBERSEX</h3>
-              <p>submit artwork  / comission a project</p>
+            <div class="d-flex justify-content-between align-items-center px-3 px-md-5 w-100">
+              <div>
+                <h3>CYBERSEX</h3>
+                <p>submit artwork  / comission a project</p>
+              </div>
+              <div class="right-arrow">
+                <img src="{{ asset('img/ico/right-arrow.svg') }}" alt="Right arrow">
+              </div>
             </div>
           </div>
         </a>

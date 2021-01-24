@@ -155,6 +155,15 @@ select {
     opacity: .8 !important;
 }
 
+.news-item:hover .right-arrow {
+    display: block;
+}
+
+.right-arrow {
+    display: none;
+}
+
+
 .news-item:hover .back-video-item {
     display: block;
 }
@@ -2051,7 +2060,6 @@ a.go-to:hover {
 .btnlink:hover {
     background: #272727;
 }
-
 @media (max-width: 450px) {
     #content_wrapper {
         margin-left: 0;

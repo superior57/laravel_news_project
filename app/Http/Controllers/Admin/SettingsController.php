@@ -50,6 +50,9 @@ class SettingsController extends Controller
             if($file) {
                 foreach($file as $key => $f) {      
                     if($f) {
+                        if(file_exists(public_path($settings->$key))){
+                            unlink(public_path($settings->$key));
+                        }
                         $fileName = time().'_'.$f->getClientOriginalName();
                         $filePath = $f->storeAs('uploads', $fileName, 'public');
                         $settings->$key = '/storage/' .$filePath;
