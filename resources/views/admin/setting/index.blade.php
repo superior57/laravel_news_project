@@ -32,7 +32,8 @@
 					</div>					
 				</div>
 			</form>
-			<form action="{{ route('settings.store') }}" method="POST" enctype="multipart/form-data">
+			<form id="f_news_video" name="f_news_video" action="{{ route('settings.store') }}" method="POST" enctype="multipart/form-data">
+				@csrf
 				<div class="form-group">
 					<div class=" text-right">
 						<button type="submit" class="btn btn-success">Save</button>
@@ -45,6 +46,7 @@
 				</div>
 			</form>
 			<form action="{{ route('settings.store') }}" method="POST" enctype="multipart/form-data">
+				@csrf
 				<div class="form-group">
 					<div class=" text-right">
 						<button type="submit" class="btn btn-success">Save</button>
@@ -57,6 +59,7 @@
 				</div>
 			</form>
 			<form action="{{ route('settings.store') }}" method="POST" enctype="multipart/form-data">
+				@csrf
 				<div class="form-group">
 					<div class=" text-right">
 						<button type="submit" class="btn btn-success">Save</button>
@@ -69,6 +72,7 @@
 				</div>
 			</form>
 			<form action="{{ route('settings.store') }}" method="POST" enctype="multipart/form-data">
+				@csrf
 				<div class="form-group">
 					<div class=" text-right">
 						<button type="submit" class="btn btn-success">Save</button>
@@ -81,6 +85,7 @@
 				</div>
 			</form>
 			<form action="{{ route('settings.store') }}" method="POST" enctype="multipart/form-data">
+				@csrf
 				<div class="form-group">
 					<div class=" text-right">
 						<button type="submit" class="btn btn-success">Save</button>
@@ -93,6 +98,7 @@
 				</div>
 			</form>
 			<form action="{{ route('settings.store') }}" method="POST" enctype="multipart/form-data">
+				@csrf
 				<div class="form-group">
 					<div class=" text-right">
 						<button type="submit" class="btn btn-success">Save</button>
@@ -105,6 +111,7 @@
 				</div>
 			</form>
 			<form action="{{ route('settings.store') }}" method="POST" enctype="multipart/form-data">
+				@csrf
 				<div class="form-group">
 					<label for="news_video">Shop video:</label>
 					<input type="file" class="form-control" id="shop_video" name="shop_video" accept="video/*">
@@ -114,6 +121,7 @@
 				</div>
 			</form>
 			<form action="{{ route('settings.store') }}" method="POST" enctype="multipart/form-data">
+				@csrf
 				<div class="form-group">
 					<div class=" text-right">
 						<button type="submit" class="btn btn-success">Save</button>
@@ -126,6 +134,7 @@
 				</div>
 			</form>
 			<form action="{{ route('settings.store') }}" method="POST" enctype="multipart/form-data">
+				@csrf
 				<div class="form-group">
 					<div class=" text-right">
 						<button type="submit" class="btn btn-success">Save</button>
@@ -138,7 +147,7 @@
 				</div>
 			</form>
 				{{-- <button type="submit" class="btn btn-primary">Submit</button> --}}
-			</form>
+
         </div>
     </div>
 </div>
