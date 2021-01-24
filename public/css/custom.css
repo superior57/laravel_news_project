@@ -158,7 +158,7 @@ select {
 .news-item:hover .right-arrow {
     /* display: block; */
     visibility: visible;
-    animation: fadeInLeft .4s;
+    /* animation: fadeInLeft .4s; */
 }
 
 .right-arrow {
