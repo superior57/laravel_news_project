@@ -40,6 +40,12 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('settings.index') }}">Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('event.index') }}">Event</a>
+                        </li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">

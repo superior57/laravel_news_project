@@ -14,9 +14,7 @@
 // Auth::routes();
 Auth::routes(['register' => false]);
 
-Route::get('/', function () {
-    return view('home1');
-});
+Route::get('/', 'HomeController@index');
 
 Route::get("admin/403", function() {
     return view("admin.403");
@@ -80,6 +78,7 @@ Route::get('admin', function() {
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function () {
     Route::resource('/todo', 'Admin\TodoController');
     Route::resource("/event", "Admin\EventController");
+    Route::resource("/settings", "Admin\SettingsController");
 });
 
 Route::get("create-admin", function() {

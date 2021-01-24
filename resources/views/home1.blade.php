@@ -15,7 +15,10 @@
   {{-- Main News --}}
   <div class="col-12 col-md-5">
     <div class="news-item main-item overaly border-b-1 border-r-1">
-      <img src="{{ asset('img/concept/news/1.png') }}" alt="Main news">
+      <img src="{{ asset($settings->news_img) }}" alt="Main news">
+      <div class="back-video-item">
+        <video src="{{ asset($settings->news_video) }}" muted autoplay loop></video>
+      </div>
       <div class="news-item-content flex-wrap px-3 px-md-5">
         <div class="w-100">
           <h5>"Find the G Spot"</h5>
@@ -25,9 +28,7 @@
           <h3>We promote <br> awareness of <br> the androgynous <br> society in Thailand</h3>
         </div>
         <div class="mb-5 w-100">
-          <a >
-            <img src="{{ asset('img/svg/play-button.svg') }}" alt="">
-          </a>
+          <img src="{{ asset('img/svg/play-button.svg') }}" alt="">          
         </div>
       </div>
     </div>
@@ -39,10 +40,13 @@
       <div class="news-item overaly video-item border-b-1 animated fadeInRight">
         {{-- <video src="{{ asset('uploads/video/artist long1.mp4') }}" autoplay muted loop></video> --}}
         <a href="{{ url('artists') }}">
-          <img src="{{ asset('img/concept/news/artists.png') }}" alt="">
+          <img src="{{ asset($settings->artist_img) }}" alt="">
+          <div class="back-video-item">
+            <video src="{{ asset($settings->artist_video) }}" muted autoplay loop></video>
+          </div>
           <div class="news-item-content">
             <div class="px-3 px-md-5 w-100">
-              <h3>Artists</h3>
+              <h3>ATOMIC GURU$</h3>
               <p>street art / music / photo / video</p>
             </div>
           </div>
@@ -50,10 +54,13 @@
       </div>
       <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .2s;">
         <a href="{{ url('projects') }}">
-          <img src="{{ asset('img/concept/news/project.png') }}" alt="">
+          <img src="{{ asset($settings->project_img) }}" alt="">
+          <div class="back-video-item">
+            <video src="{{ asset($settings->project_video) }}" muted autoplay loop></video>
+          </div>
           <div class="news-item-content">
             <div class="px-3 px-md-5 w-100">
-              <h3>projects</h3>
+              <h3>RICE BOWLS</h3>
               <p>art events / meetups</p>
             </div>
           </div>
@@ -61,10 +68,13 @@
       </div>
       <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .4s;">
         <a href="{{ url('shop') }}">
-          <img src="{{ asset('img/concept/news/shop.png') }}" alt="">
+          <img src="{{ asset($settings->shop_img) }}" alt="">
+          <div class="back-video-item">
+            <video src="{{ asset($settings->shop_video) }}" muted autoplay loop></video>
+          </div>
           <div class="news-item-content">
             <div class="px-3 px-md-5 w-100">
-              <h3>shop</h3>
+              <h3>CANDY SHOP</h3>
               <p>products designed in-house by GIA</p>
             </div>
           </div>
@@ -72,10 +82,13 @@
       </div>
       <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .6s;">
         <a href="{{ url('contact-us') }}">
-          <img src="{{ asset('img/concept/news/contact-us.png') }}" alt="">
+          <img src="{{ asset($settings->contact_us_img) }}" alt="">
+          <div class="back-video-item">
+            <video src="{{ asset($settings->contact_us_video) }}" muted autoplay loop></video>
+          </div>
           <div class="news-item-content">
             <div class="px-3 px-md-5 w-100">
-              <h3>contact us</h3>
+              <h3>CYBERSEX</h3>
               <p>submit artwork  / comission a project</p>
             </div>
           </div>

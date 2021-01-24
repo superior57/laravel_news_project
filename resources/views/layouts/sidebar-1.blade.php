@@ -3,20 +3,24 @@
 </div>
 <div class="sidebar">
     {{-- Logo --}}
-    <div class="sidebar-logo">
-        <a href="/"><img src="{{ asset('img/logo-1.png') }}" alt="Logo"></a>
-    </div>
+    <a href="{{ url('/') }}">
+        <div class="sidebar-logo">
+            <img src="{{ asset('img/logo-1.png') }}" alt="Logo">
+        </div>
+    </a>
     {{-- End Logo --}}
 
     {{-- Tha Content 2 ----------------------------------------------- --}}
     <div class="Tha-content-2">
         {{-- Flag --}}
-        <div class="flag">
-            <img src="{{ asset('img/flag/uk.png') }}" alt="UK">
-        </div>
+        <a href="{{ url('/uk') }}">
+            <div class="flag">
+                <img src="{{ asset('img/flag/uk.png') }}" alt="UK">
+            </div>
+        </a>
         {{-- End Flag --}}
         {{-- Icon Button Group --}}
-        <div class="icon-btn-group mb-4">
+        <div class="icon-btn-group">
             <a href="">
                 <div class="btn-item">
                     <img src="{{ asset('img/ico/smile.png') }}" alt="">
@@ -40,18 +44,20 @@
         </div>
         {{-- End Icon Button Group --}}
         {{-- Comission a project --}}
-        <div class="container comission-project mb-4">
-            <div class="w-100 text-center">
-                <span>
-                    comission
-                    <br>
-                    a project
-                </span>
+        <a href="{{ url('contact-us/commission-project') }}" >
+            <div class="container comission-project py-4 btnlink">
+                <div class="w-100 text-center">
+                    <span>
+                        comission
+                        <br>
+                        a project
+                    </span>
+                </div>
+                <div>
+                    <img src="{{ asset('img/diamond.png') }}" alt="">
+                </div>
             </div>
-            <div>
-                <img src="{{ asset('img/diamond.png') }}" alt="">
-            </div>
-        </div>
+        </a>
         {{-- End Comission a project --}}
     </div>
     {{-- End Tha Content 2 ------------------------------------------- --}}
