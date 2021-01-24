@@ -39,80 +39,80 @@
     <div class="videos">
       <div class="news-item overaly video-item border-b-1 animated fadeInRight">
         {{-- <video src="{{ asset('uploads/video/artist long1.mp4') }}" autoplay muted loop></video> --}}
-        <a href="{{ url('artists') }}">
-          <img src="{{ asset($settings->artist_img) }}" alt="">
-          <div class="back-video-item">
-            <video src="{{ asset($settings->artist_video) }}" muted autoplay loop></video>
-          </div>
-          <div class="news-item-content">
-            <div class="d-flex justify-content-between align-items-center px-3 px-md-5 w-100">
-              <div>
-                <h3>ATOMIC GURU$</h3>
-                <p>street art / music / photo / video</p>
-              </div>
-              <div class="right-arrow">
+        <img src="{{ asset($settings->artist_img) }}" alt="">
+        <div class="back-video-item">
+          <video src="{{ asset($settings->artist_video) }}" muted autoplay loop></video>
+        </div>
+        <div class="news-item-content">
+          <div class="d-flex justify-content-between align-items-center px-3 px-md-5 w-100">
+            <div>
+              <h3>ATOMIC GURU$</h3>
+              <p>street art / music / photo / video</p>
+            </div>
+            <div class="right-arrow">
+              <a href="{{ url('artists') }}">
                 <img src="{{ asset('img/ico/right-arrow.svg') }}" alt="Right arrow">
-              </div>
+              </a>
             </div>
           </div>
-        </a>
+        </div>
       </div>
-      <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .2s;">
-        <a href="{{ url('projects') }}">
-          <img src="{{ asset($settings->project_img) }}" alt="">
-          <div class="back-video-item">
-            <video src="{{ asset($settings->project_video) }}" muted autoplay loop></video>
-          </div>
-          <div class="news-item-content">
-            <div class="d-flex justify-content-between align-items-center px-3 px-md-5 w-100">
-              <div>
-                <h3>RICE BOWLS</h3>
-                <p>art events / meetups</p>
-              </div>
-              <div class="right-arrow">
+      <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .2s;">        
+        <img src="{{ asset($settings->project_img) }}" alt="">
+        <div class="back-video-item">
+          <video src="{{ asset($settings->project_video) }}" muted autoplay loop></video>
+        </div>
+        <div class="news-item-content">
+          <div class="d-flex justify-content-between align-items-center px-3 px-md-5 w-100">
+            <div>
+              <h3>RICE BOWLS</h3>
+              <p>art events / meetups</p>
+            </div>
+            <div class="right-arrow">
+              <a href="{{ url('projects') }}">
                 <img src="{{ asset('img/ico/right-arrow.svg') }}" alt="Right arrow">
-              </div>
+              </a>
             </div>
           </div>
-        </a>
+        </div>
       </div>
-      <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .4s;">
-        <a href="{{ url('shop') }}">
-          <img src="{{ asset($settings->shop_img) }}" alt="">
-          <div class="back-video-item">
-            <video src="{{ asset($settings->shop_video) }}" muted autoplay loop></video>
-          </div>
-          <div class="news-item-content">
-            <div class="d-flex justify-content-between align-items-center px-3 px-md-5 w-100">
-              <div>
-                <h3>CANDY SHOP</h3>
-                <p>products designed in-house by GIA</p>
-              </div>
-              <div class="right-arrow">
+      <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .4s;">        
+        <img src="{{ asset($settings->shop_img) }}" alt="">
+        <div class="back-video-item">
+          <video src="{{ asset($settings->shop_video) }}" muted autoplay loop></video>
+        </div>
+        <div class="news-item-content">
+          <div class="d-flex justify-content-between align-items-center px-3 px-md-5 w-100">
+            <div>
+              <h3>CANDY SHOP</h3>
+              <p>products designed in-house by GIA</p>
+            </div>
+            <div class="right-arrow">
+              <a href="{{ url('shop') }}">
                 <img src="{{ asset('img/ico/right-arrow.svg') }}" alt="Right arrow">
-              </div>
+              </a>
             </div>
           </div>
-        </a>
+        </div>
       </div>
-      <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .6s;">
-        <a href="{{ url('contact-us') }}">
-          <img src="{{ asset($settings->contact_us_img) }}" alt="">
-          <div class="back-video-item">
-            <video src="{{ asset($settings->contact_us_video) }}" muted autoplay loop></video>
-          </div>
-          <div class="news-item-content">
-            <div class="d-flex justify-content-between align-items-center px-3 px-md-5 w-100">
-              <div>
-                <h3>CYBERSEX</h3>
-                <p>submit artwork  / comission a project</p>
-              </div>
-              <div class="right-arrow">
+      <div class="news-item overaly video-item border-b-1 animated fadeInRight" style="animation-delay: .6s;">        
+        <img src="{{ asset($settings->contact_us_img) }}" alt="">
+        <div class="back-video-item">
+          <video src="{{ asset($settings->contact_us_video) }}" muted autoplay loop></video>
+        </div>
+        <div class="news-item-content">
+          <div class="d-flex justify-content-between align-items-center px-3 px-md-5 w-100">
+            <div>
+              <h3>CYBERSEX</h3>
+              <p>submit artwork  / comission a project</p>
+            </div>
+            <div class="right-arrow">
+              <a href="{{ url('contact-us') }}">
                 <img src="{{ asset('img/ico/right-arrow.svg') }}" alt="Right arrow">
-              </div>
+              </a>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
