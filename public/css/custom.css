@@ -158,11 +158,12 @@ select {
 .news-item:hover .right-arrow {
     /* display: block; */
     visibility: visible;
-    /* animation: fadeInLeft .4s; */
+    /* animation: fadeInLeft .4s; */    
 }
 
 .right-arrow {
     /* display: none; */
+    transition: 0;
     visibility: hidden;    
 }
 
