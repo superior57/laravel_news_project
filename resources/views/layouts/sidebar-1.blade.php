@@ -10,39 +10,22 @@
     </a>
     {{-- End Logo --}}
 
-    {{-- Tha Content 2 ----------------------------------------------- --}}
-    <div class="Tha-content-2">
+    {{-- Tha Content 1 ------------------------------------------- --}}
+    <div class="Tha-content-1">
         {{-- Flag --}}
-        <a href="{{ url('/uk') }}">
+        <a href="{{ url('/tha') }}">
             <div class="flag">
-                <img src="{{ asset('img/flag/uk.png') }}" alt="UK">
+                <img src="{{ asset('img/flag/tha.png') }}" alt="Tha">
             </div>
         </a>
         {{-- End Flag --}}
-        {{-- Icon Button Group --}}
-        <div class="icon-btn-group">
-            <a href="">
-                <div class="btn-item">
-                    <img src="{{ asset('img/ico/smile.png') }}" alt="">
-                </div>
-            </a>
-            <a href="">
-                <div class="btn-item">
-                    <img src="{{ asset('img/ico/light.png') }}" alt="">
-                </div>
-            </a>
-            <a href="">
-                <div class="btn-item">
-                    <img src="{{ asset('img/ico/key.png') }}" alt="">
-                </div>
-            </a>
-            <a href="">
-                <div class="btn-item">
-                    <img src="{{ asset('img/ico/mail.png') }}" alt="">
-                </div>
-            </a>
-        </div>
-        {{-- End Icon Button Group --}}
+        {{-- Stream Text --}}
+        <a href="#">
+            <div class="stream-text container py-5 btnlink">
+                <h3> #JOIN THE MOVEMENT</h3>
+            </div>
+        </a>
+        {{-- End Stream text --}}
         {{-- Comission a project --}}
         <a href="{{ url('contact-us/commission-project') }}" >
             <div class="container comission-project py-4 btnlink">
@@ -59,7 +42,14 @@
             </div>
         </a>
         {{-- End Comission a project --}}
+        {{-- Logo --}}
+        <a href="{{ url('/') }}">
+            <div class="sidebar-logo">
+                <img src="{{ asset('img/logo-white.png') }}" alt="Logo">
+            </div>
+        </a>
+        {{-- End Logo --}}
     </div>
-    {{-- End Tha Content 2 ------------------------------------------- --}}
+    {{-- End Tha content 1 ------------------------------------------- --}}
     
 </div>

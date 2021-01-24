@@ -5,7 +5,7 @@
 @endsection
 
 @section('sidebar')
-  @include('layouts.sidebar')
+  @include('layouts.sidebar-1')
 @endsection
 
 @section('content')
