@@ -831,7 +831,7 @@
       <div class="col-md-7 d-flex justify-content-start align-items-center py-md-5 flex-wrap">
         <div class="col-md-6">
           <h3 class="w-100 text-uppercase">Have an idea for the creative project?</h3>
-          <p class="w-100">Tell us about the project in 60 seconds</p>
+          <p class="w-100">Tell us about the project</p>
           <div class="w-100 d-flex">
             <a href="{{ url('contact-us/commission-project') }}">
                 <div class="btn-layout">

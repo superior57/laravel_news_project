@@ -121,6 +121,7 @@
                                 <option value="">Direct Delivery ($20)</option>
                             </select>
                             <a href="{{ url('cart/checkout') }}" class="btn btn-secondary w-100 btn-size-md mb-4">CHECKOUT</a>
+                            <a href="{{ url('shop') }}" class="btn btn-secondary w-100 btn-size-md mb-4">CONTINUE SHOPPING</a>
                             <h5 class="subtitle mb-4">
                                 We accept
                             </h5>

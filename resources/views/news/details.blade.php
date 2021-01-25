@@ -247,12 +247,12 @@
         <img src="{{ asset('img/concept/comission/line.png') }}" alt="Line">
       </div>
       <div class="col-md-5 d-flex justify-content-center align-items-center py-md-5">
-        <img src="{{ asset('img/concept/comission/light-white.png') }}" alt="Light">
+        <img src="{{ asset('img/concept/comission/light.png') }}" alt="Light">
       </div>
       <div class="col-md-7 d-flex justify-content-start align-items-center py-md-5 flex-wrap">
         <div class="col-md-6">
           <h3 class="w-100 text-uppercase">Have an idea for the creative project?</h3>
-          <p class="w-100">Tell us about the project in 60 seconds</p>
+          <p class="w-100">Tell us about the project</p>
           <div class="w-100 d-flex">
             <a href="{{ url('contact-us/commission-project') }}">
                 <div class="btn-layout">

@@ -310,9 +310,15 @@
 
 @section('script')
 <script>
-    $(document).on('click', '.item-img', () => {
-        location.href = "/event/details";
-    });  
+    $(document).ready(function() {
+        setTimeout(() => {
+            $('.loading').fadeOut();
+        }, 5000);
+    });
+
+    // $(document).on('click', '.item-img', () => {
+    //     location.href = "/event/details";
+    // });  
 </script>    
 @endsection
 

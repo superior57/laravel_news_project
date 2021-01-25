@@ -172,6 +172,9 @@
     $(document).on('ready', function() {
         let body = $('body');
         body.css('background-color', '#141414');
+        setTimeout(() => {
+            $('.loading').fadeOut();
+        }, 5000);
     })
 
     $(document).on('click', '.artist-item', () => {

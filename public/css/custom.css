@@ -1014,7 +1014,7 @@ ul.social-button li>a>i:hover {
 }
 
 .topevent-section .item .arrow-right:hover a{
-    animation: fadeInRight 1s;
+    animation: fadeInRight .4s;
 }
 
 .recent-events .item {
@@ -2028,6 +2028,16 @@ a.go-to:hover {
     color: #FFFFFF;
 }
 
+.artist-details .main-body .brief {
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
 
 .img-clip {
     clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
@@ -2076,6 +2086,44 @@ a.go-to:hover {
     left: 0;
     top: 0;
 }
+.artist-back {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.no_page_section .title {
+    font-family: EuropeExt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 150px;
+    line-height: 180px;
+    color: #000000;
+}
+.no_page_section .subtitle {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.no_page_section .description {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+.no_page_section .body {
+    padding: 10% 0;
+}
+
 @media (max-width: 450px) {
     #content_wrapper {
         margin-left: 0;

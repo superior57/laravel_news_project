@@ -33,7 +33,7 @@
                 </div>     
                 <div class="col-md-8">
                     <h5 class="title size-md">Have an idea for the <br>creative project?</h5>
-                    <span class="text-gray mb-4">Tell us about the project in 60 seconds</span>
+                    <span class="text-gray mb-4">Tell us about the project</span>
                     <form id="commission_project" action="">
                         <div class="form-group mb-3">
                             <label for="name">Your name or company name</label>

@@ -17,6 +17,7 @@
     // $left_hours = $cur_time->diffInHours($event_time->subDays($left_days));
     // $left_minutes = $cur_time->diffInMinutes($event_time->subHours($left_hours));
     $left_seconds = $cur_time->diffInSeconds($event_time);
+    $is_past = $event_time->isPast();
 @endphp
 
 
@@ -107,17 +108,17 @@
                         </div>
                         <div class="col-md-4">
                             <div class="item">
-                                <h5>When</h5>
+                                <h5>Where</h5>
                                 <span>
-                                    8 - 12 PM, Saturday, 24 June, 2020
+                                    Thailand, Bangkok, Thunder Dome
                                 </span>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="item">
-                                <h5>When</h5>
+                                <h5>Why</h5>
                                 <span>
-                                    8 - 12 PM, Saturday, 24 June, 2020
+                                    Place for the fun description (͡° ͜ʖ ͡°) 
                                 </span>
                             </div>
                         </div>
@@ -276,18 +277,21 @@
 @section('script')
 <script>
     let left_seconds = "{{ $left_seconds }}";
+    let is_past = "{{ $is_past }}";
 
     let lefttime_minute_interval = setInterval(() => {
-        if(left_seconds % 2 == 0) {
-            $('.time-point').css('color', "#FFF");
-        } else {
-            $('.time-point').css('color', "transparent");
-        }
-        const { days, hours, minutes, seconds } = getDateTimeAttrFromSeconds(left_seconds);
-        $('#left_days').text(days);
-        $('#left_hours').text(hours);
-        $('#left_minutes').text(minutes);
-        left_seconds --;
+        if(!is_past) {
+            if(left_seconds % 2 == 0) {
+                $('.time-point').css('color', "#FFF");
+            } else {
+                $('.time-point').css('color', "transparent");
+            }
+            const { days, hours, minutes, seconds } = getDateTimeAttrFromSeconds(left_seconds);
+            $('#left_days').text(days);
+            $('#left_hours').text(hours);
+            $('#left_minutes').text(minutes);
+            left_seconds --;
+        }      
     }, 1000);
 </script>
 @endsection

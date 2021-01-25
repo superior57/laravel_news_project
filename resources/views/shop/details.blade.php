@@ -223,3 +223,13 @@
 @section('footer')
   @include('layouts.footer-1')    
 @endsection
+
+@section('script')
+<script>
+    $(document).ready(function() {
+        setTimeout(() => {
+            $('.loading').fadeOut();
+        }, 5000);
+    });  
+</script>    
+@endsection

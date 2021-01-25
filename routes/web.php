@@ -16,6 +16,10 @@ Auth::routes(['register' => false]);
 
 Route::get('/', 'HomeController@index');
 
+Route::get('pagenotfound', function() {
+    return view('errors.404');
+})->name('notfound');
+
 Route::get("admin/403", function() {
     return view("admin.403");
 })->name("admin.403");

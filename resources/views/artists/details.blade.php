@@ -9,8 +9,10 @@
 @endsection
 
 @section('content')
-<section class="artist-details" style="background-image: url('{{ asset('img/artists/main.png') }}')">
-{{-- <section class="artist-details"> --}}
+{{-- <section class="artist-details" style="background-image: url('{{ asset('img/artists/main.png') }}')"> --}}
+<section class="artist-details">
+    <img class="artist-back" src="{{ asset('img/artists/main.png') }}" alt="Artist background">
+    {{-- <video class="artist-back" src="{{ asset('/storage/uploads/INTRO VIDEO.mp4') }}" muted autoplay></video> --}}
     <div class="w-100 d-flex body">
         <div class="w-100 d-flex">
             <div class="main-body">
@@ -23,6 +25,11 @@
                     </div>    
                     <div class="w-100 mb-4">
                         <p class="user-role">Photographer</p>
+                    </div>
+                    <div class="w-100 mb-4">
+                        <p class="brief">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </p>
                     </div>
                 </div>
                 <div class="w-100 scroll-down-show position-relative">
