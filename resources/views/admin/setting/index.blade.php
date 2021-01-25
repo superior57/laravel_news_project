@@ -2,6 +2,12 @@
 
 @section('content')
 <div class="container">
+
+	<div class="layout-preloader">
+		<div class="spinner-border text-primary" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>	
+	</div>
 	<br>
     <div class="row justify-content-center">
     	<div class="col-md-12">
@@ -154,4 +160,15 @@
         </div>
     </div>
 </div>
+@endsection
+@section('script')
+<script>
+	$(document).ready(function() {
+		$('.layout-preloader').fadeOut();
+	});
+
+	$('form').submit(function() {
+		('.layout-preloader').fadeIn();
+	});
+</script>	
 @endsection

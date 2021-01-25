@@ -17,7 +17,7 @@
         </div>
         <div class="head">            
             <div>
-                <span class="path">Mane page / News /</span>
+                <span class="path">Main page / News /</span>
                 <span class="current-path">The photographic journey through the Tottenham </span>
             </div>
         </div>

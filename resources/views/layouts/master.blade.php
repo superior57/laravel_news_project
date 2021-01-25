@@ -59,5 +59,6 @@
     <script src="{{ asset('js/dropzone.min.js') }}"></script>
 
     @yield('script')
+    
   </body>
 </html>

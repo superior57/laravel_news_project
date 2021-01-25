@@ -322,35 +322,41 @@
     <div class="row">
       {{-- product --}}
       <div class="col-md-3 mb-3 wow animated fadeInUp">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/1.png') }}" alt="">
+        <a href="{{ url('shop/details') }}">
+          <div class="product">
+            <div class="item-img">
+              <img src="{{ asset('img/concept/product/1.png') }}" alt="">
+            </div>
+            <p class="summary">G.IA T-Shirt unisex</p>
+            <h4 class="price">$69</h4>
           </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
+        </a>
       </div>
       {{-- end product --}}
       {{-- product --}}
       <div class="col-md-3 mb-3 wow animated fadeInUp" style="animation-delay: .2s;">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/2.png') }}" alt="">
+        <a href="{{ url('shop/details') }}">
+          <div class="product">
+            <div class="item-img">
+              <img src="{{ asset('img/concept/product/2.png') }}" alt="">
+            </div>
+            <p class="summary">G.IA T-Shirt unisex</p>
+            <h4 class="price">$69</h4>
           </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
+        </a>
       </div>
       {{-- end product --}}
       {{-- product --}}
       <div class="col-md-3 mb-3 wow animated fadeInUp"  style="animation-delay: .4s;">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/3.png') }}" alt="">
+        <a href="{{ url('shop/details') }}">
+          <div class="product">
+            <div class="item-img">
+              <img src="{{ asset('img/concept/product/3.png') }}" alt="">
+            </div>
+            <p class="summary">G.IA T-Shirt unisex</p>
+            <h4 class="price">$69</h4>
           </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
+        </a>
       </div>
       {{-- end product --}}
       {{-- product --}}
@@ -366,46 +372,54 @@
       {{-- end product --}}
       {{-- product --}}
       <div class="col-md-3 mb-3 wow animated fadeInUp">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/3.png') }}" alt="">
+        <a href="{{ url('shop/details') }}">
+          <div class="product">
+            <div class="item-img">
+              <img src="{{ asset('img/concept/product/3.png') }}" alt="">
+            </div>
+            <p class="summary">G.IA T-Shirt unisex</p>
+            <h4 class="price">$69</h4>
           </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
+        </a>
       </div>
       {{-- end product --}}
       {{-- product --}}
       <div class="col-md-3 mb-3 wow animated fadeInUp" style="animation-delay: .2s;">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/2.png') }}" alt="">
+        <a href="{{ url('shop/details') }}">
+          <div class="product">
+            <div class="item-img">
+              <img src="{{ asset('img/concept/product/2.png') }}" alt="">
+            </div>
+            <p class="summary">G.IA T-Shirt unisex</p>
+            <h4 class="price">$69</h4>
           </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
+        </a>
       </div>
       {{-- end product --}}
       {{-- product --}}
       <div class="col-md-3 mb-3 wow animated fadeInUp" style="animation-delay: .4s;">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/4.png') }}" alt="">
+        <a href="{{ url('shop/details') }}">
+          <div class="product">
+            <div class="item-img">
+              <img src="{{ asset('img/concept/product/4.png') }}" alt="">
+            </div>
+            <p class="summary">G.IA T-Shirt unisex</p>
+            <h4 class="price">$69</h4>
           </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
+        </a>
       </div>
       {{-- end product --}}
       {{-- product --}}
       <div class="col-md-3 mb-3 wow animated fadeInUp" style="animation-delay: .6s;">
-        <div class="product">
-          <div class="item-img">
-            <img src="{{ asset('img/concept/product/1.png') }}" alt="">
+        <a href="{{ url('shop/details') }}">
+          <div class="product">
+            <div class="item-img">
+              <img src="{{ asset('img/concept/product/1.png') }}" alt="">
+            </div>
+            <p class="summary">G.IA T-Shirt unisex</p>
+            <h4 class="price">$69</h4>
           </div>
-          <p class="summary">G.IA T-Shirt unisex</p>
-          <h4 class="price">$69</h4>
-        </div>
+        </a>
       </div>
       {{-- end product --}}
     </div>
@@ -844,9 +858,9 @@
 
 @section('script')
 <script>
-    $(document).on('click', '.item-img', () => {
-        location.href = "/news/details";
-    });  
+    // $(document).on('click', '.item-img', () => {
+    //     location.href = "/news/details";
+    // });  
 </script>    
 @endsection
 

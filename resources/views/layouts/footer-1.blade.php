@@ -18,14 +18,14 @@
         <ul>
           <h5>About us</h5>  
           <li><a href="{{ url('contact-us/about-us') }}">About us</a></li>
-          <li><a href="{{ url('contact-us/about-us') }}">Our team</a></li>
+          <li><a href="{{ url('contact-us/about-us#our_team') }}">Our team</a></li>
         </ul>
       </div>
       <div class="foot-item">        
         <ul>
           <h5>Contact us</h5>  
           <li><a href="{{ url('contact-us') }}">Contact us</a></li>
-          <li><a href="{{ url('contact-us/commission-project') }}">Comimsion a project</a></li>
+          <li><a href="{{ url('contact-us/commission-project') }}">Commission a project</a></li>
           <li><a href="{{ url('contact-us/submit-artwork') }}">Submit artwork</a></li>
           <li class="">
             {{-- social button group  --}}
@@ -72,8 +72,12 @@
     </div>
   </div> 
   <div class="w-100 d-flex foot-copyright">
-    <a href=""><img src="{{ asset('img/app-store-footer.png') }}" alt="App store"></a>
-    <a href=""><img src="{{ asset('img/Google play.png') }}" alt="Google play"></a>
+    <div class="mr-15">
+      <img src="{{ asset('img/app-store-footer.png') }}" alt="App store">
+    </div>
+    <div class="mr-15">
+      <img src="{{ asset('img/Google play.png') }}" alt="Google play">  
+    </div>
     <a href="">Copyright ©2020 G.IA</a>
     <a href="">Privacy Policy</a>
     <a href="">Store term</a>

@@ -2064,6 +2064,18 @@ a.go-to:hover {
 .btnlink:hover {
     background: #272727;
 }
+.layout-preloader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background: #ffffff99;
+    left: 0;
+    top: 0;
+}
 @media (max-width: 450px) {
     #content_wrapper {
         margin-left: 0;

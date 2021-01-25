@@ -27,7 +27,7 @@
         </div>
         <div class="head" style="margin-bottom: 121px;">            
             <div>
-                <span class="path">Mane page / Events /</span>
+                <span class="path">Main page / Events /</span>
                 <span class="current-path">{!! strip_tags($event->title) !!} </span>
             </div>
         </div>

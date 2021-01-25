@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    About us
+    Privacy policy
 @endsection
 
 @section('sidebar')
@@ -13,7 +13,7 @@
 <div class="head px-3 px-md-5 py-5" style="margin-bottom: 0px;">            
     <div>
         <span class="path">Main page / </span>
-        <span class="current-path">Contact us </span>
+        <span class="current-path">Privacy policy </span>
     </div>
 </div>
 
@@ -21,18 +21,18 @@
 <section class="w-100 shop-section mb-5 contact-us about-us">
     <div class="w-100 p-3 px-md-5 d-block">
          <div class="mb-4">
-            <h3 class="title size-lg">Contact us</h3>        
+            <h3 class="title size-lg">Privacy policy</h3>        
             <span class="subtitle">
-                submit artwork / commision a project / about us / our team
+                privacy policy / store terms / terms conditions
             </span>
          </div>
          <div class="body">
             <div class="row container-lg mb-5">
                 <div class="col-md-4">
-                    @include('contact-us.layouts.sidebar')
+                    @include('terms.layouts.sidebar')
                 </div>     
                 <div class="col-md-8">
-                    <h5 class="title size-md mb-4">About us</h5>                    
+                    <h5 class="title size-md mb-4">Privacy policy</h5>                    
                     <div class="row mb-4">
                         <div class="col-md-6 mb-4">
                             <div class="information-item">
@@ -74,63 +74,6 @@
                         <span>
                             HYPEBEAST's daily news section has become an important destination for those interested in the latest developments within the fashion community as well as other aspects of culturally-relevant content such as art, music, design and lifestyle. Several consistent marquee features have provided HYPEBEAST readers with a unique vantage point into the industry. Among the most prominent ongoing features include ESSENTIALS (a look into the daily essentials of several important creatives within the industry), PROCESS (an account from start to finish of how products are created) and PEN & PAPER (an intimate look into the sketchbook of an artist).
                         </span>
-                    </div>
-                    <h3 id="our_team" class="title mb-4">Our team</h3>
-                    <div class="row our-team">
-                        <div class="col-6">
-                            <div class="member">
-                                <div class="item-img mb-3">
-                                    <img src="{{ asset('img/members/1.png') }}" alt="Member">
-                                </div>
-                                <span class="role">CEO and founder</span>
-                                <span class="name">Stefania Picelli</span>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="member">
-                                <div class="item-img mb-3">
-                                    <img src="{{ asset('img/members/2.png') }}" alt="Member">
-                                </div>
-                                <span class="role">CEO and founder</span>
-                                <span class="name">Stefania Picelli</span>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="member">
-                                <div class="item-img mb-3">
-                                    <img src="{{ asset('img/members/3.png') }}" alt="Member">
-                                </div>
-                                <span class="role">CEO and founder</span>
-                                <span class="name">Stefania Picelli</span>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="member">
-                                <div class="item-img mb-3">
-                                    <img src="{{ asset('img/members/4.png') }}" alt="Member">
-                                </div>
-                                <span class="role">CEO and founder</span>
-                                <span class="name">Stefania Picelli</span>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="member">
-                                <div class="item-img mb-3">
-                                    <img src="{{ asset('img/members/1.png') }}" alt="Member">
-                                </div>
-                                <span class="role">CEO and founder</span>
-                                <span class="name">Stefania Picelli</span>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="member">
-                                <div class="item-img mb-3">
-                                    <img src="{{ asset('img/members/2.png') }}" alt="Member">
-                                </div>
-                                <span class="role">CEO and founder</span>
-                                <span class="name">Stefania Picelli</span>
-                            </div>
-                        </div>
                     </div>
                 </div>            
             </div>             

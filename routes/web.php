@@ -60,6 +60,16 @@ Route::get('contact-us/about-us', function() {
     return view('contact-us.about-us');
 });
 
+Route::get('privacy-policy', function() {
+    return view('terms.privacy-policy');
+});
+Route::get('store-terms', function() {
+    return view('terms.store-terms');
+});
+Route::get('terms-conditions', function() {
+    return view('terms.terms-conditions');
+});
+
 Route::get('projects', function() {
     return view('projects.index');
 });
