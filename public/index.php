@@ -1,8 +1,5 @@
 <?php
 
-echo "<h1>Hello, I am sorry but, I can not access to my freelancer.com account for few days due to some problem. so I would be thanksful If you contact me in Skype kindly in meanwhile for discuss about the project. so that I can continue work</h1>";
-exit;
-
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
