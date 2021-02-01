@@ -79,8 +79,8 @@
       <img src="{{ asset('img/Google play.png') }}" alt="Google play">  
     </div>
     <a href="">Copyright ©2020 G.IA</a>
-    <a href="">Privacy Policy</a>
-    <a href="">Store term</a>
-    <a href="">Terms & Conditions</a>
+    <a href="{{ url('/privacy-policy') }}">Privacy Policy</a>
+    <a href="{{ url('/store-terms') }}">Store term</a>
+    <a href="{{ url('/terms-conditions') }}">Terms & Conditions</a>
   </div>
 </footer>
