@@ -1951,14 +1951,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["url"],
   data: function data() {
-    return {};
+    return {
+      popupSize: {
+        width: 780,
+        height: 550
+      }
+    };
   },
   computed: {
     getURL: function getURL() {
       return this.url;
     }
   },
-  mounted: function mounted() {// console.log("123");
+  mounted: function mounted() {},
+  methods: {
+    openPopup: function openPopup(e) {
+      var el_cur = e.target;
+      var verticalPos = Math.floor(($(window).width() - this.popupSize.width) / 2),
+          horisontalPos = Math.floor(($(window).height() - this.popupSize.height) / 2);
+      var popup = window.open($(el_cur).prop('href'), 'social', 'width=' + this.popupSize.width + ',height=' + this.popupSize.height + ',left=' + verticalPos + ',top=' + horisontalPos + ',location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');
+
+      if (popup) {
+        popup.focus();
+        e.preventDefault();
+      }
+    }
   }
 });
 
@@ -37573,17 +37590,36 @@ var render = function() {
       _c(
         "a",
         {
-          staticClass: "social-button",
           attrs: {
             href: "https://www.facebook.com/sharer/sharer.php?u=" + _vm.getURL,
             target: "_blank"
-          }
+          },
+          on: { click: _vm.openPopup }
         },
         [_c("i", { staticClass: "fa fa-facebook" })]
       )
     ]),
     _vm._v(" "),
-    _vm._m(0),
+    _c(
+      "li",
+      {
+        staticClass: "wow animated fadeInLeft",
+        staticStyle: { "animation-delay": ".2s" }
+      },
+      [
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://www.instagram.com/bad_hat_films/",
+              target: "_blank"
+            },
+            on: { click: _vm.openPopup }
+          },
+          [_c("i", { staticClass: "fa fa-instagram" })]
+        )
+      ]
+    ),
     _vm._v(" "),
     _c(
       "li",
@@ -37595,11 +37631,11 @@ var render = function() {
         _c(
           "a",
           {
-            staticClass: "social-button",
             attrs: {
               href: "https://twitter.com/intent/tweet?url=" + _vm.getURL,
               target: "_blank"
-            }
+            },
+            on: { click: _vm.openPopup }
           },
           [_c("i", { staticClass: "fa fa-twitter" })]
         )
@@ -37613,7 +37649,7 @@ var render = function() {
         staticStyle: { "animation-delay": ".6s" }
       },
       [
-        _c("a", { staticClass: "social-button", attrs: { href: "" } }, [
+        _c("a", { attrs: { href: "" }, on: { click: _vm.openPopup } }, [
           _c("i", { staticClass: "ico" }, [
             _c(
               "svg",
@@ -37696,33 +37732,7 @@ var render = function() {
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "li",
-      {
-        staticClass: "wow animated fadeInLeft",
-        staticStyle: { "animation-delay": ".2s" }
-      },
-      [
-        _c(
-          "a",
-          {
-            staticClass: "social-button",
-            attrs: {
-              href: "https://www.instagram.com/bad_hat_films/",
-              target: "_blank"
-            }
-          },
-          [_c("i", { staticClass: "fa fa-instagram" })]
-        )
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
