@@ -69,7 +69,11 @@
     <div class="w-100 d-flex">
          {{-- social button group  --}}
          <ul class="social-button">
-            <li class="wow animated fadeInLeft"><a href=""><i class="fa fa-facebook"></i></a></li>
+            <li class="wow animated fadeInLeft">
+                <a href="" data-data="{&quot;name&quot;:&quot;facebook&quot;,&quot;action&quot;:&quot;share&quot;,&quot;href&quot;:&quot;https://www.facebook.com/sharer/sharer.php?u=https://hypebeast.com/2021/1/stussy-nike-spring-2021-insulated-apparel-collection-collaboration?utm_source=St%C3%BCssy%20and%20Nike%20Kick%20off%202021%20With%20Insulated%20and%20Upcycled%20Apparel%20Collaboration&amp;utm_medium=social&amp;utm_campaign=share%20buttons&quot;,&quot;sprite&quot;:&quot;sprite-social-facebook-black&quot;,&quot;slug&quot;:&quot;facebook&quot;,&quot;page&quot;:&quot;article page&quot;,&quot;trackingLink&quot;:&quot;https://hypebeast.com/2021/1/stussy-nike-spring-2021-insulated-apparel-collection-collaboration?utm_source=St%C3%BCssy%20and%20Nike%20Kick%20off%202021%20With%20Insulated%20and%20Upcycled%20Apparel%20Collaboration&amp;utm_medium=social&amp;utm_campaign=share%20buttons&quot;}">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
             <li class="wow animated fadeInLeft" style="animation-delay: .2s"><a href=""><i class="fa fa-instagram"></i></a></li>
             <li class="wow animated fadeInLeft" style="animation-delay: .4s"><a href=""><i class="fa fa-twitter"></i></a></li>
             <li class="wow animated fadeInLeft" style="animation-delay: .6s">

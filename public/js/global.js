@@ -38,11 +38,10 @@ app.on("mouseover", "document", (event) => {
 function getDateTimeAttrFromSeconds(totalseconds) {    
     let days = Math.floor(totalseconds / 86400);
     totalseconds = totalseconds % 86400;    
-    let hours = Math.floor(totalseconds / 3500);
+    let hours = Math.floor(totalseconds / 3600);
     totalseconds = totalseconds % 3600;
     let minutes = Math.floor(totalseconds / 60);
-    totalseconds = totalseconds / 60;
-    let seconds = Math.floor(totalseconds);
+    let seconds = totalseconds % 60;
     return {
         days: getNumberFormat2String(days),
         hours: getNumberFormat2String(hours),
@@ -71,3 +70,19 @@ function getNumberFormat2String(number) {
     return str_num[0] + str_num[1];
 }
 
+/**
+ * 
+ * @brief Video play
+ * 
+ * @param {string} element_id 
+ * 
+ * @return void
+ */
+function videoPlay(element_id) {
+    $(`#news_video_wrap`).css('display', 'block');
+    $(`#${element_id}`)[0].play();
+}
+
+function showNewsLetter() {
+    $('#newsletter').modal('show');
+}

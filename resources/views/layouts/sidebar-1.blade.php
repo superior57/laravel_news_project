@@ -20,7 +20,7 @@
         </a>
         {{-- End Flag --}}
         {{-- Stream Text --}}
-        <a href="#">
+        <a href="#" onclick="showNewsLetter()">
             <div class="stream-text container py-5 btnlink">
                 <h3> #JOIN THE MOVEMENT</h3>
             </div>

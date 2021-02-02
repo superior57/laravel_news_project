@@ -2123,6 +2123,16 @@ a.go-to:hover {
 .no_page_section .body {
     padding: 10% 0;
 }
+.modal-open .modal {
+    background-color: #000000cf;
+}
+.modal-content {
+    border-radius: 0;
+}
+.modal-dialog .modal-body {
+    box-shadow: none;
+}
+
 
 @media (max-width: 450px) {
     #content_wrapper {

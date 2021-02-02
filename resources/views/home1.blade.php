@@ -16,8 +16,8 @@
   <div class="col-12 col-md-5">
     <div class="news-item main-item overaly border-b-1 border-r-1">
       <img src="{{ asset($settings->news_img) }}" alt="Main news">
-      <div class="back-video-item">
-        <video src="{{ asset($settings->news_video) }}" muted autoplay loop></video>
+      <div id="news_video_wrap" class="back-video-item">
+        <video id="news_video" src="{{ asset($settings->news_video) }}" controls></video>
       </div>
       <div class="news-item-content flex-wrap px-3 px-md-5">
         <div class="w-100">
@@ -28,7 +28,9 @@
           <h3>We promote <br> awareness of <br> the androgynous <br> society in Thailand</h3>
         </div>
         <div class="mb-5 w-100">
-          <img src="{{ asset('img/svg/play-button.svg') }}" alt="">          
+          <a href="#" class="" onclick="videoPlay('news_video');">
+            <img src="{{ asset('img/svg/play-button.svg') }}" alt="">  
+          </a>          
         </div>
       </div>
     </div>
