@@ -1943,6 +1943,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["url"],
   data: function data() {
@@ -1953,8 +1958,7 @@ __webpack_require__.r(__webpack_exports__);
       return this.url;
     }
   },
-  mounted: function mounted() {
-    console.log("123");
+  mounted: function mounted() {// console.log("123");
   }
 });
 
@@ -37569,6 +37573,7 @@ var render = function() {
       _c(
         "a",
         {
+          staticClass: "social-button",
           attrs: {
             href: "https://www.facebook.com/sharer/sharer.php?u=" + _vm.getURL,
             target: "_blank"
@@ -37577,6 +37582,8 @@ var render = function() {
         [_c("i", { staticClass: "fa fa-facebook" })]
       )
     ]),
+    _vm._v(" "),
+    _vm._m(0),
     _vm._v(" "),
     _c(
       "li",
@@ -37588,6 +37595,7 @@ var render = function() {
         _c(
           "a",
           {
+            staticClass: "social-button",
             attrs: {
               href: "https://twitter.com/intent/tweet?url=" + _vm.getURL,
               target: "_blank"
@@ -37605,7 +37613,7 @@ var render = function() {
         staticStyle: { "animation-delay": ".6s" }
       },
       [
-        _c("a", { attrs: { href: "" } }, [
+        _c("a", { staticClass: "social-button", attrs: { href: "" } }, [
           _c("i", { staticClass: "ico" }, [
             _c(
               "svg",
@@ -37688,7 +37696,33 @@ var render = function() {
     )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "li",
+      {
+        staticClass: "wow animated fadeInLeft",
+        staticStyle: { "animation-delay": ".2s" }
+      },
+      [
+        _c(
+          "a",
+          {
+            staticClass: "social-button",
+            attrs: {
+              href: "https://www.instagram.com/bad_hat_films/",
+              target: "_blank"
+            }
+          },
+          [_c("i", { staticClass: "fa fa-instagram" })]
+        )
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 

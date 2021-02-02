@@ -103,7 +103,7 @@
         height: 550
     };
 
-    $(document).on('click', '.social-buttons a', function(e){
+    $(document).on('click', '.social-button', function(e){
       console.log('social button clicked');
 
         var
