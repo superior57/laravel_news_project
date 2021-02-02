@@ -74,6 +74,7 @@
     {{-- end modal --}}
 
     <!-- All JavaScript Files-->
+    <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/popper.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>    
     <script src="{{ asset('js/default/classy-nav.min.js') }}"></script>
@@ -96,6 +97,31 @@
     <script src="{{ asset('js/dropzone.min.js') }}"></script>
 
     @yield('script')
+    <script>
+      var popupSize = {
+        width: 780,
+        height: 550
+    };
+
+    $(document).on('click', '.social-buttons a', function(e){
+      console.log('social button clicked');
+
+        var
+            verticalPos = Math.floor(($(window).width() - popupSize.width) / 2),
+            horisontalPos = Math.floor(($(window).height() - popupSize.height) / 2);
+
+        var popup = window.open($(this).prop('href'), 'social',
+            'width='+popupSize.width+',height='+popupSize.height+
+            ',left='+verticalPos+',top='+horisontalPos+
+            ',location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');
+
+        if (popup) {
+            popup.focus();
+            e.preventDefault();
+        }
+
+    });
+    </script>
     
   </body>
 </html>
