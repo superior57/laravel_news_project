@@ -15,6 +15,9 @@
     <!-- Core Stylesheet-->
     <link rel="stylesheet" href="{{ asset('style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <script>
+      window.base_url = "{{ URL::to('/') }}";
+    </script>
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/global.js') }}"></script>
     @yield('style')

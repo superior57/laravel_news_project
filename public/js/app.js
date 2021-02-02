@@ -1899,6 +1899,72 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SocialButtonsSmallComponent.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SocialButtonsSmallComponent.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ["url", "text"],
+  data: function data() {
+    return {
+      popupSize: {
+        width: 780,
+        height: 550
+      }
+    };
+  },
+  computed: {
+    getBaseURL: function getBaseURL() {
+      return window.base_url;
+    },
+    getURL: function getURL() {
+      return this.url;
+    },
+    getText: function getText() {
+      return this.text;
+    }
+  },
+  mounted: function mounted() {},
+  methods: {
+    openPopup: function openPopup(e) {
+      var link = $(e.target).parent().attr('href');
+      console.log('123');
+      var verticalPos = Math.floor(($(window).width() - this.popupSize.width) / 2),
+          horisontalPos = Math.floor(($(window).height() - this.popupSize.height) / 2);
+      var popup = window.open(link, 'social', 'width=' + this.popupSize.width + ',height=' + this.popupSize.height + ',left=' + verticalPos + ',top=' + horisontalPos + ',location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');
+
+      if (popup) {
+        popup.focus();
+        e.preventDefault();
+      }
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SocialbuttonsComponent.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SocialbuttonsComponent.vue?vue&type=script&lang=js& ***!
@@ -37570,6 +37636,118 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SocialButtonsSmallComponent.vue?vue&type=template&id=d8cc3fe2&scoped=true&":
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SocialButtonsSmallComponent.vue?vue&type=template&id=d8cc3fe2&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "social-buttons" }, [
+    _c(
+      "a",
+      {
+        staticClass: "btn btn-primary btn-social",
+        attrs: {
+          href:
+            "https://twitter.com/intent/tweet?url=" +
+            _vm.getURL +
+            "&text=" +
+            _vm.getText
+        },
+        on: { click: _vm.openPopup }
+      },
+      [
+        _c("img", {
+          attrs: {
+            src: _vm.getBaseURL + "/img/svg/twitter.svg",
+            alt: "Twitter"
+          }
+        })
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "a",
+      {
+        staticClass: "btn btn-primary btn-social",
+        attrs: {
+          href: "https://www.facebook.com/sharer/sharer.php?u=" + _vm.getURL
+        },
+        on: { click: _vm.openPopup }
+      },
+      [
+        _c("img", {
+          attrs: {
+            src: _vm.getBaseURL + "/img/svg/facebook.svg",
+            alt: "facebook"
+          }
+        })
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "a",
+      {
+        staticClass: "btn btn-primary btn-social",
+        attrs: {
+          href:
+            "mailto:info@example.com?&subject=" +
+            _vm.getBaseURL +
+            "&body=" +
+            _vm.getURL +
+            " " +
+            _vm.getText
+        },
+        on: { click: _vm.openPopup }
+      },
+      [
+        _c("img", {
+          attrs: { src: _vm.getBaseURL + "/img/svg/mail.svg", alt: "mail" }
+        })
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "a",
+      {
+        staticClass: "btn btn-primary btn-social",
+        attrs: {
+          href:
+            "https://www.linkedin.com/shareArticle?mini=true&url=" +
+            _vm.getURL +
+            "&title=&summary=" +
+            _vm.getText +
+            "&source="
+        },
+        on: { click: _vm.openPopup }
+      },
+      [
+        _c("img", {
+          attrs: {
+            src: _vm.getBaseURL + "/img/svg/linkedin.svg",
+            alt: "linkedin"
+          }
+        })
+      ]
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SocialbuttonsComponent.vue?vue&type=template&id=4acf0794&scoped=true&":
 /*!*************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SocialbuttonsComponent.vue?vue&type=template&id=4acf0794&scoped=true& ***!
@@ -49923,6 +50101,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('social-buttons', __webpack_require__(/*! ./components/SocialbuttonsComponent.vue */ "./resources/js/components/SocialbuttonsComponent.vue")["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('social-buttons-small', __webpack_require__(/*! ./components/SocialButtonsSmallComponent.vue */ "./resources/js/components/SocialButtonsSmallComponent.vue")["default"]);
 
 if (document.getElementById('content_wrapper')) {
   var content_wrapper = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
@@ -49974,6 +50153,75 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/SocialButtonsSmallComponent.vue":
+/*!*****************************************************************!*\
+  !*** ./resources/js/components/SocialButtonsSmallComponent.vue ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SocialButtonsSmallComponent_vue_vue_type_template_id_d8cc3fe2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SocialButtonsSmallComponent.vue?vue&type=template&id=d8cc3fe2&scoped=true& */ "./resources/js/components/SocialButtonsSmallComponent.vue?vue&type=template&id=d8cc3fe2&scoped=true&");
+/* harmony import */ var _SocialButtonsSmallComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SocialButtonsSmallComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/SocialButtonsSmallComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _SocialButtonsSmallComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _SocialButtonsSmallComponent_vue_vue_type_template_id_d8cc3fe2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _SocialButtonsSmallComponent_vue_vue_type_template_id_d8cc3fe2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "d8cc3fe2",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/SocialButtonsSmallComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/SocialButtonsSmallComponent.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/components/SocialButtonsSmallComponent.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SocialButtonsSmallComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./SocialButtonsSmallComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SocialButtonsSmallComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SocialButtonsSmallComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/SocialButtonsSmallComponent.vue?vue&type=template&id=d8cc3fe2&scoped=true&":
+/*!************************************************************************************************************!*\
+  !*** ./resources/js/components/SocialButtonsSmallComponent.vue?vue&type=template&id=d8cc3fe2&scoped=true& ***!
+  \************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SocialButtonsSmallComponent_vue_vue_type_template_id_d8cc3fe2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./SocialButtonsSmallComponent.vue?vue&type=template&id=d8cc3fe2&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SocialButtonsSmallComponent.vue?vue&type=template&id=d8cc3fe2&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SocialButtonsSmallComponent_vue_vue_type_template_id_d8cc3fe2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SocialButtonsSmallComponent_vue_vue_type_template_id_d8cc3fe2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 

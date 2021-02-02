@@ -218,20 +218,7 @@
           <div class="item-body">
             <div class="tool-bar">
               <a href="#" class="btn btn-primary">#streetart</a>
-              <div class="social-buttons">
-                <a href="" class="btn btn-primary btn-social">
-                  <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-                </a>
-                <a href="#" class="btn btn-primary btn-social">
-                   <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-                </a>
-                <a href="#" class="btn btn-primary btn-social">
-                  <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-                </a>
-                <a href="#" class="btn btn-primary btn-social">
-                  <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-                </a>
-              </div>
+              <social-buttons-small :url="'{{ urlencode(asset('img/concept/ongoing-project/1.png')) }}'" :text="'A massive art fair featuring exhibitions from over 160 artists, plus workshops, activities, live music, food'"></social-buttons-small>
             </div> 
             <div class="item-content">
               <p>

@@ -81,7 +81,6 @@ select {
     border: solid 1px #000;
     opacity: .7;
     height: 33px;
-    padding: 5px 15px;
     font-family: EuropeExt;
     font-style: normal;
     font-weight: normal;
@@ -96,7 +95,6 @@ select {
     border: solid 1px #000;
     opacity: .7;
     height: 33px;
-    padding: 5px 15px;
     font-family: EuropeExt;
     font-style: normal;
     font-weight: normal;
