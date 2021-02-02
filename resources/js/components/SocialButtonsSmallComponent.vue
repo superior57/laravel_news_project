@@ -38,12 +38,12 @@
             }
         },
         mounted() {
-
+            // console.log(this.url);
         },
         methods: {
             openPopup: function(e) {
-                let link = $(e.target).parent().attr('href');
-                console.log('123');
+                let link = $(e.target).closest('a').attr('href');
+
                 var
                     verticalPos = Math.floor(($(window).width() - this.popupSize.width) / 2),
                     horisontalPos = Math.floor(($(window).height() - this.popupSize.height) / 2);

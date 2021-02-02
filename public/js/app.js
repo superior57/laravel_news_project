@@ -1946,11 +1946,11 @@ __webpack_require__.r(__webpack_exports__);
       return this.text;
     }
   },
-  mounted: function mounted() {},
+  mounted: function mounted() {// console.log(this.url);
+  },
   methods: {
     openPopup: function openPopup(e) {
-      var link = $(e.target).parent().attr('href');
-      console.log('123');
+      var link = $(e.target).closest('a').attr('href');
       var verticalPos = Math.floor(($(window).width() - this.popupSize.width) / 2),
           horisontalPos = Math.floor(($(window).height() - this.popupSize.height) / 2);
       var popup = window.open(link, 'social', 'width=' + this.popupSize.width + ',height=' + this.popupSize.height + ',left=' + verticalPos + ',top=' + horisontalPos + ',location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');
@@ -2015,7 +2015,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["url"],
+  props: ["url", "classname"],
   data: function data() {
     return {
       popupSize: {
@@ -2027,12 +2027,18 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     getURL: function getURL() {
       return this.url;
+    },
+    getClassName: function getClassName() {
+      return this.classname;
     }
   },
-  mounted: function mounted() {},
+  mounted: function mounted() {
+    console.log(this.classname);
+  },
   methods: {
     openPopup: function openPopup(e) {
-      var link = $(e.target).parent().attr('href');
+      var link = $(e.target).closest('a').attr('href');
+      console.log(link);
       var verticalPos = Math.floor(($(window).width() - this.popupSize.width) / 2),
           horisontalPos = Math.floor(($(window).height() - this.popupSize.height) / 2);
       var popup = window.open(link, 'social', 'width=' + this.popupSize.width + ',height=' + this.popupSize.height + ',left=' + verticalPos + ',top=' + horisontalPos + ',location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');
@@ -37763,7 +37769,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("ul", { staticClass: "social-button" }, [
+  return _c("ul", { class: "social-button " + _vm.getClassName }, [
     _c("li", { staticClass: "wow animated fadeInLeft" }, [
       _c(
         "a",
@@ -37834,7 +37840,7 @@ var render = function() {
             on: { click: _vm.openPopup }
           },
           [
-            _c("i", { staticClass: "ico" }, [
+            _c("i", { staticClass: "fa ico" }, [
               _c(
                 "svg",
                 {
@@ -37870,7 +37876,7 @@ var render = function() {
       },
       [
         _c("a", { attrs: { href: "" } }, [
-          _c("i", { staticClass: "ico" }, [
+          _c("i", { staticClass: "fa ico" }, [
             _c(
               "svg",
               {

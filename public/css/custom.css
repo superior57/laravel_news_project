@@ -1733,6 +1733,9 @@ a.go-to:hover {
 .artist-item:hover {
     opacity: .8;
 }
+.artist-section {
+    background-color: #141414;
+}
 
 .artist-section .tab-bar>li>a {
     border-color: rgba(236, 236, 236, 0.15);

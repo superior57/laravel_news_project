@@ -237,20 +237,7 @@
           <div class="item-body">
             <div class="tool-bar">
               <a href="#" class="btn btn-primary">#music</a>
-              <div class="social-buttons">
-                <a href="" class="btn btn-primary btn-social">
-                  <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-                </a>
-                <a href="#" class="btn btn-primary btn-social">
-                   <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-                </a>
-                <a href="#" class="btn btn-primary btn-social">
-                  <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-                </a>
-                <a href="#" class="btn btn-primary btn-social">
-                  <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-                </a>
-              </div>
+              <social-buttons-small :url="'{{ urlencode(asset('img/concept/ongoing-project/2.png')) }}'" :text="'A massive art fair featuring exhibitions from over 160 artists, plus workshops, activities, live music, food'"></social-buttons-small>
             </div> 
             <div class="item-content">
               <p>
@@ -272,20 +259,7 @@
     <div class="col-12 col-md-5 p-4">
       <div class="tool-bar">
         <a href="#" class="btn btn-primary">#streetart</a>
-        <div class="social-buttons">
-          <a href="" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-             <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-          </a>
-        </div>
+        <social-buttons-small :url="'{{ urlencode(asset('img/concept/news/1.png')) }}'" :text="'A massive art fair featuring exhibitions from over 160 artists, plus workshops, activities, live music, food'"></social-buttons-small>
       </div> 
       <div class="item-content">
         <p>
@@ -427,20 +401,7 @@
     <div class="social-description p-4">
       <div class="tool-bar">
         <a href="#" class="btn btn-primary">#music</a>
-        <div class="social-buttons">
-          <a href="" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-             <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-          </a>
-        </div>
+        <social-buttons-small :url="'{{ urlencode(asset('img/concept/popular-1.png')) }}'" :text="'ARIS, FRANCE - JANUARY 23: (L-R) Rapper ASAP Rocky and Fashion designer Kris Van Assche pose Backstage after the Dior Homme Menswear Fall/Winter 2016-2017 show as part of Paris Fashion Week on January 23'"></social-buttons-small>
       </div> 
       <div class="item-content">
         <p>
@@ -462,20 +423,7 @@
         <div class="social-description p-4">
           <div class="tool-bar">
             <a href="#" class="btn btn-primary">#music</a>
-            <div class="social-buttons">
-              <a href="" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                 <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-              </a>
-            </div>
+            <social-buttons-small :url="'{{ urlencode(asset('img/concept/popular-2.png')) }}'" :text="'ARIS, FRANCE - JANUARY 23: (L-R) Rapper ASAP Rocky and Fashion designer Kris Van Assche pose Backstage after the Dior Homme Menswear Fall/Winter 2016-2017 show as part of Paris Fashion Week on January 23'"></social-buttons-small>
           </div> 
           <div class="item-content">
             <p>
@@ -493,20 +441,7 @@
         <div class="social-description p-4">
           <div class="tool-bar">
             <a href="#" class="btn btn-primary">#streetart</a>
-            <div class="social-buttons">
-              <a href="" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                 <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-              </a>
-            </div>
+            <social-buttons-small :url="'{{ urlencode(asset('img/concept/popular-3.png')) }}'" :text="'ARIS, FRANCE - JANUARY 23: (L-R) Rapper ASAP Rocky and Fashion designer Kris Van Assche pose Backstage after the Dior Homme Menswear Fall/Winter 2016-2017 show as part of Paris Fashion Week on January 23'"></social-buttons-small>
           </div> 
           <div class="item-content">
             <p>
@@ -522,20 +457,7 @@
         <div class="social-description p-4">
           <div class="tool-bar">
             <a href="#" class="btn btn-primary">#culture</a>
-            <div class="social-buttons">
-              <a href="" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                 <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-              </a>
-            </div>
+            <social-buttons-small :url="'{{ urlencode(asset('img/concept/popular-4.png')) }}'" :text="'ARIS, FRANCE - JANUARY 23: (L-R) Rapper ASAP Rocky and Fashion designer Kris Van Assche pose Backstage after the Dior Homme Menswear Fall/Winter 2016-2017 show as part of Paris Fashion Week on January 23'"></social-buttons-small>
           </div> 
           <div class="item-content">
             <p>
@@ -579,20 +501,7 @@
             </p>  
           </div> 
           <div class="tool-bar">
-            <div class="social-buttons">
-              <a href="" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                 <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-              </a>
-            </div>
+            <social-buttons-small :url="'{{ urlencode(asset('img/concept/art-1.png')) }}'" :text="'ARIS, FRANCE - JANUARY 23: (L-R) Rapper ASAP Rocky and Fashion designer Kris Van Assche pose Backstage after the Dior Homme Menswear Fall/Winter 2016-2017 show as part of Paris Fashion Week on January 23'"></social-buttons-small>
           </div> 
         </div>
       </div>
@@ -609,20 +518,7 @@
             </p>  
           </div> 
           <div class="tool-bar">
-            <div class="social-buttons">
-              <a href="" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                 <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-              </a>
-            </div>
+            <social-buttons-small :url="'{{ urlencode(asset('img/concept/art-1.png')) }}'" :text="'ARIS, FRANCE - JANUARY 23: (L-R) Rapper ASAP Rocky and Fashion designer Kris Van Assche pose Backstage after the Dior Homme Menswear Fall/Winter 2016-2017 show as part of Paris Fashion Week on January 23'"></social-buttons-small>
           </div> 
         </div>
       </div>
@@ -638,20 +534,7 @@
         </p>  
       </div> 
       <div class="tool-bar">
-        <div class="social-buttons">
-          <a href="" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-             <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-          </a>
-          <a href="#" class="btn btn-primary btn-social">
-            <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-          </a>
-        </div>
+        <social-buttons-small :url="'{{ urlencode(asset('img/concept/art-1.png')) }}'" :text="'ARIS, FRANCE - JANUARY 23: (L-R) Rapper ASAP Rocky and Fashion designer Kris Van Assche pose Backstage after the Dior Homme Menswear Fall/Winter 2016-2017 show as part of Paris Fashion Week on January 23'"></social-buttons-small>
       </div> 
     </div>
     <div class="item-img" style="height: 350px;">
@@ -675,20 +558,7 @@
           </p>  
         </div> 
         <div class="tool-bar">
-          <div class="social-buttons">
-            <a href="" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-               <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-            </a>
-          </div>
+          <social-buttons-small :url="'{{ urlencode(asset('img/concept/art-1.png')) }}'" :text="'ARIS, FRANCE - JANUARY 23: (L-R) Rapper ASAP Rocky and Fashion designer Kris Van Assche pose Backstage after the Dior Homme Menswear Fall/Winter 2016-2017 show as part of Paris Fashion Week on January 23'"></social-buttons-small>
         </div> 
       </div>
     </div>    
@@ -714,20 +584,7 @@
           </p>  
         </div> 
         <div class="tool-bar">
-          <div class="social-buttons">
-            <a href="" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-               <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-            </a>
-          </div>
+          <social-buttons-small :url="'{{ urlencode(asset('img/concept/art-1.png')) }}'" :text="'ARIS, FRANCE - JANUARY 23: (L-R) Rapper ASAP Rocky and Fashion designer Kris Van Assche pose Backstage after the Dior Homme Menswear Fall/Winter 2016-2017 show as part of Paris Fashion Week on January 23'"></social-buttons-small>
         </div> 
       </div>
     </div>
@@ -745,20 +602,7 @@
             </p>  
           </div> 
           <div class="tool-bar">
-            <div class="social-buttons">
-              <a href="" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                 <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-              </a>
-              <a href="#" class="btn btn-primary btn-social">
-                <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-              </a>
-            </div>
+            <social-buttons-small :url="'{{ urlencode(asset('img/concept/art-1.png')) }}'" :text="'ARIS, FRANCE - JANUARY 23: (L-R) Rapper ASAP Rocky and Fashion designer Kris Van Assche pose Backstage after the Dior Homme Menswear Fall/Winter 2016-2017 show as part of Paris Fashion Week on January 23'"></social-buttons-small>
           </div> 
         </div> 
       </div>
@@ -777,20 +621,7 @@
       <div class="social-description p-4">
         <div class="tool-bar">
           <a href="#" class="btn btn-primary">#music</a>
-          <div class="social-buttons">
-            <a href="" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/twitter.svg') }}" alt="Twitter">                           
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-               <img src="{{ asset('img/svg/facebook.svg') }}" alt="facebook">                  
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/mail.svg') }}" alt="mail">                
-            </a>
-            <a href="#" class="btn btn-primary btn-social">
-              <img src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin"> 
-            </a>
-          </div>
+          <social-buttons-small :url="'{{ urlencode(asset('img/concept/art-1.png')) }}'" :text="'ARIS, FRANCE - JANUARY 23: (L-R) Rapper ASAP Rocky and Fashion designer Kris Van Assche pose Backstage after the Dior Homme Menswear Fall/Winter 2016-2017 show as part of Paris Fashion Week on January 23'"></social-buttons-small>
         </div> 
         <div class="item-content">
           <p>
