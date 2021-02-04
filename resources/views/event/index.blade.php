@@ -14,7 +14,7 @@
     <div class="hero-content py-5 px-3 px-md-5">
         <div class="head">            
             <div>
-                <span class="path">Main page / </span>
+                <span class="path"><a href="{{ url('/') }}">Main page</a> / </span>
                 <span class="current-path">Events </span>
             </div>
         </div>

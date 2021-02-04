@@ -12,7 +12,7 @@
 
 <div class="head px-3 px-md-5 py-5" style="margin-bottom: 0px;">            
     <div>
-        <span class="path">Main page / </span>
+        <span class="path"><a href="{{ url('/') }}">Main page</a> / </span>
         <span class="current-path">Contact us </span>
     </div>
 </div>

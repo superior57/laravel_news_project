@@ -28,7 +28,7 @@
         </div>
         <div class="head" style="margin-bottom: 121px;">            
             <div>
-                <span class="path">Main page / Events /</span>
+                <span class="path"><a href="{{ url('/') }}">Main page</a> / <a href="{{ url('events') }}">Events</a> /</span>
                 <span class="current-path">{!! strip_tags($event->title) !!} </span>
             </div>
         </div>

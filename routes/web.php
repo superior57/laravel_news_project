@@ -77,6 +77,9 @@ Route::get('terms-conditions', function() {
 Route::get('projects', function() {
     return view('projects.index');
 });
+Route::get('project/details', function() {
+    return view('projects.details');
+});
 
 Route::get('artists', function() {
     return view('artists.index');

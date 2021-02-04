@@ -2038,7 +2038,6 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     openPopup: function openPopup(e) {
       var link = $(e.target).closest('a').attr('href');
-      console.log(link);
       var verticalPos = Math.floor(($(window).width() - this.popupSize.width) / 2),
           horisontalPos = Math.floor(($(window).height() - this.popupSize.height) / 2);
       var popup = window.open(link, 'social', 'width=' + this.popupSize.width + ',height=' + this.popupSize.height + ',left=' + verticalPos + ',top=' + horisontalPos + ',location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');

@@ -25,6 +25,9 @@ app.on("mouseover", "document", (event) => {
 
 
 
+
+
+
 /**
  * Define functions from here 
  */
@@ -81,6 +84,10 @@ function getNumberFormat2String(number) {
 function videoPlay(element_id) {
     $(`#news_video_wrap`).css('display', 'block');
     $(`#${element_id}`)[0].play();
+}
+function videoPause(element_id) {
+    $(`#news_video_wrap`).css('display', 'block');
+    $(`#${element_id}`)[0].pause();
 }
 
 function showNewsLetter() {

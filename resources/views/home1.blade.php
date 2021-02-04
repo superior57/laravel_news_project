@@ -17,7 +17,7 @@
     <div class="news-item main-item overaly border-b-1 border-r-1">
       <img src="{{ asset($settings->news_img) }}" alt="Main news">
       <div id="news_video_wrap" class="back-video-item">
-        <video id="news_video" src="{{ asset($settings->news_video) }}" controls></video>
+        <video id="news_video" src="{{ asset($settings->news_video) }}"></video>
       </div>
       <div class="news-item-content flex-wrap px-3 px-md-5">
         <div class="w-100">
@@ -28,9 +28,36 @@
           <h3>We promote <br> awareness of <br> the androgynous <br> society in Thailand</h3>
         </div>
         <div class="mb-5 w-100">
-          <a href="#" class="" onclick="videoPlay('news_video');">
-            <img src="{{ asset('img/svg/play-button.svg') }}" alt="">  
-          </a>          
+          {{-- paly button --}}
+          <a href="#" class="btnvideo newsplay" onclick="videoPlay('news_video');">
+            <div class="btn-video-play" >
+              <div class="d-flex m-auto mb-2">
+                <div class="d-flex justify-content-between align-items-center play-icon">
+                  <i class="fa fa-play"></i>
+                </div>
+                <div class="">
+                  <span>Play video</span>
+                  <span>2:30</span>
+                </div>
+              </div>
+            </div>
+          </a>    
+          {{-- end play button --}}
+          {{-- pause button --}}
+          <a href="#" class="btnvideo newspause" onclick="videoPause('news_video');">
+            <div class="btn-video-play pause" >
+              <div class="d-flex m-auto mb-2">
+                <div class="d-flex justify-content-between align-items-center play-icon">
+                  <i class="fa fa-pause"></i>
+                </div>
+                <div class="">
+                  <span>Pause video</span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </a>   
+          {{-- end pause button --}}
         </div>
       </div>
     </div>
@@ -682,6 +709,17 @@
     // $(document).on('click', '.item-img', () => {
     //     location.href = "/news/details";
     // });  
+
+    // toggle button class on click
+    $('.btnvideo').on('click', function() {
+        console.log('123');
+        $('.newsplay, .newspause').toggle();
+    });
+    // toggle button class when finished
+    $('#news_video')[0].onended = function(e) {
+      console.log('123');
+        $('.newsplay, .newspause').toggle();
+    };
 </script>    
 @endsection
 

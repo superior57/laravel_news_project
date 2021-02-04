@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    News
+    Project
 @endsection
 
 @section('sidebar')
@@ -10,14 +10,14 @@
 
 @section('content')
 
-<section class="hero" style="background-image: url('{{ asset('img/back1.png') }}');">
+<section class="hero" style="background-image: url('{{ asset('img/projects/back.png') }}');">
     <div class="hero-content py-5 px-3 px-md-5">
         <div class="mb-4">
-            <a href="{{ url('news') }}" class="btn-back">Back to all news</a>
+            <a href="{{ url('projects') }}" class="btn-back">Back to all projects</a>
         </div>
         <div class="head">            
             <div>
-                <span class="path"><a href="{{ url('/') }}">Main page</a> / <a href="{{ url('news') }}">News</a> /</span>
+                <span class="path"><a href="{{ url('/') }}">Main page</a> / <a href="{{ url('projects') }}">Projects</a> /</span>
                 <span class="current-path">The photographic journey through the Tottenham </span>
             </div>
         </div>

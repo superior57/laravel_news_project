@@ -1206,8 +1206,12 @@ section .subtitle {
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
-    color: #000000;
-    opacity: 0.5;
+    /* color: #000000; */
+    /* opacity: 0.5; */
+}
+.path>a,
+.path>a:hover {
+    color: #d6c7c7;
 }
 
 .head .current-path {
@@ -2133,7 +2137,35 @@ a.go-to:hover {
 .modal-dialog .modal-body {
     box-shadow: none;
 }
-
+.btn-video-play {
+    background-image: url(../img/svg/play-button.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 209px;
+    height: 87px;
+    display: flex;
+}
+.btn-video-play span {
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    width: 100%;
+}
+.btn-video-play i {
+    color: #000000;
+    font-size: 30px;
+}
+.newspause {
+    display: none;
+}
+.play-icon {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 @media (max-width: 450px) {
     #content_wrapper {
