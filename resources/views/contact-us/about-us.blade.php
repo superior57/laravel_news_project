@@ -1,7 +1,10 @@
 @extends('layouts.master')
 
 @section('title')
-    About us
+Join The Movement | Meet the G.IA Culture Team
+@endsection
+@section('keywords')
+gia culture    
 @endsection
 
 @section('sidebar')

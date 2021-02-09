@@ -1,7 +1,10 @@
 @extends('layouts.master')
 
 @section('title')
-    Shops
+Shop Thai Clothing Online, Thai Products for Sale | G.IA Culture
+@endsection
+@section('keywords')
+thai clothing,thai clothing online,thai clothing for sale 
 @endsection
 
 @section('sidebar')

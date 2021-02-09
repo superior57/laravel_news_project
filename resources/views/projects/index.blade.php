@@ -1,7 +1,11 @@
 @extends('layouts.master')
 
 @section('title')
-    Projects
+Art Projects: Bangkok & Thai Photography, Music, Street Art
+@endsection
+
+@section('keywords')
+street art thai,thai street art,bangkok photography,bangkok street photography,street photography bangkok,bangkok music
 @endsection
 
 @section('sidebar')
@@ -42,7 +46,7 @@
                     <span class="mb-5">
                         The photographer's point of view made it possible to take rough and biting images, with the taste of beer and cigarettes. Difficult to recognize a precise year in the photos, which want to highlight the obsession and loyalty of the Spurs fans
                     </span>
-                    <a href="{{ url('project/details') }}" class="btn btn-more"><span>Read more</span></a>
+                    <a href="{{ url('projects/details') }}" class="btn btn-more"><span>Read more</span></a>
                 </div>
             </div>
             <div class="item-img">
@@ -65,7 +69,7 @@
                     <span class="mb-5">
                         The photographer's point of view made it possible to take rough and biting images, with the taste of beer and cigarettes. Difficult to recognize a precise year in the photos, which want to highlight the obsession and loyalty of the Spurs fans
                     </span>
-                    <a href="{{ url('project/details') }}" class="btn btn-more"><span>Read more</span></a>
+                    <a href="{{ url('projects/details') }}" class="btn btn-more"><span>Read more</span></a>
                 </div>
             </div>         
         </div>
@@ -82,7 +86,7 @@
                     <span class="mb-5">
                         The photographer's point of view made it possible to take rough and biting images, with the taste of beer and cigarettes. Difficult to recognize a precise year in the photos, which want to highlight the obsession and loyalty of the Spurs fans
                     </span>
-                    <a href="{{ url('project/details') }}" class="btn btn-more"><span>Read more</span></a>
+                    <a href="{{ url('projects/details') }}" class="btn btn-more"><span>Read more</span></a>
                 </div>
             </div>
             <div class="item-img">
@@ -105,7 +109,7 @@
                     <span class="mb-5">
                         The photographer's point of view made it possible to take rough and biting images, with the taste of beer and cigarettes. Difficult to recognize a precise year in the photos, which want to highlight the obsession and loyalty of the Spurs fans
                     </span>
-                    <a href="{{ url('project/details') }}" class="btn btn-more"><span>Read more</span></a>
+                    <a href="{{ url('projects/details') }}" class="btn btn-more"><span>Read more</span></a>
                 </div>
             </div>           
         </div>
@@ -118,7 +122,7 @@
 @section('script')
 <script>
     $(document).on('click', '.item-img', () => {
-        location.href = "/project/details";
+        location.href = "/projects/details";
     });  
 </script>    
 @endsection

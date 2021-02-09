@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Cart | Confirmation
+Checkout Confirmation | G.IA Culture
 @endsection
 
 @section('sidebar')
@@ -12,7 +12,7 @@
 
 <div class="head px-3 px-md-5 py-5" style="margin-bottom: 0px;">            
     <div>
-        <span class="path"><a href="{{ url('/') }}">Main page</a> / <a href="{{ url('cart') }}">Cart</a> / <a href="{{ url('cart/checkout') }}">Checkout</a> /</span>
+        <span class="path"><a href="{{ url('/') }}">Main page</a> / <a href="{{ url('cart') }}">Cart</a> / <a href="{{ url('checkout') }}">Checkout</a> /</span>
         <span class="current-path">Order confirmation </span>
     </div>
 </div>

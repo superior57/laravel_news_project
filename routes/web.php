@@ -27,12 +27,12 @@ Route::get("admin/403", function() {
 Route::get('news', function() {
     return view('news.index');
 });
-Route::get('news/details', function() {
+Route::get('blog-post', function() {
     return view('news.details');
 });
 
 Route::get('events', "HomeController@event")->name("events");
-Route::get('event/details/{id}', "HomeController@eventDetails");
+Route::get('events/{id}', "HomeController@eventDetails");
 
 Route::get('shop', function() {
     return view('shop.index');
@@ -44,23 +44,23 @@ Route::get('shop/details', function() {
 Route::get('cart', function() {
     return view('cart.index');
 });
-Route::get('cart/checkout', function() {
+Route::get('checkout', function() {
     return view('cart.checkout');
 });
-Route::get('cart/checkout/confirmation', function() {
+Route::get('checkout-confirmation', function() {
     return view('cart.thanks');
 });
 
 Route::get('contact-us', function() {
-    return redirect('contact-us/commission-project');
+    return redirect('commission-a-project');
 });
-Route::get('contact-us/commission-project', function() {
+Route::get('commission-a-project', function() {
     return view('contact-us.commission-project');
 });
-Route::get('contact-us/submit-artwork', function() {
+Route::get('submit-artwork', function() {
     return view('contact-us.submit-artwork');
 });
-Route::get('contact-us/about-us', function() {
+Route::get('about-us', function() {
     return view('contact-us.about-us');
 });
 
@@ -77,14 +77,14 @@ Route::get('terms-conditions', function() {
 Route::get('projects', function() {
     return view('projects.index');
 });
-Route::get('project/details', function() {
+Route::get('projects/details', function() {
     return view('projects.details');
 });
 
 Route::get('artists', function() {
     return view('artists.index');
 });
-Route::get('artist/details', function() {
+Route::get('artists/details', function() {
     return view('artists.details');
 });
 

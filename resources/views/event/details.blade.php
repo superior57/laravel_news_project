@@ -1,7 +1,10 @@
 @extends('layouts.master')
 
 @section('title')
-    Event
+[Events Name] | G.IA Culture
+@endsection
+@section('keywords')
+[Events Name]
 @endsection
 
 @section('sidebar')

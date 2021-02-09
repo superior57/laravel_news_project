@@ -1,7 +1,10 @@
 @extends('layouts.master')
 
 @section('title')
-    All events
+Thai Street Fashion, Music, & Art Events | G.IA Culture
+@endsection
+@section('keywords')
+thai fashion,thai street fashion    
 @endsection
 
 @section('sidebar')
@@ -46,7 +49,7 @@
                                 </h5>
                                 <div class="d-flex">
                                     <div class="arrow-right">
-                                        <a href="{{ url('event/details/'.$event->id) }}" class="btn mx-0 px-0">
+                                        <a href="{{ url('events/'.$event->id) }}" class="btn mx-0 px-0">
                                             <svg width="44" height="25" viewBox="0 0 44 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1459 13.6257L0.5 13.6257V11.3744L39.1459 11.3744L30.3454 2.29911L31.8784 0.718262L43.3035 12.5L31.8784 24.2818L30.3454 22.701L39.1459 13.6257Z" fill="black"/>
                                             </svg>      
@@ -317,7 +320,7 @@
     });
 
     // $(document).on('click', '.item-img', () => {
-    //     location.href = "/event/details";
+    //     location.href = "/events";
     // });  
 </script>    
 @endsection

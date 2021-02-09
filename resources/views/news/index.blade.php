@@ -1,7 +1,10 @@
 @extends('layouts.master')
 
 @section('title')
-    All news
+Online News | Bangkok & Thai Music, Fashion, Street Arts, Culture
+@endsection
+@section('keywords')
+thai news online,bangkok news today,bangkok news,street art bangkok,street art in bangkok,bangkok street art    
 @endsection
 
 @section('sidebar')
@@ -274,7 +277,7 @@
         <h3 class="w-100 text-uppercase">Have an idea for the creative project?</h3>
         <p class="w-100">Tell us about the project</p>
         <div class="w-100 d-flex">
-          <a href="{{ url('contact-us/commission-project') }}">
+          <a href="{{ url('commission-a-project') }}">
               <div class="btn-layout">
                   <svg viewBox="0 0 236 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1 1H230V61H1V1Z" class="stroke" stroke="black" stroke-width="2"/>
@@ -299,7 +302,7 @@
 @section('script')
 <script>
     $(document).on('click', '.item-img', () => {
-        location.href = "/news/details";
+        location.href = "blog-post";
     });  
 </script>    
 @endsection

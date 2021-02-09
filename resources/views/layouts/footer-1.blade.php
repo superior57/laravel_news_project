@@ -17,16 +17,16 @@
       <div class="foot-item">        
         <ul>
           <h5>About us</h5>  
-          <li><a href="{{ url('contact-us/about-us') }}">About us</a></li>
-          <li><a href="{{ url('contact-us/about-us#our_team') }}">Our team</a></li>
+          <li><a href="{{ url('about-us') }}">About us</a></li>
+          <li><a href="{{ url('about-us#our_team') }}">Our team</a></li>
         </ul>
       </div>
       <div class="foot-item">        
         <ul>
           <h5>Contact us</h5>  
           <li><a href="{{ url('contact-us') }}">Contact us</a></li>
-          <li><a href="{{ url('contact-us/commission-project') }}">Commission a project</a></li>
-          <li><a href="{{ url('contact-us/submit-artwork') }}">Submit artwork</a></li>
+          <li><a href="{{ url('commission-a-project') }}">Commission a project</a></li>
+          <li><a href="{{ url('submit-artwork') }}">Submit artwork</a></li>
           <li class="">
             {{-- social button group  --}}
             <ul class="social-button d-flex">

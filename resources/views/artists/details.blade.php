@@ -1,7 +1,10 @@
 @extends('layouts.master')
 
 @section('title')
-    Artists
+[artist name]: Profile, Bio, Career | G.IA Culture
+@endsection
+@section('keywords')
+[artist name]
 @endsection
 
 @section('sidebar')

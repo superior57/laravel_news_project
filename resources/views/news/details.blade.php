@@ -1,7 +1,10 @@
 @extends('layouts.master')
 
 @section('title')
-    News
+[Blog Post Title] | G.IA Culture
+@endsection
+@section('keywords')
+[Blog Post Title]
 @endsection
 
 @section('sidebar')
@@ -230,7 +233,7 @@
           <h3 class="w-100 text-uppercase">Have an idea for the creative project?</h3>
           <p class="w-100">Tell us about the project</p>
           <div class="w-100 d-flex">
-            <a href="{{ url('contact-us/commission-project') }}">
+            <a href="{{ url('commission-a-project') }}">
                 <div class="btn-layout">
                     <svg viewBox="0 0 236 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1H230V61H1V1Z" class="stroke" stroke="black" stroke-width="2"/>

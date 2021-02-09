@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Cart | Checkout
+Checkout | G.IA Culture
 @endsection
 
 @section('sidebar')
@@ -165,7 +165,7 @@
                      {{-- place order --}}
                      <div class="w-100 mb-3">
                         <div class="body mt-3 w-100">
-                            <a href="{{ url('cart/checkout/confirmation') }}" class="w-100 btn btn-secondary btn-size-md mb-4">Place order</a>    
+                            <a href="{{ url('checkout-confirmation') }}" class="w-100 btn btn-secondary btn-size-md mb-4">Place order</a>    
                             <span class="text-16">
                                 By placing your order you agree to our <a href="" class="go-to text-gray">Terms & Conditions</a>, <a href="" class="go-to text-gray">privacy and returns policies</a> . <br>
                                 You also consent to some of your data being stored by G.IA, which may be used to make <br> 

@@ -27,7 +27,7 @@
         </a>
         {{-- End Stream text --}}
         {{-- Comission a project --}}
-        <a href="{{ url('contact-us/commission-project') }}" >
+        <a href="{{ url('commission-a-project') }}" >
             <div class="container comission-project py-4 btnlink">
                 <div class="w-100 text-center">
                     <span>
@@ -86,7 +86,7 @@
         </div>
         {{-- End Icon Button Group --}}
         {{-- Comission a project --}}
-        <a href="{{ url('contact-us/commission-project') }}" >
+        <a href="{{ url('commission-a-project') }}" >
             <div class="container comission-project py-4 btnlink">
                 <div class="w-100 text-center">
                     <span>
@@ -145,7 +145,7 @@
         </div>{{-- End Icon Button Group --}}
         
         {{-- Comission a project --}}
-        <a href="{{ url('contact-us/commission-project') }}" >
+        <a href="{{ url('commission-a-project') }}" >
             <div class="container comission-project py-4 btnlink">
                 <div class="w-100 text-center">
                     <span>
@@ -204,7 +204,7 @@
         </div>{{-- End Icon Button Group --}}
         
         {{-- Comission a project --}}
-        <a href="{{ url('contact-us/commission-project') }}" >
+        <a href="{{ url('commission-a-project') }}" >
             <div class="container comission-project py-4 btnlink">
                 <div class="w-100 text-center">
                     <span>
@@ -263,7 +263,7 @@
         </div>{{-- End Icon Button Group --}}
         
         {{-- Comission a project --}}
-        <a href="{{ url('contact-us/commission-project') }}" >
+        <a href="{{ url('commission-a-project') }}" >
             <div class="container comission-project py-4 btnlink">
                 <div class="w-100 text-center">
                     <span>
@@ -322,7 +322,7 @@
         </div>{{-- End Icon Button Group --}}
         
         {{-- Comission a project --}}
-        <a href="{{ url('contact-us/commission-project') }}" >
+        <a href="{{ url('commission-a-project') }}" >
             <div class="container comission-project py-4 btnlink">
                 <div class="w-100 text-center">
                     <span>
@@ -381,7 +381,7 @@
         </div>{{-- End Icon Button Group --}}
         
         {{-- Comission a project --}}
-        <a href="{{ url('contact-us/commission-project') }}" >
+        <a href="{{ url('commission-a-project') }}" >
             <div class="container comission-project py-4 btnlink">
                 <div class="w-100 text-center">
                     <span>

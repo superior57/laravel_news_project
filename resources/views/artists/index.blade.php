@@ -1,7 +1,11 @@
 @extends('layouts.master')
 
 @section('title')
-    Artists
+Favorite Thai Arts: Street Art, Music, Artists, Photography | G.IA Culture
+@endsection
+
+@section('keywords')
+thai artist,thai street art,thai photography,thai music,thai arts
 @endsection
 
 @section('sidebar')
@@ -167,7 +171,7 @@
     })
 
     $(document).on('click', '.artist-item', () => {
-        location.href = "/artist/details";
+        location.href = "/artists/details";
     });  
 </script>    
 @endsection

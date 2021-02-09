@@ -1,7 +1,10 @@
 @extends('layouts.master')
 
 @section('title')
-    Submit Artwork
+Submit Original Thai Art & Artwork | G.IA Culture
+@endsection
+@section('keywords')
+thai artwork,thai art,original thai    
 @endsection
 
 @section('sidebar')

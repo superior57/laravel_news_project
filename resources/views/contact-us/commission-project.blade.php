@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Commission Project
+Commission a Project: Buy a Design, Hire an Artist | G.IA Culture
 @endsection
 
 @section('sidebar')

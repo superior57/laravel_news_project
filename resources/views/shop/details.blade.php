@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
 @section('title')
-    Shop
+Buy [Product Name] Online | G.IA Culture
 @endsection
-
+[Product Name]
 @section('sidebar')
     @include('layouts.sidebar-1')    
 @endsection
