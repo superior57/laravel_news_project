@@ -4,7 +4,7 @@
 Join The Movement | Meet the G.IA Culture Team
 @endsection
 @section('keywords')
-gia culture    
+gia culture,gia
 @endsection
 
 @section('sidebar')
