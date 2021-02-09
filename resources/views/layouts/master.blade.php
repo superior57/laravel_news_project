@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -17,16 +18,40 @@
     <link rel="stylesheet" href="{{ asset('style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <script>
-      window.base_url = "{{ URL::to('/') }}";
+        window.base_url = "{{ URL::to('/') }}";
     </script>
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/global.js') }}"></script>
     @yield('style')
-  </head>
-  <body>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MGGMMP6');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGGMMP6" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Preloader-->
     <div class="preloader" id="preloader">
-      <div class="spinner-grow text-light" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="spinner-grow text-light" role="status"><span class="sr-only">Loading...</span></div>
     </div>
     <!-- Header Area-->
     {{-- @include('layouts.header') --}}
@@ -39,48 +64,51 @@
         @yield('content')
         <!-- Footer Area-->
         @yield('footer')
-    </div>    
+    </div>
 
 
     {{-- modal --}}
     <div class="modal fade" id="newsletter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">NEWSLETTER</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            {{-- body --}}
-              <p class="new-letter">Subscribe to our newsletter</p>
-              <form action="" class="form_email mb-30">
-                <div class="form-group d-flex">
-                  <input type="text" class="form-control" placeholder="Your email">
-                  <a href="" type="submit" class="d-flex"><i class="fa m-auto">
-                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M29.3281 12.7152L1.71367 24.4304L6.00925 12.7152M29.3281 12.7152L1.71367 0.999999L6.00925 12.7152M29.3281 12.7152L6.00925 12.7152" stroke="black"/>
-                    </svg>                  
-                  </i></a>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">NEWSLETTER</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-              </form>
-              <span class="form_email_desc">
-                By signing up, you agree to our 
-                Terms & Conditions and Privacy Policy
-              </span>
-            {{-- end body --}}
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+                <div class="modal-body">
+                    {{-- body --}}
+                    <p class="new-letter">Subscribe to our newsletter</p>
+                    <form action="" class="form_email mb-30">
+                        <div class="form-group d-flex">
+                            <input type="text" class="form-control" placeholder="Your email">
+                            <a href="" type="submit" class="d-flex"><i class="fa m-auto">
+                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M29.3281 12.7152L1.71367 24.4304L6.00925 12.7152M29.3281 12.7152L1.71367 0.999999L6.00925 12.7152M29.3281 12.7152L6.00925 12.7152"
+                                            stroke="black" />
+                                    </svg>
+                                </i></a>
+                        </div>
+                    </form>
+                    <span class="form_email_desc">
+                        By signing up, you agree to our
+                        Terms & Conditions and Privacy Policy
+                    </span>
+                    {{-- end body --}}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     {{-- end modal --}}
 
     <!-- All JavaScript Files-->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/popper.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>    
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/default/classy-nav.min.js') }}"></script>
     <script src="{{ asset('js/waypoints.min.js') }}"></script>
     <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
@@ -101,6 +129,7 @@
     <script src="{{ asset('js/dropzone.min.js') }}"></script>
 
     @yield('script')
-    
-  </body>
+
+</body>
+
 </html>
